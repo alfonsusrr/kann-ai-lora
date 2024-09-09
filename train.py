@@ -126,7 +126,7 @@ def train(args):
             lr_scheduler_type = "cosine",
             seed = 3407,
             output_dir = "/content/checkpoints",
-            save_steps = 100
+            save_steps = 100,
             resume_from_checkpoint=args.from_checkpoint,
         ),
     )
