@@ -77,7 +77,7 @@ def format_messages(raw_messages, character):
 def formatting_prompts_func(examples, tokenizer):
     convos = examples["conversations"]
     texts = [tokenizer.apply_chat_template(convo, tokenize = False, add_generation_prompt = False) for convo in convos]
-    return { "text" : texts, }
+    return { "text" : texts }
 
 
 def process_dataset(dataset, hf_token, character, tokenizer):
@@ -89,11 +89,12 @@ def process_dataset(dataset, hf_token, character, tokenizer):
         fn_kwargs = {"character": character}
     )
 
-    dataset = dataset.map(
-        formatting_prompts_func,
-        num_proc=os.cpu_count(),
-        fn_kwargs = {"tokenizer": tokenizer}
-    )
+    # dataset = dataset.map(
+    #     formatting_prompts_func,
+    #     num_proc=os.cpu_count()/2,
+    #     fn_kwargs = {"tokenizer": tokenizer}
+    # )
+    print(dataset[0])
     return dataset
 
 def train(args):
@@ -101,38 +102,38 @@ def train(args):
     lora_model, tokenizer = load_model(args.model, args.from_checkpoint, args.output_dir, args.lora_rank, args.lora_alpha)
     dataset = process_dataset(args.dataset, args.hf_token, args.character, tokenizer)
 
-    tokenizer.padding_side = "right"
-    packing = False
-    trainer = SFTTrainer(
-        model = lora_model,
-        tokenizer = tokenizer,
-        train_dataset = dataset,
-        dataset_text_field = "text",
-        max_seq_length = 8192,
-        dataset_num_proc = os.cpu_count(),
-        packing = packing, # Can make training 5x faster for short sequences.
-        args = TrainingArguments(
-            per_device_train_batch_size = args.batch_size,
-            auto_find_batch_size = True,
-            gradient_accumulation_steps = 1,
-            warmup_steps = 5,
-            num_train_epochs=args.epochs,
-            learning_rate = args.learning_rate, # lower lr with no packing
-            fp16 = not torch.cuda.is_bf16_supported(),
-            bf16 = torch.cuda.is_bf16_supported(),
-            logging_steps = 10,
-            optim = "paged_adamw_8bit",
-            weight_decay = 1e-12,
-            lr_scheduler_type = "cosine",
-            seed = 3407,
-            output_dir = "BASE_CHECKPOINT_DIR" + args.output_dir,
-            save_steps = 100,
-            resume_from_checkpoint=args.from_checkpoint,
-        ),
-    )
+    # tokenizer.padding_side = "right"
+    # packing = False
+    # trainer = SFTTrainer(
+    #     model = lora_model,
+    #     tokenizer = tokenizer,
+    #     train_dataset = dataset,
+    #     dataset_text_field = "text",
+    #     max_seq_length = 8192,
+    #     dataset_num_proc = os.cpu_count(),
+    #     packing = packing, # Can make training 5x faster for short sequences.
+    #     args = TrainingArguments(
+    #         per_device_train_batch_size = args.batch_size,
+    #         auto_find_batch_size = True,
+    #         gradient_accumulation_steps = 1,
+    #         warmup_steps = 5,
+    #         num_train_epochs=args.epochs,
+    #         learning_rate = args.learning_rate, # lower lr with no packing
+    #         fp16 = not torch.cuda.is_bf16_supported(),
+    #         bf16 = torch.cuda.is_bf16_supported(),
+    #         logging_steps = 10,
+    #         optim = "paged_adamw_8bit",
+    #         weight_decay = 1e-12,
+    #         lr_scheduler_type = "cosine",
+    #         seed = 3407,
+    #         output_dir = "BASE_CHECKPOINT_DIR" + args.output_dir,
+    #         save_steps = 100,
+    #         resume_from_checkpoint=args.from_checkpoint,
+    #     ),
+    # )
 
-    trainer_stats = trainer.train(resume_from_checkpoint=args.from_checkpoint)
-    lora_model.save_pretrained(BASE_OUTPUT_DIR + args.output_dir) # Local saving
+    # trainer_stats = trainer.train(resume_from_checkpoint=args.from_checkpoint)
+    # lora_model.save_pretrained(BASE_OUTPUT_DIR + args.output_dir) # Local saving
 
 def main():
     parser = argparse.ArgumentParser()
