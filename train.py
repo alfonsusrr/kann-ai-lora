@@ -130,7 +130,7 @@ def train(args):
             weight_decay = 1e-12,
             lr_scheduler_type = "cosine",
             seed = 3407,
-            output_dir = "BASE_CHECKPOINT_DIR" + args.output_dir,
+            output_dir = BASE_CHECKPOINT_DIR + args.output_dir,
             save_steps = 100,
             resume_from_checkpoint=args.from_checkpoint,
         ),
