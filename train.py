@@ -98,7 +98,7 @@ def load_dataset(dataset, hf_token, character, tokenizer):
 
 def train(args):
     set_env(args.device)
-    lora_model, tokenizer = load_model(args.model, args.from_checkpoint, args.checkpoint_dir, args.lora_rank, args.lora_alpha)
+    lora_model, tokenizer = load_model(args.model, args.from_checkpoint, args.output_dir, args.lora_rank, args.lora_alpha)
     dataset = load_dataset(args.dataset, args.hf_token, args.character, tokenizer)
 
     tokenizer.padding_side = "right"
@@ -146,7 +146,7 @@ def main():
     parser.add_argument("--lora_rank", type=int, default=16)
     parser.add_argument("--lora_alpha", type=int, default=64)
     parser.add_argument("--from_checkpoint", type=int, default=False)
-    parser.add_argument("--character", type=int, nargs="+", required=True)
+    parser.add_argument("--character", type=str, nargs="+", required=True)
     parser.add_argument("--device", type=str, default="0")
 
     args = parser.parse_args()
