@@ -21,7 +21,7 @@ def set_env(device):
     os.environ["NCCL_P2P_DISABLE"] = "1"
     os.environ["NCCL_IB_DISABLE"] = "1"
 
-def load_model(model, from_checkpoint, checkpoint_dir, lora_rank, lora_alpha):
+def load_model(model_name, from_checkpoint, checkpoint_dir, lora_rank, lora_alpha):
     model = None
     tokenizer = None
     if from_checkpoint:
@@ -33,7 +33,7 @@ def load_model(model, from_checkpoint, checkpoint_dir, lora_rank, lora_alpha):
         )
     else:
         model, tokenizer = FastLanguageModel.from_pretrained(
-            model_name = BASE_MODEL_DIR + model,
+            model_name = BASE_MODEL_DIR + model_name,
             max_seq_length = 8192,
             dtype = None,
             load_in_4bit = True
