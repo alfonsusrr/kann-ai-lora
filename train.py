@@ -125,7 +125,7 @@ def train(args):
             weight_decay = 1e-12,
             lr_scheduler_type = "cosine",
             seed = 3407,
-            output_dir = "/content/checkpoints",
+            output_dir = "BASE_CHECKPOINT_DIR" + args.output_dir,
             save_steps = 100,
             resume_from_checkpoint=args.from_checkpoint,
         ),
@@ -146,7 +146,6 @@ def main():
     parser.add_argument("--lora_rank", type=int, default=16)
     parser.add_argument("--lora_alpha", type=int, default=64)
     parser.add_argument("--from_checkpoint", type=int, default=False)
-    parser.add_argument("--checkpoint_dir", type=str, required=True)
     parser.add_argument("--character", type=int, nargs="+", required=True)
     parser.add_argument("--device", type=str, default="0")
 
