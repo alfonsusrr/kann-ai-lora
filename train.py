@@ -13,6 +13,8 @@ BASE_CHECKPOINT_DIR = "./checkpoint/"
 BASE_MODEL_DIR = "./model/"
 BASE_OUTPUT_DIR = "./lora/"
 
+global lora_model
+global tokenizer
 
 
 def set_env(device):
@@ -22,6 +24,9 @@ def set_env(device):
     os.environ["NCCL_IB_DISABLE"] = "1"
 
 def load_model(model_name, from_checkpoint, checkpoint_dir, lora_rank, lora_alpha):
+    global lora_model
+    global tokenizer
+
     model = None
     tokenizer = None
     if from_checkpoint:
@@ -76,13 +81,14 @@ def format_messages(raw_messages, character):
         "conversations": messages
     }
 
-def formatting_prompts_func(examples, tokenizer):
+def formatting_prompts_func(examples):
+    global tokenizer
     convos = examples["conversations"]
     texts = [tokenizer.apply_chat_template(convo, tokenize = False, add_generation_prompt = False) for convo in convos]
     return { "text" : texts }
 
 
-def process_dataset(dataset, hf_token, character, tokenizer):
+def process_dataset(dataset, hf_token, character):
     dataset = load_dataset(dataset, token=hf_token, split="train")
     dataset = dataset.map(
         format_messages,
@@ -93,14 +99,14 @@ def process_dataset(dataset, hf_token, character, tokenizer):
 
     dataset = dataset.map(
         formatting_prompts_func,
-        fn_kwargs = {"tokenizer": tokenizer}
+        batched = True
     )
     return dataset
 
 def train(args):
     set_env(args.device)
     lora_model, tokenizer = load_model(args.model, args.from_checkpoint, args.output_dir, args.lora_rank, args.lora_alpha)
-    dataset = process_dataset(args.dataset, args.hf_token, args.character, tokenizer)
+    dataset = process_dataset(args.dataset, args.hf_token, args.character)
 
     tokenizer.padding_side = "right"
     packing = False
