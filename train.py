@@ -9,9 +9,9 @@ import torch
 import os
 import json
 
-BASE_CHECKPOINT_DIR = "/checkpoint/"
-BASE_MODEL_DIR = "/model/"
-BASE_OUTPUT_DIR = "/lora/"
+BASE_CHECKPOINT_DIR = "./checkpoint/"
+BASE_MODEL_DIR = "./model/"
+BASE_OUTPUT_DIR = "./lora/"
 
 
 
