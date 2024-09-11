@@ -30,6 +30,7 @@ def load_model(model_name, from_checkpoint, checkpoint_dir, lora_rank, lora_alph
             max_seq_length = 8192,
             dtype = None,
             load_in_4bit = True
+            device_map = "cuda"
         )
     else:
         model, tokenizer = FastLanguageModel.from_pretrained(
@@ -37,6 +38,7 @@ def load_model(model_name, from_checkpoint, checkpoint_dir, lora_rank, lora_alph
             max_seq_length = 8192,
             dtype = None,
             load_in_4bit = True
+            device_map = "cuda"
         )
     lora_model = FastLanguageModel.get_peft_model(
         model,
