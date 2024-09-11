@@ -80,7 +80,7 @@ def formatting_prompts_func(examples, tokenizer):
     return { "text" : texts, }
 
 
-def load_dataset(dataset, hf_token, character, tokenizer):
+def process_dataset(dataset, hf_token, character, tokenizer):
     dataset = load_dataset(dataset, token=hf_token, split="train")
     dataset = dataset.map(
         format_messages,
@@ -99,7 +99,7 @@ def load_dataset(dataset, hf_token, character, tokenizer):
 def train(args):
     set_env(args.device)
     lora_model, tokenizer = load_model(args.model, args.from_checkpoint, args.output_dir, args.lora_rank, args.lora_alpha)
-    dataset = load_dataset(args.dataset, args.hf_token, args.character, tokenizer)
+    dataset = process_dataset(args.dataset, args.hf_token, args.character, tokenizer)
 
     tokenizer.padding_side = "right"
     packing = False
