@@ -29,7 +29,7 @@ def load_model(model_name, from_checkpoint, checkpoint_dir, lora_rank, lora_alph
             model_name = BASE_CHECKPOINT_DIR + checkpoint_dir,
             max_seq_length = 8192,
             dtype = None,
-            load_in_4bit = True
+            load_in_4bit = True,
             device_map = "cuda"
         )
     else:
@@ -37,7 +37,7 @@ def load_model(model_name, from_checkpoint, checkpoint_dir, lora_rank, lora_alph
             model_name = BASE_MODEL_DIR + model_name,
             max_seq_length = 8192,
             dtype = None,
-            load_in_4bit = True
+            load_in_4bit = True,
             device_map = "cuda"
         )
     lora_model = FastLanguageModel.get_peft_model(
