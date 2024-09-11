@@ -93,7 +93,6 @@ def process_dataset(dataset, hf_token, character, tokenizer):
 
     dataset = dataset.map(
         formatting_prompts_func,
-        num_proc=1,
         fn_kwargs = {"tokenizer": tokenizer}
     )
     return dataset
