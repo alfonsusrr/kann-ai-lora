@@ -116,7 +116,7 @@ def train(args):
         train_dataset = dataset,
         dataset_text_field = "text",
         max_seq_length = 8192,
-        dataset_num_proc = os.cpu_count(),
+        dataset_num_proc = 16,
         packing = packing, # Can make training 5x faster for short sequences.
         args = TrainingArguments(
             per_device_train_batch_size = args.batch_size,
