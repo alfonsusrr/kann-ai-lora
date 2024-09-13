@@ -160,7 +160,8 @@ def inference(args):
         inputs = tokenizer(text, return_tensors="pt", padding=True).to('cuda')
         output = lora_model.generate(**inputs, max_new_tokens=500, temperature=1)
         text = tokenizer.batch_decode(output)
-        parsed_text_1 = "<|end_header_id|>".split(text)[-1]
+        print(text)
+        parsed_text_1 = "<|end_header_id|>".split(text[0])[-1]
         parsed_text_2 = "<|eot_id|>".split(parsed_text_1)[0]
         prev_messages.append({"from": "assistant", "value": parsed_text_2})
         print(f"{args.character}: {parsed_text_2}")
