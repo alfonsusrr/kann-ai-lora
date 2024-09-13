@@ -138,7 +138,7 @@ def inference(args):
         rag_results_list = document_retrieval(embed_model, embed_tokenizer, index, args.index_name, message_content)
         rag_results = rag_results_list[0]
         user_results = rag_results_list[1]
-        rag_prompt = f"Here are some examples of how you might respond as {' or '.join(args.character)} based on the given context and characters: {', '.join(rag_results)} \n"
+        rag_prompt = f"Here are some examples of how you might respond as {' or '.join(args.character) if len(args.character) > 1 else args.character[0]} based on the given context and characters: {', '.join(rag_results)} \n"
 
         if len(user_results) > 0:
             rag_prompt += f"Here are also some related chat history with this person: {', '.join(user_results)} \n"
@@ -147,7 +147,7 @@ def inference(args):
         
         appended_messages = [{
             "from": "system",
-            "value": f"You are roleplaying a character that is named {' or '.join(args.character)}. Please provide a response that is engaging, in-character, and adds depth to the conversation. Make sure to be as detailed as possible. Do not include the character's name or any tags before the response. Only provide the spoken dialogue of the character you are roleplaying. \n" + rag_prompt
+            "value": f"You are roleplaying a character that is named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}. Please provide a response that is engaging, in-character, and adds depth to the conversation. Make sure to be as detailed as possible. Do not include the character's name or any tags before the response. Only provide the spoken dialogue of the character you are roleplaying. \n" + rag_prompt
         }] + prev_messages
 
         text = tokenizer.apply_chat_template(
@@ -160,18 +160,18 @@ def inference(args):
         inputs = tokenizer(text, return_tensors="pt", padding=True).to('cuda')
         output = lora_model.generate(**inputs, max_new_tokens=500, temperature=1)
         text = tokenizer.batch_decode(output)
-        print(text)
-        parsed_text_1 = "<|end_header_id|>".split(text[0])[-1]
-        parsed_text_2 = "<|eot_id|>".split(parsed_text_1)[0]
+
+        parsed_text_1 = text[0].split("<|end_header_id|>")[-1]
+        parsed_text_2 = parsed_text_1.split("<|eot_id|>")[0].strip()
         prev_messages.append({"from": "assistant", "value": parsed_text_2})
-        print(f"{args.character}: {parsed_text_2}")
+        print(f"{args.character[0]}: {parsed_text_2}")
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", type=str, default=5)
     parser.add_argument("--index_name", type=str, required=True)
     parser.add_argument("--embed_model", type=str, required=True)
-    parser.add_argument("--character", type=str, required=True)
+    parser.add_argument("--character", type=str, nargs="+", required=True)
     parser.add_argument("--device", type=str, default="0")
     args = parser.parse_args()
 
