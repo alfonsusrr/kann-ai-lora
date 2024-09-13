@@ -32,9 +32,9 @@ def set_env(device):
     os.environ["NCCL_P2P_DISABLE"] = "1"
     os.environ["NCCL_IB_DISABLE"] = "1"
 
-def load_model(model_dir):
+def load_model(model_dir, from_checkpoint):
     lora_model, tokenizer = FastLanguageModel.from_pretrained(
-        model_name = BASE_OUTPUT_DIR + model_dir,
+        model_name = BASE_OUTPUT_DIR + model_dir if not from_checkpoint else BASE_CHECKPOINT_DIR + model_dir,
         max_seq_length = 8192,
         dtype = None,
         load_in_4bit = True,
@@ -128,7 +128,7 @@ def document_retrieval(model, tokenizer, pc, index_name, query):
 
 def inference(args):
     set_env(args.device)
-    lora_model, tokenizer = load_model(args.model)
+    lora_model, tokenizer = load_model(args.model, args.from_checkpoint)
     embed_model, embed_tokenizer = load_embed_model(args.embed_model)
     index = initialize_RAG(args.index_name)
 
@@ -172,6 +172,7 @@ def main():
     parser.add_argument("--index_name", type=str, required=True)
     parser.add_argument("--embed_model", type=str, required=True)
     parser.add_argument("--character", type=str, nargs="+", required=True)
+    parser.add_argument("--from_checkpoint", type=str, default=False)
     parser.add_argument("--device", type=str, default="0")
     args = parser.parse_args()
 
