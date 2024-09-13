@@ -34,7 +34,7 @@ def set_env(device):
 
 def load_model(model_dir):
     lora_model, tokenizer = FastLanguageModel.from_pretrained(
-        model_name = BASE_MODEL_DIR + model_dir,
+        model_name = BASE_OUTPUT_DIR + model_dir,
         max_seq_length = 8192,
         dtype = None,
         load_in_4bit = True,
