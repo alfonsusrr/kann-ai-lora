@@ -132,6 +132,7 @@ def inference(args):
     embed_model, embed_tokenizer = load_embed_model(args.embed_model)
     index = initialize_RAG(args.index_name)
 
+    prev_messages = []
     while True:
         message_content = input("You: ")
         rag_results_list = document_retrieval(embed_model, embed_tokenizer, index, args.index_name, message_content)
@@ -142,13 +143,15 @@ def inference(args):
         if len(user_results) > 0:
             rag_prompt += f"Here are also some related chat history with this person: {', '.join(user_results)} \n"
 
-        messages = [{
+        prev_messages.append({"from": "user", "value": message_content})
+        
+        appended_messages = [{
             "from": "system",
             "value": f"You are roleplaying a character that is named {' or '.join(args.character)}. Please provide a response that is engaging, in-character, and adds depth to the conversation. Make sure to be as detailed as possible. Do not include the character's name or any tags before the response. Only provide the spoken dialogue of the character you are roleplaying. \n" + rag_prompt
-        }] + messages
+        }] + prev_messages
 
         text = tokenizer.apply_chat_template(
-            messages,
+            appended_messages,
             tokenize = False,
             add_generation_prompt = True, # Must add for generation
             return_tensors = "pt",
@@ -159,6 +162,7 @@ def inference(args):
         text = lora_model.batch_decode(output)
         parsed_text_1 = "<|end_header_id|>".split(text)[-1]
         parsed_text_2 = "<|eot_id|>".split(parsed_text_1)[0]
+        prev_messages.append({"from": "assistant", "value": parsed_text_2})
         print(f"{args.character}: {parsed_text_2}")
 
 def main():
