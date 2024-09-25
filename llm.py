@@ -35,13 +35,15 @@ def set_env(device):
     os.environ["NCCL_IB_DISABLE"] = "1"
 
 def load_model(model_dir, from_checkpoint):
-    lora_model, tokenizer = FastLanguageModel.from_pretrained(
-        model_name = BASE_OUTPUT_DIR + model_dir if not from_checkpoint else BASE_CHECKPOINT_DIR + model_dir,
-        max_seq_length = 8192,
-        dtype = None,
-        load_in_4bit = True,
-        device_map = "cuda:0"
-    )
+
+    with torch.no_grad():
+        lora_model, tokenizer = FastLanguageModel.from_pretrained(
+            model_name = BASE_OUTPUT_DIR + model_dir if not from_checkpoint else BASE_CHECKPOINT_DIR + model_dir,
+            max_seq_length = 8192,
+            dtype = None,
+            load_in_4bit = True,
+            device_map = "cuda:0"
+        )
 
     tokenizer = get_chat_template(
         tokenizer,
@@ -58,8 +60,10 @@ def load_embed_model(embed_model):
         bnb_4bit_use_double_quant=True,
         bnb_4bit_compute_dtype=torch.bfloat16
     )
-    tokenizer = AutoTokenizer.from_pretrained(BASE_MODEL_DIR + embed_model, trust_remote_code=True)
-    model = AutoModel.from_pretrained(BASE_MODEL_DIR + embed_model, trust_remote_code=True, quantization_config=nf4_config, device_map="cuda")
+    
+    with torch.no_grad():
+        tokenizer = AutoTokenizer.from_pretrained(BASE_MODEL_DIR + embed_model, trust_remote_code=True)
+        model = AutoModel.from_pretrained(BASE_MODEL_DIR + embed_model, trust_remote_code=True, quantization_config=nf4_config, device_map="cuda")
     return model, tokenizer
 
 def format_messages(raw_messages, character):
