@@ -163,6 +163,9 @@ def inference(args):
         output = lora_model.generate(**inputs, max_new_tokens=500, temperature=1)
         text = tokenizer.batch_decode(output)
 
+        inputs.to("cpu")
+        del inputs
+
         parsed_text_1 = text[0].split("<|end_header_id|>")[-1]
         parsed_text_2 = parsed_text_1.split("<|eot_id|>")[0].strip()
         prev_messages.append({"from": "assistant", "value": parsed_text_2})
@@ -219,8 +222,9 @@ def evaluate_conversations(data, output_file_path, args):
     embed_model, embed_tokenizer = load_embed_model(args.embed_model)
     index = initialize_RAG(args.index_name)
     with open(output_file_path, 'w', encoding='utf-8') as file:
-        for conversation in data:
+        for i in tqdm(range(len(data))):
             # Get the reference and generated text
+            conversation = data[i]
             input_message = ""
             
             for message in conversation['input']:
