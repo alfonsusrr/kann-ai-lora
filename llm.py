@@ -28,6 +28,7 @@ BASE_OUTPUT_DIR = "./lora/"
 load_dotenv()
 nltk.download('all')
 
+global lora_model, tokenizer, embed_model, embed_tokenizer, index
 def set_env(device):
     os.environ["CUDA_VISIBLE_DEVICES"] = device
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
@@ -188,7 +189,9 @@ def inference(args):
 
 
 # New entry function for a single message
-def handle_single_message(message_content, args, lora_model, tokenizer,embed_model, embed_tokenizer, index):    
+def handle_single_message(message_content, args):  
+    global lora_model, tokenizer, embed_model, embed_tokenizer, index  
+
     rag_results_list = document_retrieval(embed_model, embed_tokenizer, index, args.index_name, message_content)
     rag_results = rag_results_list[0]
     rag_prompt = f"Here are some examples of how you might respond as {' or '.join(args.character) if len(args.character) > 1 else args.character[0]} based on the given context and characters: {', '.join(rag_results)} \n"
@@ -239,6 +242,8 @@ def evaluate_conversations(data, output_file_path, args):
     bleu_scores = []
     rouge_scores = {'rouge1': [], 'rouge2': [], 'rougeL': []}
     
+    global lora_model, tokenizer, embed_model, embed_tokenizer, index
+
     set_env(args.device)
     lora_model, tokenizer = load_model(args.model, args.from_checkpoint)
     embed_model, embed_tokenizer = load_embed_model(args.embed_model)
@@ -256,24 +261,24 @@ def evaluate_conversations(data, output_file_path, args):
                 input_message += f"{message['role']}: {message['content']}\n"
             
             reference_response = conversation['result']['content']
-            generated_response = handle_single_message(input_message, args, lora_model, tokenizer, embed_model, embed_tokenizer, index)
+            generated_response = handle_single_message(input_message, args)
             
-            # # Calculate BLEU
-            # bleu_score = calculate_bleu(reference_response, generated_response)
-            # bleu_scores.append(bleu_score)
+            # Calculate BLEU
+            bleu_score = calculate_bleu(reference_response, generated_response)
+            bleu_scores.append(bleu_score)
             
-            # # Calculate ROUGE
-            # rouge_score = calculate_rouge(reference_response, generated_response)
-            # rouge_scores['rouge1'].append(rouge_score['rouge1'].fmeasure)
-            # rouge_scores['rouge2'].append(rouge_score['rouge2'].fmeasure)
-            # rouge_scores['rougeL'].append(rouge_score['rougeL'].fmeasure)
+            # Calculate ROUGE
+            rouge_score = calculate_rouge(reference_response, generated_response)
+            rouge_scores['rouge1'].append(rouge_score['rouge1'].fmeasure)
+            rouge_scores['rouge2'].append(rouge_score['rouge2'].fmeasure)
+            rouge_scores['rougeL'].append(rouge_score['rougeL'].fmeasure)
 
             # Log the results to the file
             file.write(f"Input: {input_message}\n")
             file.write(f"Expected: {reference_response}\n")
             file.write(f"Generated: {generated_response}\n")
-            # file.write(f"BLEU Score: {bleu_score}\n")
-            # file.write(f"ROUGE Score: {rouge_score}\n")
+            file.write(f"BLEU Score: {bleu_score}\n")
+            file.write(f"ROUGE Score: {rouge_score}\n")
             file.write('-' * 50 + '\n')
         
         # Average BLEU and ROUGE scores
