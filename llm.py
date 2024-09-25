@@ -170,7 +170,7 @@ def inference(args):
 
 
 # New entry function for a single message
-def handle_single_message(message_content, args, lora_model, tokenizer, embed_model, embed_tokenizer, index):    
+def handle_single_message(message_content, args, lora_model, tokenizer,embed_model, embed_tokenizer, index):    
     rag_results_list = document_retrieval(embed_model, embed_tokenizer, index, args.index_name, message_content)
     rag_results = rag_results_list[0]
     rag_prompt = f"Here are some examples of how you might respond as {' or '.join(args.character) if len(args.character) > 1 else args.character[0]} based on the given context and characters: {', '.join(rag_results)} \n"
@@ -188,7 +188,8 @@ def handle_single_message(message_content, args, lora_model, tokenizer, embed_mo
     )
 
     inputs = tokenizer(text, return_tensors="pt", padding=True).to('cuda')
-    output = lora_model.generate(**inputs, max_new_tokens=500, temperature=1)
+    with torch.no_grad():
+        output = lora_model.generate(**inputs, max_new_tokens=500, temperature=1)
     text = tokenizer.batch_decode(output)
 
     parsed_text_1 = text[0].split("<|end_header_id|>")[-1]
