@@ -163,9 +163,6 @@ def inference(args):
         output = lora_model.generate(**inputs, max_new_tokens=500, temperature=1)
         text = tokenizer.batch_decode(output)
 
-        inputs.to("cpu")
-        del inputs
-
         parsed_text_1 = text[0].split("<|end_header_id|>")[-1]
         parsed_text_2 = parsed_text_1.split("<|eot_id|>")[0].strip()
         prev_messages.append({"from": "assistant", "value": parsed_text_2})
@@ -194,6 +191,12 @@ def handle_single_message(message_content, args, lora_model, tokenizer,embed_mod
     with torch.no_grad():
         output = lora_model.generate(**inputs, max_new_tokens=500, temperature=1)
     text = tokenizer.batch_decode(output)
+
+    
+    inputs.to("cpu")
+    output.to("cpu")
+    del inputs
+    del output
 
     parsed_text_1 = text[0].split("<|end_header_id|>")[-1]
     parsed_text_2 = parsed_text_1.split("<|eot_id|>")[0].strip()
