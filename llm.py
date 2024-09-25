@@ -100,7 +100,9 @@ def pooling(outputs: torch.Tensor, inputs: Dict,  strategy: str = 'cls') -> np.n
             outputs * inputs["attention_mask"][:, :, None], dim=1) / torch.sum(inputs["attention_mask"], dim=1, keepdim=True)
     else:
         raise NotImplementedError
-    return outputs.detach().cpu().numpy()
+    last_layer = outputs.detach().cpu().numpy()
+
+    return last_layer
 
 def embedding_function(model, tokenizer, text):
     inputs = tokenizer(text, padding=True, return_tensors='pt').to("cuda")
@@ -108,7 +110,7 @@ def embedding_function(model, tokenizer, text):
         inputs[k] = v.cuda()
     with torch.no_grad():
         outputs = model(**inputs).last_hidden_state
-    embeddings = pooling(outputs, inputs, 'cls')
+        embeddings = pooling(outputs, inputs, 'cls')
 
     inputs.to("cpu")
     outputs.to("cpu")
@@ -118,6 +120,7 @@ def embedding_function(model, tokenizer, text):
 
     gc.collect()
     torch.cuda.empty_cache()
+
     return embeddings
 # --- End of Embedding Tools ---
 
@@ -201,7 +204,7 @@ def handle_single_message(message_content, args, lora_model, tokenizer,embed_mod
     inputs = tokenizer(text, return_tensors="pt", padding=True).to('cuda')
     with torch.no_grad():
         output = lora_model.generate(**inputs, max_new_tokens=500, temperature=1)
-    text = tokenizer.batch_decode(output)
+        text = tokenizer.batch_decode(output)
 
     inputs.to("cpu")
     output.to("cpu")
