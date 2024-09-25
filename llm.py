@@ -60,7 +60,7 @@ def load_embed_model(embed_model):
         bnb_4bit_use_double_quant=True,
         bnb_4bit_compute_dtype=torch.bfloat16
     )
-    
+
     with torch.no_grad():
         tokenizer = AutoTokenizer.from_pretrained(BASE_MODEL_DIR + embed_model, trust_remote_code=True)
         model = AutoModel.from_pretrained(BASE_MODEL_DIR + embed_model, trust_remote_code=True, quantization_config=nf4_config, device_map="cuda")
@@ -243,6 +243,7 @@ def evaluate_conversations(data, output_file_path, args):
     lora_model, tokenizer = load_model(args.model, args.from_checkpoint)
     embed_model, embed_tokenizer = load_embed_model(args.embed_model)
     index = initialize_RAG(args.index_name)
+
     with open(output_file_path, 'w', encoding='utf-8') as file:
         for i in tqdm(range(len(data))):
             # Get the reference and generated text
@@ -255,25 +256,24 @@ def evaluate_conversations(data, output_file_path, args):
                 input_message += f"{message['role']}: {message['content']}\n"
             
             reference_response = conversation['result']['content']
-            
             generated_response = handle_single_message(input_message, args, lora_model, tokenizer, embed_model, embed_tokenizer, index)
             
-            # Calculate BLEU
-            bleu_score = calculate_bleu(reference_response, generated_response)
-            bleu_scores.append(bleu_score)
+            # # Calculate BLEU
+            # bleu_score = calculate_bleu(reference_response, generated_response)
+            # bleu_scores.append(bleu_score)
             
-            # Calculate ROUGE
-            rouge_score = calculate_rouge(reference_response, generated_response)
-            rouge_scores['rouge1'].append(rouge_score['rouge1'].fmeasure)
-            rouge_scores['rouge2'].append(rouge_score['rouge2'].fmeasure)
-            rouge_scores['rougeL'].append(rouge_score['rougeL'].fmeasure)
+            # # Calculate ROUGE
+            # rouge_score = calculate_rouge(reference_response, generated_response)
+            # rouge_scores['rouge1'].append(rouge_score['rouge1'].fmeasure)
+            # rouge_scores['rouge2'].append(rouge_score['rouge2'].fmeasure)
+            # rouge_scores['rougeL'].append(rouge_score['rougeL'].fmeasure)
 
             # Log the results to the file
             file.write(f"Input: {input_message}\n")
             file.write(f"Expected: {reference_response}\n")
             file.write(f"Generated: {generated_response}\n")
-            file.write(f"BLEU Score: {bleu_score}\n")
-            file.write(f"ROUGE Score: {rouge_score}\n")
+            # file.write(f"BLEU Score: {bleu_score}\n")
+            # file.write(f"ROUGE Score: {rouge_score}\n")
             file.write('-' * 50 + '\n')
         
         # Average BLEU and ROUGE scores
