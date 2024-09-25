@@ -19,6 +19,7 @@ import nltk
 from rouge_score import rouge_scorer
 import os
 import json
+import gc
 
 BASE_CHECKPOINT_DIR = "./checkpoint/"
 BASE_MODEL_DIR = "./model/"
@@ -192,7 +193,6 @@ def handle_single_message(message_content, args, lora_model, tokenizer,embed_mod
         output = lora_model.generate(**inputs, max_new_tokens=500, temperature=1)
     text = tokenizer.batch_decode(output)
 
-    
     inputs.to("cpu")
     output.to("cpu")
     del inputs
@@ -236,6 +236,8 @@ def evaluate_conversations(data, output_file_path, args):
             reference_response = conversation['result']['content']
             
             generated_response = handle_single_message(input_message, args, lora_model, tokenizer, embed_model, embed_tokenizer, index)
+            gc.collect()
+            torch.cuda.empty_cache()
             
             # Calculate BLEU
             bleu_score = calculate_bleu(reference_response, generated_response)
