@@ -103,11 +103,17 @@ def pooling(outputs: torch.Tensor, inputs: Dict,  strategy: str = 'cls') -> np.n
     return outputs.detach().cpu().numpy()
 
 def embedding_function(model, tokenizer, text):
-    inputs = tokenizer(text, padding=True, return_tensors='pt')
+    inputs = tokenizer(text, padding=True, return_tensors='pt').to("cuda")
     for k, v in inputs.items():
         inputs[k] = v.cuda()
-    outputs = model(**inputs).last_hidden_state
+    with torch.no_grad():
+        outputs = model(**inputs).last_hidden_state
     embeddings = pooling(outputs, inputs, 'cls')
+
+    inputs.to("cpu")
+    outputs.to("cpu")
+    del inputs
+    del outputs
     return embeddings
 # --- End of Embedding Tools ---
 
@@ -229,6 +235,7 @@ def evaluate_conversations(data, output_file_path, args):
             # Get the reference and generated text
             conversation = data[i]
             input_message = ""
+            
             
             for message in conversation['input']:
                 input_message += f"{message['role']}: {message['content']}\n"
