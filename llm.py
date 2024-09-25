@@ -243,6 +243,7 @@ def evaluate_conversations(data, output_file_path, args):
             input_message = ""
             
             
+            file.write(f"Message length: {len(conversation['input'])}\n")
             for message in conversation['input']:
                 input_message += f"{message['role']}: {message['content']}\n"
             
