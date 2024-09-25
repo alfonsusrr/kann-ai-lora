@@ -251,6 +251,8 @@ def evaluate_conversations(data, output_file_path, args):
 
     with open(output_file_path, 'w', encoding='utf-8') as file:
         for i in tqdm(range(len(data))):
+            if i % 10 != 0:
+                continue
             # Get the reference and generated text
             conversation = data[i]
             input_message = ""
