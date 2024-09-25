@@ -1,1 +1,7 @@
 .env
+lora/
+checkpoint/
+model/
+transf/
+data/
+
