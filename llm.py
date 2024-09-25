@@ -110,8 +110,8 @@ def embedding_function(model, tokenizer, text):
         outputs = model(**inputs).last_hidden_state
     embeddings = pooling(outputs, inputs, 'cls')
 
-    inputs.cpu()
-    outputs.cpu()
+    inputs.to("cpu")
+    outputs.to("cpu")
     
     del inputs
     del outputs
