@@ -110,10 +110,14 @@ def embedding_function(model, tokenizer, text):
         outputs = model(**inputs).last_hidden_state
     embeddings = pooling(outputs, inputs, 'cls')
 
-    inputs.to("cpu")
-    outputs.to("cpu")
+    inputs.cpu()
+    outputs.cpu()
+    
     del inputs
     del outputs
+
+    gc.collect()
+    torch.cuda.empty_cache()
     return embeddings
 # --- End of Embedding Tools ---
 
@@ -207,6 +211,8 @@ def handle_single_message(message_content, args, lora_model, tokenizer,embed_mod
     parsed_text_1 = text[0].split("<|end_header_id|>")[-1]
     parsed_text_2 = parsed_text_1.split("<|eot_id|>")[0].strip()
     
+    gc.collect()
+    torch.cuda.empty_cache()
     return parsed_text_2
 
 def calculate_bleu(reference, generated):
@@ -243,8 +249,6 @@ def evaluate_conversations(data, output_file_path, args):
             reference_response = conversation['result']['content']
             
             generated_response = handle_single_message(input_message, args, lora_model, tokenizer, embed_model, embed_tokenizer, index)
-            gc.collect()
-            torch.cuda.empty_cache()
             
             # Calculate BLEU
             bleu_score = calculate_bleu(reference_response, generated_response)
