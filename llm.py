@@ -170,12 +170,7 @@ def inference(args):
 
 
 # New entry function for a single message
-def handle_single_message(message_content, args):
-    set_env(args.device)
-    lora_model, tokenizer = load_model(args.model, args.from_checkpoint)
-    embed_model, embed_tokenizer = load_embed_model(args.embed_model)
-    index = initialize_RAG(args.index_name)
-    
+def handle_single_message(message_content, args, lora_model, tokenizer, embed_model, embed_tokenizer, index):    
     rag_results_list = document_retrieval(embed_model, embed_tokenizer, index, args.index_name, message_content)
     rag_results = rag_results_list[0]
     rag_prompt = f"Here are some examples of how you might respond as {' or '.join(args.character) if len(args.character) > 1 else args.character[0]} based on the given context and characters: {', '.join(rag_results)} \n"
@@ -218,6 +213,10 @@ def evaluate_conversations(data, output_file_path, args):
     bleu_scores = []
     rouge_scores = {'rouge1': [], 'rouge2': [], 'rougeL': []}
     
+    set_env(args.device)
+    lora_model, tokenizer = load_model(args.model, args.from_checkpoint)
+    embed_model, embed_tokenizer = load_embed_model(args.embed_model)
+    index = initialize_RAG(args.index_name)
     with open(output_file_path, 'w', encoding='utf-8') as file:
         for conversation in data:
             # Get the reference and generated text
@@ -228,7 +227,7 @@ def evaluate_conversations(data, output_file_path, args):
             
             reference_response = conversation['result']['content']
             
-            generated_response = handle_single_message(input_message, args)
+            generated_response = handle_single_message(input_message, args, lora_model, tokenizer, embed_model, embed_tokenizer, index)
             
             # Calculate BLEU
             bleu_score = calculate_bleu(reference_response, generated_response)
