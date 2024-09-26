@@ -239,8 +239,8 @@ def calculate_rouge(reference, generated):
     return scores
 
 def evaluate_conversations(data, output_file_path, args):
-    bleu_scores = []
-    rouge_scores = {'rouge1': [], 'rouge2': [], 'rougeL': []}
+    reference_responses = []
+    generated_responses = []
     
     global lora_model, tokenizer, embed_model, embed_tokenizer, index
 
@@ -257,7 +257,6 @@ def evaluate_conversations(data, output_file_path, args):
             conversation = data[i]
             input_message = ""
             
-            
             file.write(f"Message length: {len(conversation['input'])}\n")
             for message in conversation['input']:
                 input_message += f"{message['role']}: {message['content']}\n"
@@ -265,30 +264,23 @@ def evaluate_conversations(data, output_file_path, args):
             reference_response = conversation['result']['content']
             generated_response = handle_single_message(input_message, args)
             
-            # Calculate BLEU
-            bleu_score = calculate_bleu(reference_response, generated_response)
-            bleu_scores.append(bleu_score)
-            
-            # Calculate ROUGE
-            rouge_score = calculate_rouge(reference_response, generated_response)
-            rouge_scores['rouge1'].append(rouge_score['rouge1'].fmeasure)
-            rouge_scores['rouge2'].append(rouge_score['rouge2'].fmeasure)
-            rouge_scores['rougeL'].append(rouge_score['rougeL'].fmeasure)
+            # Accumulate reference and generated responses for later evaluation
+            reference_responses.append(reference_response)
+            generated_responses.append(generated_response)
 
-            # Log the results to the file
+            # Log the individual conversation to the file
             file.write(f"Input: {input_message}\n")
             file.write(f"Expected: {reference_response}\n")
             file.write(f"Generated: {generated_response}\n")
-            file.write(f"BLEU Score: {bleu_score}\n")
-            file.write(f"ROUGE Score: {rouge_score}\n")
             file.write('-' * 50 + '\n')
-        
-        # Average BLEU and ROUGE scores
-        avg_bleu = sum(bleu_scores) / len(bleu_scores)
-        avg_rouge = {key: sum(value) / len(value) for key, value in rouge_scores.items()}
-        
-        file.write(f"Average BLEU: {avg_bleu}\n")
-        file.write(f"Average ROUGE: {avg_rouge}\n")
+
+        # Calculate BLEU and ROUGE scores over all responses at once
+        bleu_score = calculate_bleu(reference_responses, generated_responses)
+        rouge_score = calculate_rouge(reference_responses, generated_responses)
+
+        # Log the final BLEU and ROUGE scores to the file
+        file.write(f"Final BLEU Score: {bleu_score}\n")
+        file.write(f"Final ROUGE Score: {rouge_score}\n")
         
 def main():
     parser = argparse.ArgumentParser()
