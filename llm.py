@@ -64,7 +64,7 @@ def load_embed_model(embed_model):
 
     with torch.no_grad():
         tokenizer = AutoTokenizer.from_pretrained(BASE_MODEL_DIR + embed_model, trust_remote_code=True)
-        model = AutoModel.from_pretrained(BASE_MODEL_DIR + embed_model, trust_remote_code=True, quantization_config=nf4_config, device_map="cpu")
+        model = AutoModel.from_pretrained(BASE_MODEL_DIR + embed_model, trust_remote_code=True, quantization_config=nf4_config, device_map="cuda:0")
     return model, tokenizer
 
 def format_messages(raw_messages, character):
