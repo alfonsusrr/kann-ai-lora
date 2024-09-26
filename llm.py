@@ -110,7 +110,7 @@ def pooling(outputs: torch.Tensor, inputs: Dict,  strategy: str = 'cls') -> np.n
     return last_layer
 
 def embedding_function(model, tokenizer, text):
-    inputs = tokenizer(text, padding=True, return_tensors='pt')
+    inputs = tokenizer(text, padding=True, return_tensors='pt', batch_size=1)
     with torch.no_grad():
         outputs = model(**inputs).last_hidden_state
         embeddings = pooling(outputs, inputs, 'cls')
