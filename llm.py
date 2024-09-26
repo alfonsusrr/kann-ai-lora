@@ -106,14 +106,17 @@ def pooling(outputs: torch.Tensor, inputs: Dict,  strategy: str = 'cls') -> np.n
     else:
         raise NotImplementedError
     last_layer = outputs.detach().cpu().numpy()
-
     return last_layer
 
 def embedding_function(model, tokenizer, text):
-    inputs = tokenizer(text, padding=True, return_tensors='pt', batch_size=1)
+    inputs = tokenizer(text, padding=True, return_tensors='pt')
     with torch.no_grad():
         outputs = model(**inputs).last_hidden_state
         embeddings = pooling(outputs, inputs, 'cls')
+
+    del inputs
+    del outputs
+    
     gc.collect()
     torch.cuda.empty_cache()
     return embeddings
