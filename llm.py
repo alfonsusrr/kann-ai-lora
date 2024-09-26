@@ -64,7 +64,7 @@ def load_embed_model(embed_model):
 
     with torch.no_grad():
         tokenizer = AutoTokenizer.from_pretrained(BASE_MODEL_DIR + embed_model, trust_remote_code=True)
-        model = AutoModel.from_pretrained(BASE_MODEL_DIR + embed_model, trust_remote_code=True, quantization_config=nf4_config, device_map="cuda:0")
+        model = AutoModel.from_pretrained(BASE_MODEL_DIR + embed_model, trust_remote_code=True, quantization_config=nf4_config, device_map="cpu")
     return model, tokenizer
 
 def format_messages(raw_messages, character):
@@ -110,13 +110,14 @@ def pooling(outputs: torch.Tensor, inputs: Dict,  strategy: str = 'cls') -> np.n
 
 def embedding_function(model, tokenizer, text):
     inputs = tokenizer(text, padding=True, return_tensors='pt')
+
     with torch.no_grad():
         outputs = model(**inputs).last_hidden_state
         embeddings = pooling(outputs, inputs, 'cls')
 
     del inputs
     del outputs
-    
+
     gc.collect()
     torch.cuda.empty_cache()
     return embeddings
