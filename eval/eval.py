@@ -27,6 +27,7 @@ BASE_MODEL_DIR = "/workspace/kann-ai/model/"
 BASE_OUTPUT_DIR = "/workspace/kann-ai/lora/"
 EVAL_DATASET_DIR = "/workspace/kann-ai/eval/datasets/"
 EVAL_REPORT_DIR = "/workspace/kann-ai/eval/report/"
+BASEMODEL_DIR = "/workspace/kann-ai/eval/basemodel/"
 
 load_dotenv()
 nltk.download('all')
@@ -74,7 +75,7 @@ def load_embed_model(embed_model):
 def load_ollama_model(args):
     global baseline_model_name
     
-    modelfile_name = "./basemodel/" + args.modelfile_name
+    modelfile_name = BASEMODEL_DIR + args.modelfile_name
     
     with open(modelfile_name, 'w') as f:
         ollama.create(model=f"{modelfile_name}", modelfile=f.read())
@@ -320,6 +321,7 @@ def evaluate_conversations(data, args):
     set_env(args.device)
     lora_model, tokenizer = load_model(args.model, args.from_checkpoint)
     embed_model, embed_tokenizer = load_embed_model(args.embed_model)
+    load_ollama_model(args)
     index = initialize_RAG(args.index_name)
 
     with open(EVAL_REPORT_DIR + args.output_report, 'w', encoding='utf-8') as file:
