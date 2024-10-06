@@ -32,13 +32,13 @@ def set_env(device):
     os.environ["NCCL_P2P_DISABLE"] = "1"
     os.environ["NCCL_IB_DISABLE"] = "1"
 
-def load_model(model_dir, from_checkpoint):
+def load_model(model_dir, from_checkpoint, device):
     lora_model, tokenizer = FastLanguageModel.from_pretrained(
         model_name = BASE_OUTPUT_DIR + model_dir if not from_checkpoint else BASE_CHECKPOINT_DIR + model_dir,
         max_seq_length = 8192,
         dtype = None,
         load_in_4bit = True,
-        device_map="cuda"
+        device_map="cuda:" + device
     )
 
     tokenizer = get_chat_template(
@@ -48,7 +48,7 @@ def load_model(model_dir, from_checkpoint):
     )
     FastLanguageModel.for_inference(lora_model)
     return lora_model, tokenizer
-def load_embed_model(embed_model):
+def load_embed_model(embed_model, device):
     nf4_config = BitsAndBytesConfig(
         load_in_4bit=True,
         bnb_4bit_quant_type="nf4",
@@ -56,7 +56,7 @@ def load_embed_model(embed_model):
         bnb_4bit_compute_dtype=torch.bfloat16
     )
     tokenizer = AutoTokenizer.from_pretrained(BASE_MODEL_DIR + embed_model, trust_remote_code=True)
-    model = AutoModel.from_pretrained(BASE_MODEL_DIR + embed_model, trust_remote_code=True, quantization_config=nf4_config, device_map="cuda")
+    model = AutoModel.from_pretrained(BASE_MODEL_DIR + embed_model, trust_remote_code=True, quantization_config=nf4_config, device_map="cuda:" + device)
     return model, tokenizer
 
 def format_messages(raw_messages, character):
@@ -137,8 +137,8 @@ def document_retrieval(model, tokenizer, pc, index_name, query):
 def inference(args):
     set_env(args.device)
     # load model and initialize rag index (both persona and memory index)
-    lora_model, tokenizer = load_model(args.model, args.from_checkpoint)
-    embed_model, embed_tokenizer = load_embed_model(args.embed_model)
+    lora_model, tokenizer = load_model(args.model, args.from_checkpoint, args.device)
+    embed_model, embed_tokenizer = load_embed_model(args.embed_model, args.device)
     index = initialize_RAG(args.index_name)
     index_user = initialize_RAG_user(args.index_user)
 
