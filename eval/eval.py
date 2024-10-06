@@ -22,11 +22,11 @@ import json
 import gc
 import ollama
 
-BASE_CHECKPOINT_DIR = "~/workspace/kann-ai/checkpoint/"
-BASE_MODEL_DIR = "~/workspace/kann-ai/model/"
-BASE_OUTPUT_DIR = "~/workspace/kann-ai/lora/"
-EVAL_DATASET_DIR = "~/workspace/kann-ai/eval/datasets/"
-EVAL_REPORT_DIR = "~/workspace/kann-ai/eval/report/"
+BASE_CHECKPOINT_DIR = "/workspace/kann-ai/checkpoint/"
+BASE_MODEL_DIR = "/workspace/kann-ai/model/"
+BASE_OUTPUT_DIR = "/workspace/kann-ai/lora/"
+EVAL_DATASET_DIR = "/workspace/kann-ai/eval/datasets/"
+EVAL_REPORT_DIR = "/workspace/kann-ai/eval/report/"
 
 load_dotenv()
 nltk.download('all')
