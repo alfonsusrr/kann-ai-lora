@@ -77,8 +77,8 @@ def load_ollama_model(args):
     
     modelfile_name = BASEMODEL_DIR + args.modelfile_name
     
-    with open(modelfile_name, 'w') as f:
-        ollama.create(model=f"{modelfile_name}", modelfile=f.read())
+    with open(modelfile_name, 'r') as f:
+        ollama.create(model=f"{args.modelfile_name}", modelfile=f.read())
         
     baseline_model_name = f"{modelfile_name}"
 
