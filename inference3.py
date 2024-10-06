@@ -47,7 +47,6 @@ def load_model(model_dir, from_checkpoint):
     )
     FastLanguageModel.for_inference(lora_model)
     return lora_model, tokenizer
-
 def load_embed_model(embed_model):
     nf4_config = BitsAndBytesConfig(
         load_in_4bit=True,
@@ -136,6 +135,7 @@ def document_retrieval(model, tokenizer, pc, index_name, query):
 
 def inference(args):
     set_env(args.device)
+    # load model and initialize rag index (both persona and memory index)
     lora_model, tokenizer = load_model(args.model, args.from_checkpoint)
     embed_model, embed_tokenizer = load_embed_model(args.embed_model)
     index = initialize_RAG(args.index_name)
@@ -144,8 +144,11 @@ def inference(args):
     prev_messages = []
     while True:
         message_content = input("You: ")
+        # rag context from original persona index
         rag_results_list = document_retrieval(embed_model, embed_tokenizer, index, args.index_name, message_content)
         rag_results = rag_results_list[0]
+
+        # rag context from user generated memory index
         user_results = document_retrieval(embed_model, embed_tokenizer, index_user, args.index_user, message_content)
         rag_prompt = (
             f"As the character {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}, "
@@ -157,16 +160,20 @@ def inference(args):
             f"that better suits the situation, ensuring it is coherent with the character's personality and knowledge."
         )
 
+        # add memory rag retreival to the prompt
         if len(user_results) > 0:
            rag_prompt += f"Here are also some related chat history with this person: {', '.join(user_results)} \n"
 
+        # add current prompt to chat history of this session
         prev_messages.append({"from": "user", "value": message_content})
         
+        # add system prompt to the message that will be sent to the LLM
         appended_messages = [{
             "from": "system",
             "value": f"You are now immersed in the role of a character named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}. Your task is to respond in a way that captures the essence of this character, fully embodying their personality, emotions, and unique perspective. Consider their background, motivations, and current situation as you craft your response. Aim to engage the conversation with rich, descriptive language that enhances the narrative and invites further interaction. Your reply should be in the first person, providing the character’s spoken dialogue only. Avoid responses that are vague, consist solely of ellipses, or lack substance. Do not include the character's name or any identifying tags before the response; focus solely on delivering a captivating and authentic portrayal. Remember, the depth and nuance of your response will greatly enrich the overall experience. \n" + rag_prompt
         }] + prev_messages
 
+        # answer generation
         text = tokenizer.apply_chat_template(
             appended_messages,
             tokenize = False,
@@ -180,6 +187,8 @@ def inference(args):
 
         parsed_text_1 = text[0].split("<|end_header_id|>")[-1]
         parsed_text_2 = parsed_text_1.split("<|eot_id|>")[0].strip()
+
+        # append the answer to the chat history
         prev_messages.append({"from": "assistant", "value": parsed_text_2})
         print(f"{args.character[0]}: {parsed_text_2}")
 
