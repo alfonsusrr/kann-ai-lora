@@ -27,7 +27,6 @@ BASE_OUTPUT_DIR = "./lora/"
 load_dotenv()
 
 def set_env(device):
-    os.environ["CUDA_VISIBLE_DEVICES"] = device
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
     os.environ["NCCL_P2P_DISABLE"] = "1"
     os.environ["NCCL_IB_DISABLE"] = "1"
