@@ -33,6 +33,7 @@ nltk.download('all')
 
 global lora_model, tokenizer, embed_model, embed_tokenizer, index, baseline_model_name
 def set_env(device):
+    os.environ["CUDA_VISIBLE_DEVICES"] = device
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
     os.environ["NCCL_P2P_DISABLE"] = "1"
     os.environ["NCCL_IB_DISABLE"] = "1"
