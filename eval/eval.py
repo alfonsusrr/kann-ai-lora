@@ -27,7 +27,7 @@ BASE_MODEL_DIR = "/workspace/kann-ai/model/"
 BASE_OUTPUT_DIR = "/workspace/kann-ai/lora/"
 EVAL_DATASET_DIR = "/workspace/kann-ai/eval/datasets/"
 EVAL_REPORT_DIR = "/workspace/kann-ai/eval/report/"
-BASEMODEL_DIR = "/workspace/kann-ai/eval/basemodel/"
+BASEMODEL_DIR = "./basemodel/"
 
 load_dotenv()
 nltk.download('all')
