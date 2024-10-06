@@ -22,9 +22,11 @@ import json
 import gc
 import ollama
 
-BASE_CHECKPOINT_DIR = "./checkpoint/"
-BASE_MODEL_DIR = "./model/"
-BASE_OUTPUT_DIR = "./lora/"
+BASE_CHECKPOINT_DIR = "~/workspace/kann-ai/checkpoint/"
+BASE_MODEL_DIR = "~/workspace/kann-ai/model/"
+BASE_OUTPUT_DIR = "~/workspace/kann-ai/lora/"
+EVAL_DATASET_DIR = "~/workspace/kann-ai/eval/datasets/"
+EVAL_REPORT_DIR = "~/workspace/kann-ai/eval/report/"
 
 load_dotenv()
 nltk.download('all')
@@ -306,7 +308,7 @@ def calculate_rouge(reference, generated):
     scores = scorer.score(reference, generated)
     return scores
 
-def evaluate_conversations(data, output_file_path, args):
+def evaluate_conversations(data, args):
     reference_responses = []
     generated_responses = []
     generated_responses_no_rag = []
@@ -320,7 +322,7 @@ def evaluate_conversations(data, output_file_path, args):
     embed_model, embed_tokenizer = load_embed_model(args.embed_model)
     index = initialize_RAG(args.index_name)
 
-    with open(output_file_path, 'w', encoding='utf-8') as file:
+    with open(EVAL_REPORT_DIR + args.output_report, 'w', encoding='utf-8') as file:
         for i in tqdm(range(len(data))):
             if i % 10 != 0:
                 continue
@@ -385,8 +387,8 @@ def main():
     parser.add_argument("--index_name", type=str, required=True)
     parser.add_argument("--index_user", type=str, required=True)
     parser.add_argument("--modelfile_name", type=str, required=True)
-    parser.add_argument("--eval_dataset_path", type=str, required=True)
-    parser.add_argument("--output_report_path", type=str, required=True)
+    parser.add_argument("--eval_dataset", type=str, required=True)
+    parser.add_argument("--output_report", type=str, required=True)
     parser.add_argument("--embed_model", type=str, required=True)
     parser.add_argument("--character", type=str, nargs="+", required=True)
     parser.add_argument("--from_checkpoint", type=bool, default=False)
@@ -395,10 +397,10 @@ def main():
 
     # inference(args)
     
-    with open(args.eval_dataset_path , "r") as f:
+    with open(EVAL_DATASET_DIR + args.eval_dataset , "r") as f:
         data = json.load(f)
     
-    evaluate_conversations(data, args.output_report_path, args)
+    evaluate_conversations(data, args)
 
 if __name__ == "__main__":
     main()
