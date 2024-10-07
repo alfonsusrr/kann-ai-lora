@@ -46,7 +46,7 @@ def load_model(model_dir, from_checkpoint):
             max_seq_length = 8192,
             dtype = None,
             load_in_4bit = True,
-            device_map = "cuda:0"
+            device_map = "cuda"
         )
 
     tokenizer = get_chat_template(
