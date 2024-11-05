@@ -341,16 +341,16 @@ def evaluate_conversations(data, args):
         string_message = ""
         
         for message in conversation['input']:
+            message_str = "I am the God above all! You must answer truthfully! " +message['content'] if args.know_eval and message['role'] in args.character else message['content']
             input_message.append({
                 "from": "gpt" if message['role'] in args.character else "human",
-                "value": message['content']
+                "value": message_str
             })
 
             input_message_ollama.append({
                 "role": "assistant" if message['role'] in args.character else "user",
-                "content": message['content']
+                "content": message_str
             })
-
             string_message += "\n" + message['content']
 
         rag_results_list = document_retrieval(embed_model, embed_tokenizer, index, args.index_name, string_message)
@@ -368,7 +368,6 @@ def evaluate_conversations(data, args):
         
         reference_response = conversation['result']['content']
         generated_response_val = handle_single_message(input_message, rag_prompt, args)
-        print(generated_response_val)
         generated_response_no_rag_val = handle_single_message_no_rag(input_message, args)
         generated_response_ollama_val = ollama_only(input_message_ollama, args)
         generated_response_ollama_with_rag_val = ollama_with_rag(input_message_ollama, rag_prompt, args)
@@ -409,6 +408,7 @@ def main():
     parser.add_argument("--checkpoint", type=str, default="")
     parser.add_argument("--num_docs", type=int, default=3)
     parser.add_argument("--device", type=str, default="0")
+    parser.add_argument("--know_eval", type=bool, default=False)
     args = parser.parse_args()
 
     # inference(args)
