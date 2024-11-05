@@ -199,10 +199,10 @@ def inference(args):
 
 
 # LoRA + RAG
-def handle_single_message(message_content, args):  
+def handle_single_message(message_content, string_message, args):  
     global lora_model, tokenizer, embed_model, embed_tokenizer, index  
 
-    rag_results_list = document_retrieval(embed_model, embed_tokenizer, index, args.index_name, message_content)
+    rag_results_list = document_retrieval(embed_model, embed_tokenizer, index, args.index_name, string_message)
     rag_results = rag_results_list[0]
     rag_prompt = f"Here are some examples of how you might respond as {' or '.join(args.character) if len(args.character) > 1 else args.character[0]} based on the given context and characters: {', '.join(rag_results)} \n"
 
@@ -280,10 +280,10 @@ def ollama_only(message_content, args):
     response = ollama.chat(model=baseline_model_name, messages=appended_messages)
     return response['message']['content']
 
-def ollama_with_rag(message_content, args):
+def ollama_with_rag(message_content, string_message, args):
     global baseline_model_name, embed_model, embed_tokenizer, index
 
-    rag_results_list = document_retrieval(embed_model, embed_tokenizer, index, args.index_name, message_content)
+    rag_results_list = document_retrieval(embed_model, embed_tokenizer, index, args.index_name, string_message)
     rag_results = rag_results_list[0]
 
     rag_prompt = f"Here are some examples of how you might respond as {' or '.join(args.character) if len(args.character) > 1 else args.character[0]} based on the given context and characters: {', '.join(rag_results)} \n"
@@ -347,6 +347,7 @@ def evaluate_conversations(data, args):
         conversation = data[i]
         input_message = []
         input_message_ollama = []
+        string_message = ""
         
         for message in conversation['input']:
             input_message.append({
@@ -358,11 +359,13 @@ def evaluate_conversations(data, args):
                 "role": "assistant" if message['role'] in args.character else "user",
                 "content": message['content']
             })
+
+            string_message += "\n" + message['content']
         
         reference_response = conversation['result']['content']
-        generated_response_val = handle_single_message(input_message, args)
+        generated_response_val = handle_single_message(input_message, string_message, args)
         generated_response_no_rag_val = handle_single_message_no_rag(input_message, args)
-        generated_response_ollama_val = ollama_only(input_message_ollama)
+        generated_response_ollama_val = ollama_only(input_message_ollama, string_message)
         generated_response_ollama_with_rag_val = ollama_with_rag(input_message_ollama, args)
         
         # Accumulate reference and generated responses for later evaluation
