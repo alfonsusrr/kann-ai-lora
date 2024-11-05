@@ -227,7 +227,7 @@ def handle_single_message(message_content, string_message, args):
     )
 
     with open('output.txt', 'w') as f:
-        print(text, file=f)
+        print(message_content, file=f)
     return ""
 
     inputs = tokenizer(text, return_tensors="pt", padding=True).to('cuda')
