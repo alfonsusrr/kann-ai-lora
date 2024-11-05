@@ -204,8 +204,16 @@ def handle_single_message(message_content, string_message, args):
 
     rag_results_list = document_retrieval(embed_model, embed_tokenizer, index, args.index_name, string_message)
     rag_results = rag_results_list[0]
-    rag_prompt = f"Here are some examples of how you might respond as {' or '.join(args.character) if len(args.character) > 1 else args.character[0]} based on the given context and characters: {', '.join(rag_results)} \n"
-
+    rag_prompt = (
+            f"As the character {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}, "
+            f"please consider the following examples of responses that have been generated based on the dataset: \n\n"
+            f"**Previous Examples:** {rag_results}\n\n"
+            f"While these examples may provide some guidance, evaluate their relevance to the current conversation. "
+            f"Consider whether the provided information aligns with the character's traits and the ongoing dialogue. "
+            f"If you find the examples useful, feel free to adapt them into your response. Otherwise, generate a new response "
+            f"that better suits the situation, ensuring it is coherent with the character's personality and knowledge."
+        )
+    
     appended_messages = [{
         "from": "system",
         "value": f"You are roleplaying a character that is named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}. Please provide a response that is engaging, in-character, and adds depth to the conversation. Make sure to be as detailed as possible. Do not include the character's name or any tags before the response. Only provide the spoken dialogue of the character you are roleplaying. \n" + rag_prompt
@@ -286,8 +294,16 @@ def ollama_with_rag(message_content, string_message, args):
     rag_results_list = document_retrieval(embed_model, embed_tokenizer, index, args.index_name, string_message)
     rag_results = rag_results_list[0]
 
-    rag_prompt = f"Here are some examples of how you might respond as {' or '.join(args.character) if len(args.character) > 1 else args.character[0]} based on the given context and characters: {', '.join(rag_results)} \n"
-
+    rag_prompt = (
+            f"As the character {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}, "
+            f"please consider the following examples of responses that have been generated based on the dataset: \n\n"
+            f"**Previous Examples:** {rag_results}\n\n"
+            f"While these examples may provide some guidance, evaluate their relevance to the current conversation. "
+            f"Consider whether the provided information aligns with the character's traits and the ongoing dialogue. "
+            f"If you find the examples useful, feel free to adapt them into your response. Otherwise, generate a new response "
+            f"that better suits the situation, ensuring it is coherent with the character's personality and knowledge."
+        )
+    
     appended_messages = [{
         "from": "system",
         "value": f"You are roleplaying a character that is named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}. Please provide a response that is engaging, in-character, and adds depth to the conversation. Make sure to be as detailed as possible. Do not include the character's name or any tags before the response. Only provide the spoken dialogue of the character you are roleplaying. \n" + rag_prompt
