@@ -199,20 +199,8 @@ def inference(args):
 
 
 # LoRA + RAG
-def handle_single_message(message_content, string_message, args):  
+def handle_single_message(message_content, rag_prompt, args):  
     global lora_model, tokenizer, embed_model, embed_tokenizer, index  
-
-    rag_results_list = document_retrieval(embed_model, embed_tokenizer, index, args.index_name, string_message)
-    rag_results = rag_results_list[0]
-    rag_prompt = (
-            f"As the character {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}, "
-            f"please consider the following examples of responses that have been generated based on the dataset: \n\n"
-            f"**Previous Examples:** {rag_results}\n\n"
-            f"While these examples may provide some guidance, evaluate their relevance to the current conversation. "
-            f"Consider whether the provided information aligns with the character's traits and the ongoing dialogue. "
-            f"If you find the examples useful, feel free to adapt them into your response. Otherwise, generate a new response "
-            f"that better suits the situation, ensuring it is coherent with the character's personality and knowledge."
-        )
     
     appended_messages = [{
         "from": "system",
@@ -288,21 +276,8 @@ def ollama_only(message_content, args):
     response = ollama.chat(model=baseline_model_name, messages=appended_messages)
     return response['message']['content']
 
-def ollama_with_rag(message_content, string_message, args):
+def ollama_with_rag(message_content, rag_prompt, args):
     global baseline_model_name, embed_model, embed_tokenizer, index
-
-    rag_results_list = document_retrieval(embed_model, embed_tokenizer, index, args.index_name, string_message)
-    rag_results = rag_results_list[0]
-
-    rag_prompt = (
-            f"As the character {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}, "
-            f"please consider the following examples of responses that have been generated based on the dataset: \n\n"
-            f"**Previous Examples:** {rag_results}\n\n"
-            f"While these examples may provide some guidance, evaluate their relevance to the current conversation. "
-            f"Consider whether the provided information aligns with the character's traits and the ongoing dialogue. "
-            f"If you find the examples useful, feel free to adapt them into your response. Otherwise, generate a new response "
-            f"that better suits the situation, ensuring it is coherent with the character's personality and knowledge."
-        )
     
     appended_messages = [{
         "from": "system",
@@ -377,13 +352,26 @@ def evaluate_conversations(data, args):
             })
 
             string_message += "\n" + message['content']
+
+        rag_results_list = document_retrieval(embed_model, embed_tokenizer, index, args.index_name, string_message)
+        rag_results = rag_results_list[:args.num_docs]
+
+        rag_prompt = (
+                f"As the character {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}, "
+                f"please consider the following examples of responses that have been generated based on the dataset: \n\n"
+                f"**Previous Examples:** {", ".join(rag_results) if len(rag_results) > 0 else "None"}\n\n"
+                f"While these examples may provide some guidance, evaluate their relevance to the current conversation. "
+                f"Consider whether the provided information aligns with the character's traits and the ongoing dialogue. "
+                f"If you find the examples useful, feel free to adapt them into your response. Otherwise, generate a new response "
+                f"that better suits the situation, ensuring it is coherent with the character's personality and knowledge."
+            )
         
         reference_response = conversation['result']['content']
-        generated_response_val = handle_single_message(input_message, string_message, args)
+        generated_response_val = handle_single_message(input_message, rag_prompt, args)
         print(generated_response_val)
         generated_response_no_rag_val = handle_single_message_no_rag(input_message, args)
         generated_response_ollama_val = ollama_only(input_message_ollama, args)
-        generated_response_ollama_with_rag_val = ollama_with_rag(input_message_ollama, string_message, args)
+        generated_response_ollama_with_rag_val = ollama_with_rag(input_message_ollama, rag_prompt, args)
         
         # Accumulate reference and generated responses for later evaluation
         reference_responses.append(reference_response)
@@ -419,6 +407,7 @@ def main():
     parser.add_argument("--character", type=str, nargs="+", required=True)
     parser.add_argument("--from_checkpoint", type=bool, default=False)
     parser.add_argument("--checkpoint", type=str, default="")
+    parser.add_argument("--number_docs", type=int, default=1)
     parser.add_argument("--device", type=str, default="0")
     args = parser.parse_args()
 
