@@ -29,7 +29,6 @@ BASE_OUTPUT_DIR = "/workspace/kann-ai/lora/"
 EVAL_DATASET_DIR = "/workspace/kann-ai/eval/datasets/"
 EVAL_REPORT_DIR = "/workspace/kann-ai/eval/report/"
 BASEMODEL_DIR = "./basemodel/"
-CHECKPOINT_FILE = "/workspace/kann-ai/eval/checkpoint.txt"
 
 load_dotenv()
 nltk.download('all')
@@ -299,9 +298,9 @@ def ollama_with_rag(message_content, args):
     return response['message']['content']
 
 # Load the checkpoint index if it exists
-def load_checkpoint():
-    if os.path.exists(CHECKPOINT_FILE):
-        with open(CHECKPOINT_FILE, 'r') as f:
+def load_checkpoint(checkpoint_file):
+    if os.path.exists(EVAL_REPORT_DIR + checkpoint_file):
+        with open(EVAL_REPORT_DIR + checkpoint_file, 'r') as f:
             try:
                 checkpoint_data = json.load(f)
                 return checkpoint_data.get("last_processed", 0)
@@ -310,9 +309,9 @@ def load_checkpoint():
     return 0
 
 # Save the current index to the checkpoint file
-def save_checkpoint(index):
+def save_checkpoint(index, checkpoint_file):
     checkpoint_data = {"last_processed": index}
-    with open(CHECKPOINT_FILE, 'w') as f:
+    with open(EVAL_REPORT_DIR + checkpoint_file, 'w') as f:
         json.dump(checkpoint_data, f)
 
 def evaluate_conversations(data, args):
@@ -331,7 +330,7 @@ def evaluate_conversations(data, args):
     index = initialize_RAG(args.index_name)
 
     # Load the last processed index
-    last_processed = load_checkpoint()
+    last_processed = load_checkpoint(args.checkpoint)
 
     # Load or initialize the evaluation report
     if os.path.exists(EVAL_REPORT_DIR + args.output_report):
@@ -342,7 +341,7 @@ def evaluate_conversations(data, args):
 
     for i in tqdm(range(last_processed, len(data))):
         # Save checkpoint after each conversation
-        save_checkpoint(i)
+        save_checkpoint(i, args.checkpoint)
 
         # Process conversation
         conversation = data[i]
@@ -390,6 +389,7 @@ def main():
     parser.add_argument("--embed_model", type=str, required=True)
     parser.add_argument("--character", type=str, nargs="+", required=True)
     parser.add_argument("--from_checkpoint", type=bool, default=False)
+    parser.add_argument("--checkpoint_file", type=str, default="")
     parser.add_argument("--device", type=str, default="0")
     args = parser.parse_args()
 
@@ -399,6 +399,7 @@ def main():
         data = json.load(f)
     
     evaluate_conversations(data, args)
+    save_checkpoint(0, args.checkpoint)
 
     print("ALL_DONE")
 
