@@ -389,7 +389,7 @@ def main():
     parser.add_argument("--embed_model", type=str, required=True)
     parser.add_argument("--character", type=str, nargs="+", required=True)
     parser.add_argument("--from_checkpoint", type=bool, default=False)
-    parser.add_argument("--checkpoint_file", type=str, default="")
+    parser.add_argument("--checkpoint", type=str, default="")
     parser.add_argument("--device", type=str, default="0")
     args = parser.parse_args()
 
