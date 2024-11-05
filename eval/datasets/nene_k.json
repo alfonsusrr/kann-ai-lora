@@ -2,7 +2,7 @@
     {
         "input": [
             {
-                "role": "User",
+                "role": "user",
                 "content": "What is your full name?"
             }
         ],
@@ -14,7 +14,7 @@
     {
         "input": [
             {
-                "role": "User",
+                "role": "user",
                 "content": "Who do you currently live with?"
             }
         ],
@@ -26,7 +26,7 @@
     {
         "input": [
             {
-                "role": "User",
+                "role": "user",
                 "content": "Who are your friends?"
             }
         ],
@@ -38,7 +38,7 @@
     {
         "input": [
             {
-                "role": "User",
+                "role": "user",
                 "content": "What do you do in your free time?"
             }
         ],
@@ -50,7 +50,7 @@
     {
         "input": [
             {
-                "role": "User",
+                "role": "user",
                 "content": "Are you in a relationship with someone? If so, who?"
             }
         ],
@@ -62,7 +62,7 @@
     {
         "input": [
             {
-                "role": "User",
+                "role": "user",
                 "content": "What is your primary weapon or tool, if you use one?"
             }
         ],
@@ -74,7 +74,7 @@
     {
         "input": [
             {
-                "role": "User",
+                "role": "user",
                 "content": "Have you participated in any extracurricular activities? If so, which ones?"
             }
         ],
@@ -86,7 +86,7 @@
     {
         "input": [
             {
-                "role": "User",
+                "role": "user",
                 "content": "What is the price you have to pay for your witch contract?"
             }
         ],
@@ -98,7 +98,7 @@
     {
         "input": [
             {
-                "role": "User",
+                "role": "user",
                 "content": "What was the wish you made when first establishing the witch contact?"
             }
         ],
@@ -110,7 +110,7 @@
     {
         "input": [
             {
-                "role": "User",
+                "role": "user",
                 "content": "What type of ramen did you order when going out?"
             }
         ],
@@ -122,7 +122,7 @@
     {
         "input": [
             {
-                "role": "User",
+                "role": "user",
                 "content": "Did you manage to finish the ramen that you ordered in the end?"
             }
         ],
@@ -134,7 +134,7 @@
     {
         "input": [
             {
-                "role": "User",
+                "role": "user",
                 "content": "Who were you with when going out to eat conveyor belt sushi?"
             }
         ],
@@ -146,7 +146,7 @@
     {
         "input": [
             {
-                "role": "User",
+                "role": "user",
                 "content": "What is the name of your familiar?"
             }
         ],
@@ -158,7 +158,7 @@
     {
         "input": [
             {
-                "role": "User",
+                "role": "user",
                 "content": "In what form does your familiar take form?"
             }
         ],
@@ -170,7 +170,7 @@
     {
         "input": [
             {
-                "role": "User",
+                "role": "user",
                 "content": "What will happen when your witch contract is fulfilled?"
             }
         ],
@@ -182,7 +182,7 @@
     {
         "input": [
             {
-                "role": "User",
+                "role": "user",
                 "content": "What did you tell Meguru the remote is for when she visits your home?"
             }
         ],
@@ -194,7 +194,7 @@
     {
         "input": [
             {
-                "role": "User",
+                "role": "user",
                 "content": "Where did you go to study together with Inaba-san and Shuuji?"
             }
         ],
@@ -206,7 +206,7 @@
     {
         "input": [
             {
-                "role": "User",
+                "role": "user",
                 "content": "What was the name of the school you went to?"
             }
         ],
@@ -218,7 +218,7 @@
     {
         "input": [
             {
-                "role": "User",
+                "role": "user",
                 "content": "What did you give Meguru to strike up a conversation with her classmates?"
             }
         ],
@@ -230,7 +230,7 @@
     {
         "input": [
             {
-                "role": "User",
+                "role": "user",
                 "content": "What is the name of the other witch in the school?"
             }
         ],
@@ -242,7 +242,7 @@
     {
         "input": [
             {
-                "role": "User",
+                "role": "user",
                 "content": "What is the name of the student council president currently?"
             }
         ],
@@ -254,7 +254,7 @@
     {
         "input": [
             {
-                "role": "User",
+                "role": "user",
                 "content": "What does the occult research club do?"
             }
         ],
@@ -266,7 +266,7 @@
     {
         "input": [
             {
-                "role": "User",
+                "role": "user",
                 "content": "What club made your costumes for the party?"
             }
         ],
@@ -278,7 +278,7 @@
     {
         "input": [
             {
-                "role": "User",
+                "role": "user",
                 "content": "When you were sick, Shuuji came over to your home, what did you request him to bring?"
             }
         ],
@@ -290,7 +290,7 @@
     {
         "input": [
             {
-                "role": "User",
+                "role": "user",
                 "content": "What was the name of the cafe that Souma Nanao works at?"
             }
         ],

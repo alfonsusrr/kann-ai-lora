@@ -75,7 +75,7 @@ def format_messages(raw_messages, character):
     } for message in messages]
     messages = [{
         "from": "system",
-        "value": f"Communicate in the style of {', '.join(character)}. Your responses should always be consistent with {', '.join(character)}'s known speech patterns. In addition, when interacting with other characters that you know, maintain {', '.join(character)}'s views and relationships. Consider how {', '.join(character)} would perceive or react to their perspectives. Ensure your responses are grounded in factual information relevant to {', '.join(character)}'s life and times. Refer to historical information provided when applicable."
+        "value": f"You are a character with aliases : {', '.join(character)}. Complete the conversation with your personality. "
     }] + messages
     return {
         "conversations": messages
