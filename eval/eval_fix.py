@@ -365,8 +365,8 @@ def evaluate_conversations(data, args):
         reference_response = conversation['result']['content']
         generated_response_val = handle_single_message(input_message, string_message, args)
         generated_response_no_rag_val = handle_single_message_no_rag(input_message, args)
-        generated_response_ollama_val = ollama_only(input_message_ollama, string_message)
-        generated_response_ollama_with_rag_val = ollama_with_rag(input_message_ollama, args)
+        generated_response_ollama_val = ollama_only(input_message_ollama, args)
+        generated_response_ollama_with_rag_val = ollama_with_rag(input_message_ollama, string_message, args)
         
         # Accumulate reference and generated responses for later evaluation
         reference_responses.append(reference_response)
