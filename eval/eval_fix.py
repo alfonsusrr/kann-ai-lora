@@ -226,12 +226,6 @@ def handle_single_message(message_content, string_message, args):
         return_tensors = "pt",
     )
 
-    with open('output.txt', 'w') as f:
-        print(appended_messages, file=f)
-
-        print(text, file=f)
-    return ""
-
     inputs = tokenizer(text, return_tensors="pt", padding=True).to('cuda')
     with torch.no_grad():
         output = lora_model.generate(**inputs, max_new_tokens=500, temperature=1)
@@ -386,7 +380,6 @@ def evaluate_conversations(data, args):
         
         reference_response = conversation['result']['content']
         generated_response_val = handle_single_message(input_message, string_message, args)
-        break
         generated_response_no_rag_val = handle_single_message_no_rag(input_message, args)
         generated_response_ollama_val = ollama_only(input_message_ollama, args)
         generated_response_ollama_with_rag_val = ollama_with_rag(input_message_ollama, string_message, args)
