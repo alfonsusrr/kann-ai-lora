@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # List of scripts to run
-scripts=("eval_kanna.sh")
+scripts=("eval_kanna.sh", "eval_nene.sh", "eval_tsumugi.sh", "eval_natsume.sh")
 
 # Loop through each script in sequence
 for script in "${scripts[@]}"; do
@@ -10,8 +10,8 @@ for script in "${scripts[@]}"; do
     output=$(bash "$script" cuda)
 
     # Check if the output contains "ALL_DONE"
-    if [[ $output == *"ALL_DONE_STELLA"* ]]; then
-      echo "$script finished successfully with 'ALL_DONE_STELLA'"
+    if [[ $output == *"ALL_DONE"* ]]; then
+      echo "$script finished successfully with 'ALL_DONE'"
       break  # Exit the loop and proceed to the next script
     else
       echo "$script did not finish. Retrying..."
