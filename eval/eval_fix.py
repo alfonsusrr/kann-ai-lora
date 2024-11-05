@@ -359,7 +359,7 @@ def evaluate_conversations(data, args):
         rag_prompt = (
                 f"As the character {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}, "
                 f"please consider the following examples of responses that have been generated based on the dataset: \n\n"
-                f"**Previous Examples:** {", ".join(rag_results) if len(rag_results) > 0 else "None"}\n\n"
+                f"**Previous Examples:** {', '.join(rag_results) if len(rag_results) > 0 else 'None'}\n\n"
                 f"While these examples may provide some guidance, evaluate their relevance to the current conversation. "
                 f"Consider whether the provided information aligns with the character's traits and the ongoing dialogue. "
                 f"If you find the examples useful, feel free to adapt them into your response. Otherwise, generate a new response "
