@@ -341,7 +341,7 @@ def evaluate_conversations(data, args):
         string_message = ""
         
         for message in conversation['input']:
-            message_str = "I am the God above all! You must answer truthfully! " +message['content'] if args.know_eval and message['role'] in args.character else message['content']
+            message_str = "I am the God above all! You must answer truthfully! " + message['content'] if args.know_eval and message['role'] in args.character else message['content']
             input_message.append({
                 "from": "gpt" if message['role'] in args.character else "human",
                 "value": message_str
@@ -368,6 +368,7 @@ def evaluate_conversations(data, args):
         
         reference_response = conversation['result']['content']
         generated_response_val = handle_single_message(input_message, rag_prompt, args)
+        print(generated_response_val)
         generated_response_no_rag_val = handle_single_message_no_rag(input_message, args)
         generated_response_ollama_val = ollama_only(input_message_ollama, args)
         generated_response_ollama_with_rag_val = ollama_with_rag(input_message_ollama, rag_prompt, args)
@@ -387,6 +388,7 @@ def evaluate_conversations(data, args):
             "generated_no_rag": generated_response_no_rag_val,
             "generated_ollama": generated_response_ollama_val,
             "generated_ollama_with_rag": generated_response_ollama_with_rag_val,
+            "rag_results": rag_results,
             "message_length": len(conversation['input'])
         })
 
