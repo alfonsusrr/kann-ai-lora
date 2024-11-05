@@ -351,7 +351,7 @@ def evaluate_conversations(data, args):
         
         for message in conversation['input']:
             input_message.append({
-                "role": "gpt" if message['role'] in args.character else "human",
+                "from": "gpt" if message['role'] in args.character else "human",
                 "content": message['content']
             })
 
