@@ -80,7 +80,7 @@ def load_ollama_model(args):
     with open(modelfile_name, 'r') as f:
         ollama.create(model=f"{args.modelfile_name}", modelfile=f.read())
         
-    baseline_model_name = f"{modelfile_name}"
+    baseline_model_name = f"{args.modelfile_name}"
 
 def format_messages(raw_messages, character):
     messages = raw_messages["conversation"]

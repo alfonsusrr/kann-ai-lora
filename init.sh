@@ -10,3 +10,6 @@ echo "Initializing Git"
 git config --global user.name "Alfonsus Rendy"
 git config --global user.email "alfonsus737@gmail.com"
 
+echo "Initializing Ollama"
+curl -fsSL https://ollama.com/install.sh | sh
+ollama pull llama3.1:8b

@@ -6,4 +6,4 @@ fi
 device=$1
 export CUDA_VISIBLE_DEVICES=$device
 
-python3 inference3.py --model nene-v1 --index_user nene-user --index_name ayachi-nene --character Ayachi Nene --embed_model mxbai-embed-large-v1
+python3 inference3.py --character Shiiba Tsumugi  --model tsumugi-v3 --index_name shiiba-tsumugi --index_user tsumugi-user --embed_model mxbai-embed-large-v1 --device $device

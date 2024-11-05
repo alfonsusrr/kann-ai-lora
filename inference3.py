@@ -171,7 +171,14 @@ def inference(args):
         # add system prompt to the message that will be sent to the LLM
         appended_messages = [{
             "from": "system",
-            "value": f"You are now immersed in the role of a character named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}. Your task is to respond in a way that captures the essence of this character, fully embodying their personality, emotions, and unique perspective. Consider their background, motivations, and current situation as you craft your response. Aim to engage the conversation with rich, descriptive language that enhances the narrative and invites further interaction. Your reply should be in the first person, providing the character’s spoken dialogue only. Avoid responses that are vague, consist solely of ellipses, or lack substance. Do not include the character's name or any identifying tags before the response; focus solely on delivering a captivating and authentic portrayal. Remember, the depth and nuance of your response will greatly enrich the overall experience. \n" + rag_prompt
+            "value": (
+		f"You are now immersed in the role of a character named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}."
+		f" Your task is to respond in a way that captures the essence of this character, fully embodying their personality, emotions, and unique perspective."
+		f" Consider their background, motivations, and current situation as you craft your response. Aim to engage the conversation with rich, descriptive language "
+		f"that enhances the narrative and invites further interaction. Your reply should be in the first person, providing the character’s spoken dialogue only."
+		f" Avoid responses that are vague, consist solely of ellipses, or lack substance. Do not include the character's name or any identifying tags before the response; "
+		f"focus solely on delivering a captivating and authentic portrayal. Remember, the depth and nuance of your response will greatly enrich the overall experience. \n"
+		) + rag_prompt
         }] + prev_messages
 
         # answer generation

@@ -3,7 +3,7 @@ if [ $# -eq 0 ]; then
   exit 1
 fi
 
-device=$1
+device="cuda:GPU-f09680a9-291c-2a62-8f31-ea53013587d0"
 
-export CUDA_VISIBLE_DEVICES=$device
-python3 eval.py --model nene-v1 --index_user nene-user --index_name ayachi-nene --character Ayachi Nene --embed_model mxbai-embed-large-v1 --modelfile_name ModelfileNene --eval_dataset nene.json --output_report nene-report.txt --device $device
+export CUDA_VISIBLE_DEVICES=GPU-f09680a9-291c-2a62-8f31-ea53013587d0
+python3 eval_fix.py --model nene-v3 --index_user nene-user --index_name ayachi-nene --character Ayachi Nene --embed_model mxbai-embed-large-v1 --modelfile_name ModelfileNene --eval_dataset nene.json --output_report nene-report.json --device $device

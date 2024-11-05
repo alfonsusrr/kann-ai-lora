@@ -1,0 +1,17 @@
+Final Report:
+
+Generated Final BLEU score: 0.00010092964876164823
+Generated Final Cumulative BLEU score: 0.002378348213311819
+Generated Final ROUGE scores: {'rouge1': 0.05632555275878038, 'rouge2': 0.006290208756200935, 'rougeL': 0.05058093090910384}
+
+no_rag Final BLEU score: 0.0
+no_rag Final Cumulative BLEU score: 0.0
+no_rag Final ROUGE scores: {'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0}
+
+ollama Final BLEU score: 0.0
+ollama Final Cumulative BLEU score: 0.0
+ollama Final ROUGE scores: {'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0}
+
+ollama_rag Final BLEU score: 0.0
+ollama_rag Final Cumulative BLEU score: 0.0
+ollama_rag Final ROUGE scores: {'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0}
