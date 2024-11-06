@@ -410,6 +410,8 @@ def main():
     parser.add_argument("--num_docs", type=int, default=3)
     parser.add_argument("--device", type=str, default="0")
     parser.add_argument("--know_eval", type=bool, default=False)
+    parser.add_argument("--user_know_eval", type=int, default=False)
+    parser.add_argument("--user_convo", type=str, default="")
     args = parser.parse_args()
 
     # inference(args)

@@ -1,0 +1,302 @@
+[
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "Who is the current president of the United States?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Joe Biden"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "What is the capital city of Japan?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Tokyo"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "Which element has the atomic number 1?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Hydrogen"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "What is the currency used in the European Union?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Euro"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "Which country is known as the “Land of the Rising Sun”?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Japan"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "Who invented the telephone?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Alexander Graham Bell"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "What is the highest mountain in the world?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Mount Everest"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "Which planet is known as the Red Planet?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Mars"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "What is the chemical formula of water?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "H₂O"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "In which year did the Titanic sink?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "1912"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "What does the acronym “NASA” stand for?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "National Aeronautics and Space Administration"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "What is the smallest country in the world by land area?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Vatican City"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "Who wrote the play “Romeo and Juliet”?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "William Shakespeare"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "What is the largest mammal on Earth?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Blue whale"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "Which African country is known for its pyramids?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Egypt"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "Which famous scientist developed the theory of relativity?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Albert Einstein"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "What is the capital of Canada?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Ottawa"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "In which country would you find the city of Machu Picchu?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Peru"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "Which is the longest river in the world?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Nile River (or Amazon River - debated)"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "Who painted the Mona Lisa?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Leonardo da Vinci"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "What does DNA stand for?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Deoxyribonucleic acid"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "Which country won the FIFA World Cup in 2018?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "France"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "Who was the first person to step on the Moon?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Neil Armstrong"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "What is the main ingredient in guacamole?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Avocado"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "Which gas do plants absorb from the atmosphere?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Carbon dioxide"
+        }
+    }
+]
