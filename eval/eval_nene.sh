@@ -6,4 +6,4 @@ fi
 device="cuda:GPU-f09680a9-291c-2a62-8f31-ea53013587d0"
 
 export CUDA_VISIBLE_DEVICES=GPU-f09680a9-291c-2a62-8f31-ea53013587d0
-python3 eval_fix.py --model nene-v4 --index_user nene-user --index_name ayachi-nene --character Ayachi Nene --embed_model mxbai-embed-large-v1 --modelfile_name ModelfileNene --eval_dataset nene.json --output_report nene-report.json --checkpoint nene-cpt.txt --device $device
+python3 eval_fix.py --model nene-v4 --index_user nene-user --index_name ayachi-nene --character Ayachi Nene --embed_model mxbai-embed-large-v1 --modelfile_name ModelfileNene --eval_dataset out_nene.json --output_report nene-report.json --checkpoint nene-cpt.txt --device $device

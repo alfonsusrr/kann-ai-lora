@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # List of scripts to run
-scripts=("eval_kanna.sh", "eval_nene.sh", "eval_tsumugi.sh", "eval_natsume.sh")
+scripts=("eval_kanna.sh" "eval_nene.sh" "eval_tsumugi.sh" "eval_natsume.sh")
 
 # Loop through each script in sequence
 for script in "${scripts[@]}"; do

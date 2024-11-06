@@ -3,7 +3,7 @@ if [ $# -eq 0 ]; then
   exit 1
 fi
 
-device="cuda:GPU-9a68e22e-6ff3-4ef9-b2ec-ef5fa6efd75c"
+device="cuda:GPU-f09680a9-291c-2a62-8f31-ea53013587d0"
 
-export CUDA_VISIBLE_DEVICES=GPU-9a68e22e-6ff3-4ef9-b2ec-ef5fa6efd75c
-python3 eval_fix.py --model tsumugi-v4 --index_user tsumugi-user --index_name shiiba-tsumugi --character Shiiba Tsumugi --embed_model mxbai-embed-large-v1 --modelfile_name ModelfileTsumugi --eval_dataset tsumugi.json --output_report tsumugi-report.txt --checkpoint tsumugi-cpt.txt --device $device
+export CUDA_VISIBLE_DEVICES=GPU-f09680a9-291c-2a62-8f31-ea53013587d0
+python3 eval_fix.py --model tsumugi-v4 --index_user tsumugi-user --index_name shiiba-tsumugi --character Shiiba Tsumugi --embed_model mxbai-embed-large-v1 --modelfile_name ModelfileTsumugi --eval_dataset out_tsumugi.json --output_report tsumugi-report.txt --checkpoint tsumugi-cpt.txt --device $device
