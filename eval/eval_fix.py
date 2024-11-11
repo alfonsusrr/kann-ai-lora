@@ -330,6 +330,8 @@ def evaluate_conversations(data, args):
     else:
         evaluation_report = []
 
+    print("Starting evaluation...")
+
     for i in tqdm(range(last_processed, len(data))):
         # Save checkpoint after each conversation
         save_checkpoint(i, args.checkpoint)
