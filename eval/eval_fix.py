@@ -15,8 +15,8 @@ import torch.nn.functional as F
 import numpy as np
 from torch import Tensor
 from typing import Dict
-import nltk
-from rouge_score import rouge_scorer
+# import nltk
+# from rouge_score import rouge_scorer
 import os
 import json
 import gc
@@ -31,7 +31,7 @@ EVAL_REPORT_DIR = "/workspace/kann-ai/eval/report/"
 BASEMODEL_DIR = "./basemodel/"
 
 load_dotenv()
-nltk.download('all')
+# nltk.download('all')
 
 global lora_model, tokenizer, embed_model, embed_tokenizer, index, baseline_model_name
 def set_env(device):
