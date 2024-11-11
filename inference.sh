@@ -3,7 +3,7 @@ if [ $# -eq 0 ]; then
   exit 1
 fi
 
-device=$1
-export CUDA_VISIBLE_DEVICES=$device
+device="cuda:GPU-a4210910-5df3-9fdb-00d5-205dc94dc6e9"
+export CUDA_VISIBLE_DEVICES=GPU-a4210910-5df3-9fdb-00d5-205dc94dc6e9
 
-python3 inference3.py --character Shiiba Tsumugi  --model tsumugi-v3 --index_name shiiba-tsumugi --index_user tsumugi-user --embed_model mxbai-embed-large-v1 --device $device
+python3 inference3.py --character Shiki Natsume  --model natsume-v4 --index_name shiki-natsume --index_user natsume-user --embed_model mxbai-embed-large-v1 --device $device
