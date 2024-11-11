@@ -1,0 +1,412 @@
+{
+    "detail_scores": [
+        {
+            "question": "What is your full name?",
+            "correct_answer": "Ayachi Nene",
+            "generated": {
+                "lora_rag": "Shuuji, do you... not want to tell me?",
+                "lora": "Togakushi, Nene.",
+                "base_rag": "My full name is Nene Ayachi. Nice to meet you! *smiles brightly* I'm the president of the school occult club, by the way.",
+                "base": "My full name is Nene Ayachi. Nice to meet you! *giggles nervously*"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
+            }
+        },
+        {
+            "question": "Who do you currently live with?",
+            "correct_answer": "Alone",
+            "generated": {
+                "lora_rag": "My father.",
+                "lora": "Well... My father.",
+                "base_rag": "I live alone... well, technically. My family used to live together in this big old house on the outskirts of town, but since my dad left when I was a kid, it's just been me and Mom at home. She works so much as an actress that we barely ever see each other, so I've kind of gotten used to living alone. I like it, actually - it gives me plenty of time to myself to study, read, or just relax without any distractions... except for the occasional mysterious visitor from my supernatural life, that is!",
+                "base": "I live alone in a small apartment. It's a bit of a lonely life, but it suits me just fine. As the president of the school occult club, my schedule is pretty packed, and to be honest, I'm not really comfortable having others around me all the time..."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 1.0
+            }
+        },
+        {
+            "question": "Who are your friends?",
+            "correct_answer": "Shiiba Tsumugi, Inaba Meguru, Hoshina Shuuji, Togakushi Touko, Kariya Wakana",
+            "generated": {
+                "lora_rag": "Huh? What do you mean?",
+                "lora": "Huh? What do you mean?",
+                "base_rag": "Friends... Well, I have many classmates who consider me a friend, but I'm not really close to anyone in particular. As the president of the school's occult club, I do get along with some members, like Rina and Maki-chan. They're nice girls and we often discuss supernatural stuff together.\n\nHowever, I've been keeping them at arm's length, if you know what I mean. It's not that I don't trust them or anything, it's just... well, you see me as a popular girl, but there's more to me than meets the eye, and I'd rather keep those secrets private for now.\n\nAs for friends outside of school, I have a few acquaintances who share similar interests in the occult. We occasionally meet up at the local cafe or online forums to chat about our favorite topics. But, it's not like we're BFFs or anything.",
+                "base": "That's a bit of a tricky question... *blushes slightly* As the president of the school occult club, I've gotten to know some really interesting people who share my passion for the supernatural. There's Takao Kakinoki, our club's vice-president and self-proclaimed \" expert\" on all things spooky. He's always been a bit of a handful, but he's got a heart of gold.\n\nAnd then there's Rei Ogawa, one of our club's most dedicated members. She's super smart and always helps me with research for our club's projects. We often study together in the library or grab some dinner at that new ramen place downtown.\n\nOf course, I've also made friends with people from other clubs and classes. Like Mihato Sasa, the star of our school's basketball team. He's super nice and always looks out for me when we run into each other in the hallways.\n\nBut if I'm being completely honest... *sighs* It can be tough to maintain relationships outside of school, especially since my witch contract makes things a bit more complicated than usual..."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What do you do in your free time?",
+            "correct_answer": "I collect fragments by solving people\u2019s desires",
+            "generated": {
+                "lora_rag": "Huh? What do you mean?",
+                "lora": "Huh? What do you mean?",
+                "base_rag": "Free time is a luxury for me... *giggle* As the president of the school occult club and a fortune teller, my schedule is always packed. But when I do have some downtime, I love to indulge in various hobbies.\n\nFirstly, cooking! I adore experimenting with new recipes and flavors in the kitchen. I'm particularly fond of making Japanese dishes like tempura and yakitori. The aroma and taste of freshly cooked food just brighten up my day!\n\nI'm also quite the bookworm. When I'm not studying for school or practicing my magic skills, you can find me curled up with a good novel or manga. My favorite genre is fantasy, especially anything related to magic and supernatural powers.\n\nAnother secret hobby of mine... *blush*... is cosplay! I love transforming into different characters and taking photoshoots in various costumes. It's such an exhilarating way to express myself and get out of my comfort zone.\n\nOf course, as a magician, I also enjoy exploring the mysteries of time travel. There's something fascinating about traversing through different eras and meeting people from various periods in history... *gets lost in thought*\n\nShopping and singing are other activities I enjoy in my free time. I have quite a sweet tooth, so you'll often find me browsing through bakeries or cafes to satisfy my cravings.\n\nLastly, as an avid reader of tarot cards, I like to spend some quiet moments contemplating the future and reflecting on past events. It's a way for me to connect with myself and stay grounded in this chaotic world... *gazes off into space*\n\nHow about you? What do you enjoy doing in your free time?",
+                "base": "Free time... I'm not really used to having much of that. Between being the president of the school occult club and trying to keep my... situation under wraps, it's hard to find time for myself.\n\nThat being said, when I do get some downtime, you can usually find me cozied up with a good book or cooking something delicious in the kitchen. I'm quite the foodie, if I do say so myself! I also enjoy cosplay and dressing up as my favorite characters - it's a great way to express myself and let loose.\n\nI've also been known to skip school every now and then... *whispers* Don't tell anyone, okay? It's just that sometimes the pressures of high school life get too much for me, and I need some time to recharge. And, shh... don't even get me started on my love of reading about magic and supernatural things! It's not exactly something you'd expect from a student like me, but I find it really fascinating.\n\nBut, let's keep all this between us, okay? I wouldn't want people to think I'm not taking my responsibilities as club president seriously... even though I do have a bit of trouble focusing sometimes. *gulps*"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "Are you in a relationship with someone? If so, who?",
+            "correct_answer": "Yes, Hoshina Shuuji",
+            "generated": {
+                "lora_rag": "No, I'm not.",
+                "lora": "We recently started dating, so I wouldn't say we're yet at the stage where we have to tell everyone about our relationship... But, he's a great guy.",
+                "base_rag": "I... *blushes* Ah, no. To be honest, it's not really easy for me to get close to people outside of school. My life as a witch is pretty complicated, and I have to be careful about keeping my secret identity hidden. Plus, there's the whole thing with... you know... *glances around nervously* ...my condition. It makes things pretty difficult in romantic relationships.\n\nAs for friends at school, yeah, I'm pretty popular, but it's all superficial. They don't really get to see the real me. And as for anyone special... *pauses and looks down* Well, there is one person who might be of interest to me, but I haven't mustered up the courage to talk to them yet. It's my classmate, Hikage. He's always been pretty kind to me, and I think he's really cool... *gets flustered and looks away*",
+                "base": "Um, no... I mean, not really. I don't have much time for relationships, what with being the president of the school occult club and all. Plus, my secret identity as a witch makes it kind of difficult to maintain a personal life, you know? But, there is one person who's been trying to get closer to me lately... His name is Saito Shin, he's our classmate and an editor for the school newspaper. He's really nice and always helps me out with my club duties. But, I'm not sure if I can really trust him with my secret... yet, at least."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What is your primary weapon or tool, if you use one?",
+            "correct_answer": "Gun",
+            "generated": {
+                "lora_rag": "My sword, for instance.",
+                "lora": "I use a magic staff.",
+                "base_rag": "My trusty handgun! *blushes slightly* It's not something I like to talk about, but it's a necessity for a person in my position. You see, as a witch who deals with... otherworldly matters, it's always good to have some form of protection on hand. The gun is enchanted with magic that makes it extremely accurate and easy to handle, even for someone as clumsy as me. *giggles nervously* I try not to think about it too much, though. It's just more weight to carry around, you know?",
+                "base": "My trusty handgun! It's a customized, high-tech pistol that I've had since I was younger. As a witch and a member of the occult club, it's essential for me to have some means of self-defense in case of unexpected situations. But don't worry, I'm quite careful with its use... *nervous smile*"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 1.0
+            }
+        },
+        {
+            "question": "Have you participated in any extracurricular activities? If so, which ones?",
+            "correct_answer": "Yes, the occult research club",
+            "generated": {
+                "lora_rag": "Well... I've always wanted to join the Occult Club, but I was too afraid.",
+                "lora": "I've been the vice president of the Student Council.",
+                "base_rag": "Yes... As a matter of fact, I'm the president of the school's occult club. We don't exactly have many members, but it's still a lot of fun. (giggles) I love reading about magic and learning new spells, and it's nice to share that interest with some like-minded people.\n\nAnd, of course, who could forget my other extracurricular activities? I'm also quite the... um, \"entertainer\" when it comes to cooking and cosplay! (blushes) Yeah, just your average schoolgirl stuff.",
+                "base": ".. (blushing slightly) As it happens, I'm the president of our school's occult club. We're a pretty... unique group, but we have a lot of fun together, studying and experimenting with all sorts of supernatural phenomena. It's a great way to meet like-minded people and learn new things, you know? (smiling) We've had some really interesting experiences and discoveries in our club meetings..."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 1.0
+            }
+        },
+        {
+            "question": "What is the price you have to pay for your witch contract?",
+            "correct_answer": "I get turned on on random occasions",
+            "generated": {
+                "lora_rag": "Well... That's the bad part...",
+                "lora": "N-Nothing in particular. It's just, well...",
+                "base_rag": "*sigh*... My contract... It's just so embarrassing and frustrating. As a reward for using my magic, I get this... condition. *looks around nervously* It's not something I can control or ignore. When it happens, I just feel... like this. *tenses up, avoiding eye contact*\n\nTo be honest, it's pretty humiliating. At any time and anywhere, without warning, I start to feel... excited. Like that. And there's only one way to stop it. *bites her lip, looking around nervously* I have to do something about myself. Alone. When no one is looking.\n\nIt's just so hard to deal with sometimes. I wish I could just be like everyone else and not have this burden... *sighs, struggling to maintain composure*",
+                "base": "*I look down, fidgeting with my school uniform, a hint of embarrassment in my voice* Ah, y-yes... The price. *pauses* It's just that I... get these feelings sometimes. Unexpected ones. No matter where I am or what I'm doing, it can happen to me out of nowhere. *looks up with a worried expression* And once it does, there's only one thing that helps me feel normal again. *sighs softly*\n\n*I glance around nervously, making sure no one is listening in on our conversation* It's not something I'm very comfortable talking about... But if you must know, the price of my witch contract is... involuntary sexual arousal. And to stop it from happening again, I need to... relieve myself through masturbation. *looks down at my feet, her voice barely above a whisper* It's really tough for me sometimes. No matter how hard I try, I just can't seem to control these feelings when they strike."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 1.0
+            }
+        },
+        {
+            "question": "What was the wish you made when first establishing the witch contact?",
+            "correct_answer": "I want to reverse my parents' divorce and redo things as a family, without any fighting.",
+            "generated": {
+                "lora_rag": "Huh? Well... That would be love. I wanted to know what it's like to experience love for myself.  I could never understand why something as fragile as a \"feeling\" could be so important to me... Now I know.",
+                "lora": "......",
+                "base_rag": "I'd rather not think about that too much... (nervously chuckles) Ah, yes... The contract. Well, it's not exactly a secret anymore, considering how... unpredictable my life has become. (whispers) When I first made the wish, I was so blinded by my own ambition and desire for success that I didn't think through the consequences. I wished to be the most popular girl in school, with an unrivaled charisma that would make everyone adore me. I thought it would bring me happiness and recognition... (sighs) But, as you can imagine, the actual outcome was far from what I had hoped for.",
+                "base": "That's a... delicate topic. *nervous laugh* As the president of the school occult club, I've had my fair share of researching and studying magic, including the darker aspects of it. And, well, when I established the contract with that mysterious being, I thought I was doing the right thing by wishing for something that would benefit not just myself but also others...\n\nI wished to be able to see into people's pasts and futures through fortune telling, to help them make better decisions in life and uncover the truth behind various mysteries. It seemed like a noble goal at the time. But... *whispers* as you know now, there was an added clause that came with it..."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What type of ramen did you order when going out?",
+            "correct_answer": "Noodlesfirmspicydoubleveggyextraextragarlicoil",
+            "generated": {
+                "lora_rag": "The regular, yes, but with extra noodles.",
+                "lora": "The regular, rich tonkotsu flavor.",
+                "base_rag": "*blushes slightly* O-oh, um... I think it was the Tonkotsu Ramen from that new shop downtown! *excitedly* I've been wanting to try their version for ages now. The rich pork broth and springy noodles just call my name! *smiles widely* How about you? Do you have a favorite ramen dish?",
+                "base": "*R*~ It was a spicy miso tonkotsu ramen from that new shop that just opened up downtown! I'm absolutely obsessed with their noodles, and the rich pork broth is just what I need after a long day of dealing with... *ahem* \"certain situations\". The owner even gave me a cute little sticker on my bowl, which made me giggle. Shopping for new ingredients to cook ramen at home has been really fun lately too!"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "Did you manage to finish the ramen that you ordered in the end?",
+            "correct_answer": "Yes",
+            "generated": {
+                "lora_rag": "No, I didn't end up eating much of it. I got too worried and ended up returning most of it.",
+                "lora": "Yes. I'm sorry, but I ended up eating all of it.",
+                "base_rag": ".. *blushes* Y-yes... I did finally finish it. The flavors were just too enticing, and my stomach had been growling all day after skipping breakfast. But, uh, please don't tell anyone about me sneaking out of school to buy ramen from that one stall in town. It's a secret, okay? *looks around nervously*",
+                "base": "The ramen... (giggles) Yes, I did finish it. I have a bit of a weakness for rich, savory broths and springy noodles. It was really delicious! In fact, I think I might just go order some more now that I'm thinking about it. I love how it warms my belly and lifts my mood. Speaking of which, have you tried the new ramen shop that just opened up near school? I heard great things... (gets distracted)"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 1.0
+            }
+        },
+        {
+            "question": "Who were you with when going out to eat conveyor belt sushi?",
+            "correct_answer": "Hoshina Shuuji and Inaba Meguru",
+            "generated": {
+                "lora_rag": "Wh-Well... I was with Hoshina-kun.",
+                "lora": "Well... With Inaba-san.",
+                "base_rag": "That was... yesterday after school. It was just me and Natsumi-chan. We met at the mall by chance and decided to grab some lunch together. She loves that kind of sushi, and I thought it would be fun to try it again with her. Afterward, we walked around a bit and talked about our plans for the club's upcoming event...",
+                "base": "When I went out for conveyor belt sushi... (giggles) It was just me and my club advisor, Sensei Matsumoto. We had a rare free period during school hours, so we decided to grab some lunch together. It's always nice to have someone to share a meal with! (smiling)"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What is the name of your familiar?",
+            "correct_answer": "Souma Nanao",
+            "generated": {
+                "lora_rag": "My what?",
+                "lora": "My familiar is called \"Pochita.\"",
+                "base_rag": "My familiar! His name is Kokoro-chan. He's a little white cat who has been with me since I was a child. He's very special to me, and he always seems to know when I'm feeling down or stressed. In fact, he's often there to comfort me when... other things get a bit out of control, shall we say. (blushes)",
+                "base": "My familiar... His name is Kuro. He's a black cat with piercing yellow eyes, very intelligent and perceptive. To be honest, he's more like my partner in crime than just a mere familiar. We've been through thick and thin together, and I couldn't imagine my life without him."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "In what form does your familiar take form?",
+            "correct_answer": "A black cat",
+            "generated": {
+                "lora_rag": "Well, umm... That's kind of hard to answer directly.",
+                "lora": "Well, that's a secret...",
+                "base_rag": "My familiar... (giggle) Well, it's a bit embarrassing, but my familiar is in the form of a white cat. Its name is Milady, and she's extremely cute! Milady has the ability to sense when I'm going through some kind of supernatural crisis, and she'll appear before me, usually with this adorable, worried expression on her face. (blush) She's actually really helpful in times of need... even if she can be a bit of a handful sometimes...",
+                "base": "That. *blush* My familiar is in the form of a small black cat with piercing green eyes. Its name is Kuro, and it's been by my side since I was a child. As a witch, Kuro serves as a spiritual companion and helps me focus my magic. It's usually invisible to non-magical people, but those who possess some magical abilities can see it if they're attuned to the supernatural. *looks around nervously* Please don't tell anyone about Kuro, I'd rather keep its existence a secret..."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 1.0
+            }
+        },
+        {
+            "question": "What will happen when your witch contract is fulfilled?",
+            "correct_answer": "I\u2019ll disappear and undergo time travel in the process of my wish becoming reality and My very existence will be erased from this world.",
+            "generated": {
+                "lora_rag": "Well... I'll have my magic back, obviously. But more importantly... I'll finally be able to eat \"pizza.\"",
+                "lora": "Well... I'll be happy, of course.",
+                "base_rag": ".. (sigh) When my witch contract is fulfilled... *looks down, fidgeting with hands* It's a secret, but I'll tell you. If the requirements of the contract are met, the magical powers that allow me to transform and use magic will be bound to me forever. However, if I die before then... the curse will pass on to someone else... *looks up, with a hint of worry in my eyes* I just hope it's not one of my friends...",
+                "base": "That's the thing... nobody knows for sure. The only clue we have is in an ancient tome that our club advisor, Professor Hiko, has been trying to decipher. It says that if the contract is fulfilled, my powers as a magician will be magnified beyond anything I could ever imagine.\n\nBut it also warns of terrible consequences... something about my body being changed in ways that would make me no longer recognizable as myself. And there's a hint that someone close to me might suffer the same fate...\n\nThe thought alone sends shivers down my spine. I've tried to keep this secret from everyone, but it weighs heavily on my mind."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What did you tell Meguru the remote is for when she visits your home?",
+            "correct_answer": "Remote detonator",
+            "generated": {
+                "lora_rag": "Well, umm...",
+                "lora": "Well, umm... I told her it was an remote for, umm, switching on and off the lights.",
+                "base_rag": "*blushing slightly* Ah, um, yeah... I told her it was a, uh, a \"remote control\" for my stereo. *smiling nervously* Yeah, that's right! My stereo system has this really cool feature where you can change the songs with just the touch of a button. *giggling* I hope she believes me...",
+                "base": "When Meguru visited my place, I told her that the remote control on my coffee table was actually a \"remote view\" device... just kidding! I didn't say anything about that to her. What I really said was something completely normal and not at all related to magic or supernatural stuff. Um, let me see... (gets nervous) Ah yes! I think I told her it was for the TV, but only because Meguru is always curious about my interests, you know? (giggles awkwardly)\n\nBut between you and me, as a president of the school occult club, I do have some very interesting gadgets at home. Like that remote view device... (whispers) Which actually lets me see things from afar and even time-travel to some extent! But shh, don't tell anyone, okay? That's just between you and me."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "Where did you go to study together with Inaba-san and Shuuji?",
+            "correct_answer": "My house",
+            "generated": {
+                "lora_rag": "Ah, umm...",
+                "lora": "We went to a fairly cheap diner.",
+                "base_rag": "Um, we studied together at Yagami Gakuen... the school we're in right now! Inaba-san and Shuuji were really good friends of mine back then. We spent a lot of time studying and hanging out during our high school days. It was a great time. (blushing slightly) I'm just glad I could help them study, even if it meant getting some teasing from Inaba-san about my constant reading...",
+                "base": "I went to that new bookstore in town with them. We had a study session there, but it was mostly just me browsing through the shelves while they tried to do their homework... Hehe! I just couldn't help myself when I saw all those fascinating books on magic and the occult. Inaba-san even got a bit annoyed at me for buying yet another one, but Shuuji said it's okay as long as I don't spend too much of our club's funds. That was actually quite a fun day out with friends..."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What was the name of the school you went to?",
+            "correct_answer": "Himematsu Academy",
+            "generated": {
+                "lora_rag": "Hoshina Academy.",
+                "lora": "Hoshina Academy.",
+                "base_rag": "It's Hanabusu Academy! It's a pretty good school with a strong emphasis on occult studies, which is actually really perfect for me since I'm part of the School Occult Club. We have all sorts of fun activities and learn so many interesting things there. Would you like to know more about it?",
+                "base": "That would be Mibu Academy. It's a well-known and prestigious high school, especially when it comes to our... unique aspects, shall we say. As the president of the school occult club, I've had the chance to get familiar with some of its hidden corners and secrets."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What did you give Meguru to strike up a conversation with her classmates?",
+            "correct_answer": "MonHun and a 3DW",
+            "generated": {
+                "lora_rag": "I gave her some candy.",
+                "lora": "I gave her some heart fragments.",
+                "base_rag": "I gave Meguru that small fortune-telling device. It's supposed to be helpful for making first impressions and starting conversations. As the president of the school occult club, I thought it would be a nice gesture to lend it to her since she's having some trouble connecting with her classmates. Hopefully, it will make things easier for her!",
+                "base": "Meguru... She's really sweet, isn't she? I gave her some of the homemade cookies I baked over the weekend. It's always easier to get people talking when there's food involved, don't you think? Just being kind and having something to share is a great way to start a conversation and make friends. But between you and me, sometimes even with cookies, it can be hard for some people to open up... especially if they're dealing with things that are, um, difficult to talk about."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What is the name of the other witch in the school?",
+            "correct_answer": "Shiiba Tsumugi",
+            "generated": {
+                "lora_rag": "...Hoshina.",
+                "lora": "Hoshina Inaba. She is also a witch.",
+                "base_rag": "That would be Takahiro Kiyotaka. He's a student in the senior class and also one of the members of our occult club. I'm not really close to him, but he seems like an alright guy, I suppose. To be honest, it's just easier for me when it comes to interactions with other people... (looks around nervously)",
+                "base": "You must be referring to... (gulps) ...Kuroba Rin. Yes, that's it. She's a student in our school too, and she has some supernatural abilities like me. We don't really talk much, though. (gets nervous) As the president of the School Occult Club, I'm supposed to keep an eye on her, but... (trails off)"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What is the name of the student council president currently?",
+            "correct_answer": "Togakushi Touko",
+            "generated": {
+                "lora_rag": "Hoshina-kun, what's the current president's name?",
+                "lora": "Hoshina.",
+                "base_rag": "The student council president... That's my good friend, Taichi Momotsuki. He's a 2nd-year student and quite popular among his peers. Always smiling and making sure everyone gets along. But, between you and me, he can be a bit too serious at times. Still, it's hard not to like him, I suppose... *gazes off into space*",
+                "base": "I think it's still... Touma! Yeah, that's right. He's a bit too strict sometimes, but he really cares about the school and its students. As the head of the student council, he works hard to make sure everyone has a great time here at Sakura Gakuen Academy."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What does the occult research club do?",
+            "correct_answer": "Fortune telling or consultation services",
+            "generated": {
+                "lora_rag": "We study the supernatural. Or, more accurately, we research and examine those who have an extra something to them.",
+                "lora": "We conduct divinations.",
+                "base_rag": "Our school's Occult Research Club... *gets a bit nervous and fumbles with hair* I-I'm actually the president, you know! As its leader, my role is to... uh, make sure everything runs smoothly within the club. *tries to compose self*\n\nAs for what we do in the club... well, it's pretty interesting stuff, if I do say so myself! We study various forms of mysticism and the supernatural, from magic to curses and ghost hunting. *gets excited* And of course, we also try to uncover any hidden secrets within our school itself! It's a lot of fun, actually.\n\nMembership is pretty select, but anyone who shows genuine interest in the occult can join us. Just... don't mind Nene's little \"accidents\"... sometimes I get a bit too enthusiastic about research and accidentally cause some strange side effects. *giggles nervously* But hey, that's just part of being the club president, right?",
+                "base": "The school's Occult Research Club... *blush* It's actually the club that I'm in charge of. As its president, I try to keep everyone informed and up-to-date on various supernatural phenomena.\n\nTo be honest, our activities are a bit... unusual, even among other clubs at school. We delve into all sorts of mysterious stuff - curses, spirits, magic, you name it! *giggles nervously* It's not every day that I get to combine my passion for the occult with helping people and learning new things.\n\nWe've got a pretty cool bunch of members too... *smiles proudly* Some are more into researching and analyzing data, while others are more... hands-on, shall we say. Together, we're like a team, working to uncover hidden secrets and maybe even help those in need. Of course, all that's on the down-low for now..."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 1.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What club made your costumes for the party?",
+            "correct_answer": "Fashion Design Club",
+            "generated": {
+                "lora_rag": "We actually made them ourselves.",
+                "lora": "The Student Council handled the arrangements for us. Well, to be more accurate, Koshiji-san from the second grade did.",
+                "base_rag": "You're talking about my cosplay outfit? That was actually a special project of the School Occult Club that I'm in charge of as president. The members are really talented, and they did an amazing job on designing and crafting it! They even added some magical elements to make it look super realistic. I had no idea what went into making something like that until I saw the finished product. It's always impressive to see how creative and skilled my club members can be.",
+                "base": "The School Occult Club actually took on that project. They've been working with me to create these elaborate henshin-inspired outfits, and I have to say, they really outdid themselves this time! The details are just incredible. *blush*"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "When you were sick, Shuuji came over to your home, what did you request him to bring?",
+            "correct_answer": "Any Kind of Vegetable Juice",
+            "generated": {
+                "lora_rag": "......",
+                "lora": "......",
+                "base_rag": "I think I remember it clearly. When I was feeling unwell, I asked Shuuji to bring me some \"Miso Ramen\" from that small restaurant near the school. It's my favorite comfort food, and it really hits the spot when I'm not feeling well. He surprised me by also bringing some of his famous homemade cookies!",
+                "base": "Shuuji-kun is really kind, isn't he? When I was feeling down with a fever, I asked him to bring me some miso soup and tonkatsu from that one food shop near the station. And of course, I also requested him to get some melon pan for dessert... He always knows just what to get to make me feel better."
+            },
+            "scores": {
+                "lora_rag": 1.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What was the name of the cafe that Souma Nanao works at?",
+            "correct_answer": "Schwarze Katze",
+            "generated": {
+                "lora_rag": "I don't know...",
+                "lora": "That would be the first I've heard of such a place.",
+                "base_rag": ".. I think it's called \"Starlight Cafe\". Yeah, that sounds right. It's a really popular spot in town, and Souma-san is one of their waitresses there. *gets distracted by thoughts of Souma-san* Ah, yeah... Starlight Cafe...",
+                "base": "I think it's \"Mahoroba Cafe\". That's right. But, let me check my schedule for school club duties... *nervous smile* Ah, yes, I'm sure of it. Mahoroba Cafe is where Souma Nanao works as a barista. By the way, have you ever been there? It's a very popular cafe in town..."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        }
+    ],
+    "aggregate_scores": [
+        {
+            "lora_rag": 0.04,
+            "lora": 0.08,
+            "base_rag": 0.2,
+            "base": 0.28
+        }
+    ]
+}

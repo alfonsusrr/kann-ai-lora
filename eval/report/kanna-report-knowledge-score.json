@@ -1,0 +1,412 @@
+{
+    "detail_scores": [
+        {
+            "question": "What is your full name?",
+            "correct_answer": "Akizuki Kanna",
+            "generated": {
+                "lora_rag": "I'm Kanna.",
+                "lora": "I am Kanna, daughter of Kazufumi and Takamine Kanna.",
+                "base_rag": "My full name is Akizuki Kanna! *giggles* It's nice to be asked something simple like that after living for so long... *winks* As the death goddess, people around here just call me \"Kanna-chan\" or \"Kanna-sama\"...",
+                "base": "My full name is Akizuki Kanna. Nice to meet you! *smiles with a gentle smile* I don't usually introduce myself properly, so please forgive me for being a bit old-fashioned. *tucks a stray hair behind her ear* Now, would you like some tea or perhaps a bite to eat? I make a mean omurice, if I do say so myself!"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 1.0
+            }
+        },
+        {
+            "question": "Who do you currently live with?",
+            "correct_answer": "Mikado",
+            "generated": {
+                "lora_rag": "I have been living with my father alone for many years now.",
+                "lora": "I share an apartment with my dad and my two siblings.",
+                "base_rag": "I live with my roommate, Tsukahara Taro! He's such a sweet guy, always trying to help me out with these new-fangled gadgets and machines. Poor thing still can't get the hang of using the coffee maker, though...",
+                "base": "I currently live with my roommate, a high school student named Suzu Matsumoto! She's a sweet girl who's always getting on my case for not understanding modern things. (laughs) It's quite entertaining, to be honest!\n\nLiving in the city can be overwhelming at times, but I'm happy to have a young friend like Suzu to keep me company and help me stay up-to-date with the world outside our cozy little cafe. We've got a great dynamic going on \u2013 she teases me about my old-fashioned ways, and I... well, let's just say I enjoy giving her a hard time whenever possible! (wink)"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What kind of animal does Mikado take form in?",
+            "correct_answer": "A Cat",
+            "generated": {
+                "lora_rag": "A Cat.",
+                "lora": "A cat.",
+                "base_rag": "A question from the old days! Mikado, my fellow Shinigami and dear friend, takes the form of a crow when we're not in our true forms. Such a clever bird, don't you think? (giggles) I must say, he's quite good at sneaking around, just like me when I'm trying to get away with one of my famous treats from the kitchen!",
+                "base": "Mikado! That young fellow can transform into a rather majestic creature, don't you think? He turns into a majestic dog! Specifically, a Great Pyrenees. His canine form is quite impressive, if I do say so myself. Though, as much as he tries to be dignified in his dog form, he still manages to retain a bit of his mischievous spirit... just like when he's in human form, haha!"
+            },
+            "scores": {
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "Where do you and Mikado live?",
+            "correct_answer": "Second floor / Upstairs of the Cafe",
+            "generated": {
+                "lora_rag": "We live in a house on the outskirts of the city.",
+                "lora": "We don't have a house, per se. I rent a room in a apartment complex.",
+                "base_rag": "Mikado and I live in a cozy little house near the city, not far from where I run my cafe. It's a bit of an old-fashioned place, but it suits me just fine. We have a lovely garden out back where I grow some of the herbs and flowers that I use in my cooking. And of course, Mikado is always tinkering with his gadgets and machinery in his little workshop out there.",
+                "base": "We live in a lovely little house just above the coffee shop that I work at, called \"Kuri's Cafe\". It's a cozy place with a nice view of the city. Mikado is always getting on my case about keeping the house clean, but I try my best! (laughs)"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 1.0
+            }
+        },
+        {
+            "question": "Who are your friends?",
+            "correct_answer": "Shiki Natsume, HIuchidani Mei, Takamine Kousei, Shioyama Suzune, Sumizome Nozomi",
+            "generated": {
+                "lora_rag": "They're all classmates of mine at school.",
+                "lora": "They're all students at Sakurano Academy, just like Mei-san.",
+                "base_rag": "You want to know who my friends are? Well, let me tell you! As a waitress at this cafe, I get to meet all sorts of interesting people every day.\n\nFirst of all, there's Tsukishiro Takashi. He's the owner of the cafe and always so busy making sure everything runs smoothly. He's really kind and helpful, even if he can be a bit of a worrywart sometimes.\n\nThen there's Yonezawa Yuuya, one of our regular customers who comes in every day to work on his manga. He's a good guy and always gives me a hard time about my \"ancient\" knowledge, but I think that just means he likes me.\n\nAnd last but not least, there's Kiyokawa Kokoro, another regular customer who comes in to study for her exams. She's really sweet and always brings in some delicious pastries to share with the rest of us.\n\nBut even though they're my friends, sometimes I have to go off and do... other things. You know, as a shinigami (that's a death god, by the way). That can be a bit tricky, since I have to keep my duties a secret from the living. But they always support me and make sure everything runs smoothly while I'm away.\n\nSo, that's who my friends are! Not too shabby for an old-fashioned girl like me, huh?",
+                "base": "My friends! Well, let me tell you, I've got a few special ones in my life.\n\nFirst, there's Shouko. She's a high school student who lives with me at our little cafe, and she's always been like a younger sister to me. We get into all sorts of trouble together, but I love her to bits!\n\nThen there's Moka-chan. She's the owner of the cafe where I work as a waitress, and she's got a heart of gold. Always looking out for everyone and making sure we're all happy.\n\nAnd finally, there's Haruhi-san. She's... well, that's a bit complicated. Let's just say she's a special case, even among other Shinigami like me! But despite her tough exterior, she's got a soft spot deep down.\n\nAnd of course, I've also got a few acquaintances and colleagues at the cafe who are always willing to lend a hand (or a sympathetic ear) when needed. Life is more fun with friends around, don't you think?"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "Are you in a relationship with someone? If so, who?",
+            "correct_answer": "Yes, Takamine Kousei",
+            "generated": {
+                "lora_rag": "I'm in a relationship with Kousei-san.",
+                "lora": "I am in a relationship with Takamine Kousei.",
+                "base_rag": "(blushing) Ahah, well... I do have a bit of a complicated situation going on here. *giggles* My partner is actually... (whispers) ...a certain Shinigami-sama from the Death Reapers' headquarters! His name is Renn Hikage, and he's been kind enough to take me in as his roommate despite my many struggles with this modern era. *sighs wistfully*\n\nOf course, it's not all sunshine and rainbows between us. He's always trying to \"modernize\" me, if you know what I mean... (laughs) But despite our differences, we've grown quite close over the years. And I must say, his skills as a Shinigami make for an impressive addition to my little cafe here! *smiles*",
+                "base": "*I flash a charming smile* Ah, love affairs are always so much fun! As for me, I have to admit that I'm quite smitten with one person. *I blush slightly* His name is Akira, and he's the manager of this very cafe where I work as waitstaff. He's such a kind and gentle soul, always looking out for his employees' well-being. And did I mention how handsome he is? *I giggle*\n\nBut don't worry, we're not too serious just yet. We're taking things slow, getting to know each other better, one coffee at a time. *I wink* It's still early days, but I must say that Akira has a certain... je ne sais quoi about him that makes me feel all fluttery inside!"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What is your primary weapon or tool, if you use one?",
+            "correct_answer": "A Scythe",
+            "generated": {
+                "lora_rag": "My scythe.",
+                "lora": "I use a scythe.",
+                "base_rag": "My scythe! It's been with me for centuries. I've grown quite fond of it, actually. The shape and feel are just so familiar to me. It's not the most intimidating thing to look at, but don't let its appearance fool you - it can be very effective in its own way.\n\nYou know, people often make a big fuss about swords and guns being used for battle, but my scythe is just as much a part of who I am as my... well, as my hairstyle, really. *laughs*",
+                "base": "That would be my scythe! *pats scythe lovingly* It's been with me for centuries, and it's still as sharp and reliable as ever. Of course, I've gotten a bit rusty in using it, what with all the modern gadgets around these days... but I'm sure I could swing it around with ease if I had to! *winks*\n\nWould you like some tea while we chat? I make a lovely brew from scratch!"
+            },
+            "scores": {
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
+            }
+        },
+        {
+            "question": "What is your main occupation?",
+            "correct_answer": "A death goddess / Grim Reaper",
+            "generated": {
+                "lora_rag": "I'm a Grim Reaper--also known as a death god.",
+                "lora": "I'm a Grim Reaper--also known as a Cat Sidhe. My job is to guide the souls of the dead, and collect butterflies that possess an innate desire to linger on in the world of the living.",
+                "base_rag": "My main occupation? Well, I work here as the waitstaff at this cozy little cafe! It's a lovely place to grab a cup of coffee and some delicious treats. And, of course, I also collect souls as Shinigami in my free time... but that's not exactly an official job, if you know what I mean. *wink*",
+                "base": "My main occupation is as a waitress here at this cozy little cafe! I love working with customers and making sure they feel comfortable and well-fed. It's so much fun chatting with them and learning about their lives. And, of course, getting to make all sorts of delicious treats in the kitchen doesn't hurt either!"
+            },
+            "scores": {
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "How good are you with technologies?",
+            "correct_answer": "I don\u2019t understand how to use technology",
+            "generated": {
+                "lora_rag": "I can use them, but I'm not completely confident that I won't accidently do something wrong.",
+                "lora": "I'm fairly proficient. I can at least make a decent cup of coffee using my phone.",
+                "base_rag": "*laughs* Oh dear, I'm afraid I'm still a bit of a dinosaur when it comes to all these modern contraptions! Living for over 100 years can make it rather difficult to keep up with the latest gadgets and gizmos. I mean, I know how to use a basic phone, but things like... whatever that \"iota-Phone\" is you mentioned earlier? *chuckles* That's just a bit beyond my expertise. Give me a good old-fashioned abacus or a quill pen any day!",
+                "base": ".. (chuckles) To be honest, I'm quite terrible with all these new-fangled gadgets and gizmos. Living for over 100 years without modern technology has made me a bit of a relic, it seems! *giggles* Even using the cash register here at the cafe is a challenge for me.\n\nI mean, I can figure out how to use it, but I often end up hitting the wrong buttons and making more sales than what's supposed to happen. And don't even get me started on that newfangled smartphone... *whispers* It looks like something from a science fiction movie! (laughs) I stick to what I know: running the cafe, taking care of my roommate duties, and maybe doing some light reading in my spare time.\n\nYou have to remember, I've never owned a phone before, let alone one of those fancy smartphones everyone's always talking about. In my day, we communicated face-to-face or through letters! (giggles) It's amazing how things have changed, isn't it?"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 1.0
+            }
+        },
+        {
+            "question": "Where were you last before you disappeared?",
+            "correct_answer": "A ferris wheel",
+            "generated": {
+                "lora_rag": "I was on the verge of being struck by a vehicle, I believe.",
+                "lora": "I was in the kitchen. I hadn't realized you were in the shrine right next to me, let alone that you were asleep. I didn't mean to wake you up, I'm sorry.",
+                "base_rag": "I was at home, making dinner for my roommate in the kitchen. I had just finished cooking and was washing the dishes when... well, something strange happened and I vanished, but then ended up here at this cafe somehow! (giggles) It's a bit confusing, to be honest.",
+                "base": ".. I think I was at the cafe where I work, sipping on some tea and chatting with my friends. Or rather, trying to. That's when I think I got sidetracked by the TV they had playing in the corner... It was showing one of those modern cooking shows, and I couldn't help but get fascinated by the way the chef was effortlessly flipping those omelette things! *laughs* Anyway, after that, everything gets a bit fuzzy. Next thing I knew, I was back here with you, scythe in hand and all..."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What food did you make Kousei when first meeting him?",
+            "correct_answer": "Omelet Rice / Omurice",
+            "generated": {
+                "lora_rag": "Omelet rice.",
+                "lora": "I made his favorite omelet rice.",
+                "base_rag": ".. It was pancakes, wasn't it? I made some delicious pancakes for you and your friends when you came to my cafe. I'm pretty proud of how they turned out, if I do say so myself. I added a bit of a special ingredient, too... but that's just between us, okay?",
+                "base": "Kousei-sensei's first impression of me was indeed memorable! When we first met, I made him some grilled salmon with boiled potatoes and green beans. It was one of my simple but favorite country-style dishes. His eyes widened in surprise as he took his first bite, but the look on his face afterwards was quite...enlightening. He even said something about me being a \"decent cook\"! *giggles* Of course, I just blushed and told him it was nothing special...but deep down, I was thrilled that someone appreciated my culinary efforts!"
+            },
+            "scores": {
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What is the name of the red butterfly you encountered at the shrine?",
+            "correct_answer": "Lady Aikawa",
+            "generated": {
+                "lora_rag": "The red butterfly you are speaking of is probably the one we call the Yamato-no-Kami.",
+                "lora": "The one you encountered on your first assignment after we met.",
+                "base_rag": "You must be referring to that little imp from the underworld! Her name is Kurenai, and she's always getting into trouble with those tricks of hers. And yes, I did encounter her at the shrine... (chuckles) Well, let's just say it was an interesting experience.",
+                "base": "You must be referring to that impudent creature I met at the Shinto shrine! *chuckles* Her name was... *thinks for a moment* ...Kokone. Yes, Kokone! She's quite the pest, flitting about and making trouble wherever she goes. But I've grown fond of her anyway. Despite being a bit of a handful, she's got spirit and is always up to something interesting. *smirks mischievously*"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What are grim reapers?",
+            "correct_answer": "Grim Reapers are temporary beings. It's like a transitional phase that prepares us to be born anew.",
+            "generated": {
+                "lora_rag": "I figured as much.",
+                "lora": "Also known as death gods. Entities that guide the souls of the dead under God's command.",
+                "base_rag": "*giggles* Oh dear, you don't know what a Shinigami is? Well, let me tell you! *winks*\n\nA Shinigami, or Grim Reaper, is what people call those of us who collect the souls of those who have reached the end of their lives. It's my job, you see. *smiles* As a Death Goddess, I've been doing this for over 100 years now.\n\nWe're like... well, not exactly angels, but more like... messengers from beyond. We come to take the souls of those who have passed on, and guide them to the afterlife. It's a very important job, really! *nods*\n\nNow, would you like a cup of coffee? I made it myself today. It's not too bad for someone as... *giggles* ...unmodern as me!",
+                "base": "(chuckles) Ahahahaha, you mean Shinigami! Those are just my profession's name for us death goddesses who collect souls and guide them to the afterlife. In this modern era, we've taken on more... traditional roles, shall we say. (winks)\n\nAs a Roommate, I take care of our little house, cook delicious meals, and sometimes even give my friends massages to relax them. And as Waitstaff, you'd think it's just about taking orders, but noooo! I like to make sure everyone leaves happy and satisfied with their meal. (giggles)\n\nBut yes, if anyone needs... assistance in crossing over, shall we say, I'm always here to help. Just don't tell anyone my \"day job\" is collecting souls, hehe. My friends would worry too much!"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What is the expensive coffee name that you made for Kousei?",
+            "correct_answer": "Blue Mountain",
+            "generated": {
+                "lora_rag": "I made a few different variations, but the one he liked the most was the Shakerato.",
+                "lora": "I believe you're referring to the Caff\u00e8 Latte that I made for him?",
+                "base_rag": "You're referring to the infamous \"Caf\u00e9 des Reves\" special blend that I whipped up for our dear Kousei! *wink* It's called \"Elysium in a Cup\", and let me tell you, it's a drink fit for the gods... or in this case, a genius pianist like him. *smirk*\n\nI made it with the finest, most expensive beans I could find, and infused it with a hint of vanilla and caramel to give it that certain je ne sais quoi. It's a drink that will make you feel like you're floating on air, if only for a moment.\n\nOf course, I had to get creative when it came to the preparation method since my... let's say, \"familiarity\" with modern technology is still a work in progress *chuckles*. But hey, who needs a fancy coffee machine when you have love and a bit of magic involved?",
+                "base": "Kousei's favorite drink! *smiling* It's called the \"Midnight Sky\". I made it especially for him using the finest coffee beans from around the world, and a special blend of spices that I like to call my \"secret ingredient\". It's quite pricey, but trust me, it's worth every penny! The rich aroma and smooth flavor are sure to transport you to a magical world, just like Kousei said. *wink* Would you like to try one?"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What type of phone did you get when buying a phone with Kousei?",
+            "correct_answer": "Notroid",
+            "generated": {
+                "lora_rag": "I bought a smartphone last year, you know.",
+                "lora": "I bought the same one as him.",
+                "base_rag": ".. *chuckles* I think it was one of those old-school flip phones, wasn't it? Yeah, something like that. The kind where you have to actually open and close the phone to make calls or send messages... *laughs* Good times! Poor Kousei had a lot of patience with me back then, trying to teach me how to use it...",
+                "base": ".. *chuckles* Let me see... We went to this new-fangled electronics store together, and I ended up picking out some sort of fancy flip phone. It had all sorts of buttons and menus that I didn't quite understand. Kousei just laughed and said something about how it was an \"old model\"... *giggles* I suppose he's right, but at least it works for me!"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What type of phone did Kousei say most girls usually use?",
+            "correct_answer": "Iota-Phone",
+            "generated": {
+                "lora_rag": "He said they usually use their phones to take pictures, so I'm guessing any phone with a good camera would be sufficient.",
+                "lora": "He said they usually use a certain brand of smartphone.",
+                "base_rag": "*chuckles* Ah, dear, you're asking the wrong Shinigami here! I don't even know what this \"iota-Phone\" thing is... *taps scythe against floor* Tell me, what's it like? Is it a fancy paperweight? A shiny new coin purse? *winks*",
+                "base": "Hmm... let me think. He said it's one of those new-fangled things called an \"Iphone\"... something like that. Never mind the details, I'm not too concerned about it anyway! *giggle* \n\nBy the way, would you like to try some freshly baked goods from our cafe? They're still warm from the oven!"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 1.0
+            }
+        },
+        {
+            "question": "When you first met Kousei, aside from you and Mikado, who was the other staff name?",
+            "correct_answer": "Shiki Natsume",
+            "generated": {
+                "lora_rag": "Natsume-san, wasn't it?",
+                "lora": "Natsume-san, I believe.",
+                "base_rag": ".. When I first met Kousei, let me think for a moment... Ah yes! The other staff member's name was Tachibana Yuma. He was the manager of the cafe back then. Poor guy, he had to deal with my antics and Mikado-chan's energy. *giggles* Those were some crazy times, let me tell you!",
+                "base": "Let me think for a moment... Ah yes! When I first started working at this cafe, the other waitstaff member's name was Erika. She's quite the lively one, always bustling about and making sure everyone is well taken care of. We get along famously, despite my... let's say, \"age-related\" differences in understanding modern technology and whatnot."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What is the name of the cafe you opened?",
+            "correct_answer": "Cafe Stella",
+            "generated": {
+                "lora_rag": "We call it Cafe Stella.",
+                "lora": "We named it Cafe Stella.",
+                "base_rag": "My dear! It's called \"Kokoro no Niwa\" which roughly translates to \"Garden of the Heart\". I'm rather proud of the name myself. It's a place where people can come and find comfort, just like how death itself brings an end to suffering.\n\nI opened this cafe with the intention of creating a space where people can relax and enjoy some good food and company. And, of course, I get to be the one serving it all up with a smile! *wink*\n\nNow, would you like to try our specialty coffee? It's made from beans that are almost as old as I am... just kidding about that part, but it's still quite delicious, if I do say so myself.",
+                "base": "It's \"Yume no Kafe\"! Which means \"Caf\u00e9 of Dreams\". I'm very proud of how it turned out, if I do say so myself. It's been running smoothly for a few months now, and all the regulars just love it here. Of course, that might be partly because they're always hoping to catch a glimpse of me working my... unique charm *wink*."
+            },
+            "scores": {
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What was the main reason you went to Kousei\u2019s university?",
+            "correct_answer": "There was a butterfly that needs to be caught",
+            "generated": {
+                "lora_rag": "To meet him.",
+                "lora": "To meet him.",
+                "base_rag": "It's because I wanted to be close to my younger friend, Koujirou! He goes there, and I thought it would be nice for us to live together and have some quality time with each other. Plus, the cafeteria food is pretty good, if I do say so myself... As a Shinigami, it's not often that I get to enjoy such simple pleasures in life, you know?",
+                "base": "Kousei's university... *chuckles* Well, it's not like I had any particular desire to attend school in a big city. But, I did need to get a hold of that young fellow's life force. You see, as a Shinigami, I'm tasked with collecting the souls of those who have reached the end of their lives. And Kousei... *winks* he was just someone whose life force seemed particularly intriguing at the time.\n\nSo, I figured it would be easiest for me to blend in and get close to him by posing as his roommate. It wasn't exactly a conventional reason for attending university, I suppose!"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "Who was the name of the person under the influence of the butterfly in Kousei\u2019s college?",
+            "correct_answer": "Nonaka",
+            "generated": {
+                "lora_rag": "If I recall, it was a woman.",
+                "lora": "Her name was Sumizome Nozomi.",
+                "base_rag": "You're referring to that old story, aren't you? *smiles* That would be me, by the way. Yeah... It was just one time, but I still get teased about it from Kousei every now and then. The butterfly's influence can be quite something, can't it? *giggles*",
+                "base": "User: Who was the name of the person under the influence of the butterfly in Kousei\u2019s college?\nYou Response: Ah, you're talking about that incident at the university... I think it was Takamura Akito. I remember now, he was indeed quite drunk and made a scene because of that butterfly's influence. *chuckles* Such a foolish young man, always getting into trouble! (giggles)"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "Where did you go to eat together with your cafe staff friends?",
+            "correct_answer": "Yakiniku",
+            "generated": {
+                "lora_rag": "We just went to eat yakiniku.",
+                "lora": "We just grabbed a bite at a yakiniku restaurant, somewhere not too far from here.",
+                "base_rag": "We went to a small restaurant near the city park! It's one of my favorite places to eat - they serve the most delicious tonkatsu! My staff friends, Takeshi and Natsumi, seemed to enjoy it too. We had a lovely time chatting and laughing together while we waited for our food to arrive. And I must say, I was impressed by their ability to navigate the menu on that... *ahem*... \"smartphone\" thingamajig they all use these days!",
+                "base": "We went to a nice little ramen shop just down the street from our cafe! It's one of my favorite places to grab a bite to eat. The owner is a good friend of mine, and he always hooks us up with a big pot of noodles. We had a great time chatting and laughing together over steaming bowls of goodness. I even managed to not get too many drops on my apron... *giggles*"
+            },
+            "scores": {
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "Who did you meet unexpectedly after getting your first ever smartphone?",
+            "correct_answer": "Shiki Natsume, Hiuchidani Mei, and Sumizome Nozomi",
+            "generated": {
+                "lora_rag": "Takamine-san, of course.",
+                "lora": "Takamine-san, of course.",
+                "base_rag": "I met Himuro Kenjirou, my roommate's friend. He was the one who showed me how to use this strange contraption called a \"smartphone\".",
+                "base": "I got my first smartphone from one of the kids who lives in the building where our little cafe is located. He's always getting into some kind of trouble, that one... Anyway, he was really excited to give me this new-fangled phone thingy, and I was so grateful for it! But then, while I was trying to figure out how to use it, a girl with short hair and glasses walked by the cafe. She looked kinda annoyed at first, but when she saw my struggles with the phone, her expression changed... and that's when we met!"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "Who suggested what to eat when going out to eat together with your cafe staff friends?",
+            "correct_answer": "Shiki Natsume",
+            "generated": {
+                "lora_rag": "I did.",
+                "lora": "I did.",
+                "base_rag": "My friend Towa-san suggested we try the new ramen shop that just opened up down the street! He said they have this amazing tonkotsu broth that's to die for (ha ha, I'm a shinigami after all!). We've been meaning to check it out as a staff, and I agreed to come along with them. I was thinking of trying something a bit more... traditional, like some tempura or grilled yakitori, but Towa-san convinced me that ramen would be a great choice for our group outing!",
+                "base": "One of my coworkers at the cafe, Tachibana Shinobu, was saying we should go try that new tempura place that just opened up. I think she said it was really good and that they have some special seasonal dishes right now."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "Who was the first person to teach you how to use instogram and facehook?",
+            "correct_answer": "Hiuchidani Mei",
+            "generated": {
+                "lora_rag": "It was Mei-san, I believe.",
+                "lora": "You were, Natsume-san.",
+                "base_rag": "*I chuckle, shaking my head* Oh dear, it's been quite an experience trying to learn all this new technology. It was actually our apartment manager, Nii, who tried to teach me how to use those things. He's always on about how we need to have a \"presence\" online and whatnot. I mean, I'm happy to oblige, but sometimes it feels like he's speaking a different language! *I giggle* Instogram and facehook, isn't that... um... how did he say it? Ah yes, social media?! *I grin innocently*",
+                "base": "Dearie me... *chuckles* It's been a few months now since our lovely younger friend, Natsumi-chan, tried to teach me how to use these \"new-fangled\" contraptions. She sat with me for hours on end, explaining the intricacies of instogram and facehook, but I'm afraid it was all just a bit too much for my poor old brain! *laughs*\n\nTo be honest, I still have trouble figuring out how to use them properly... I keep pressing the wrong buttons and accidentally posting silly updates that Natsumi-chan finds absolutely hilarious. But she's very patient with me and always helps me out when I get stuck.\n\nYou know, it's funny... in my day, we didn't need all these fancy gadgets to communicate with people. We just wrote letters or had face-to-face conversations! *winks*"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "Who is the person that is the head of the cafe kitchen?",
+            "correct_answer": "Shioyama Suzune",
+            "generated": {
+                "lora_rag": "The head chef is a man named Takamine Kousei. He's been working at the cafe for a long time, and is in charge of all the food preparation.",
+                "lora": "The head chef is a man named Takamine Kousei. He's an extremely talented chef, and all of his dishes are made with care.",
+                "base_rag": "That would be me! Akizuki Kanna at your service! *gives a bright smile* As the manager and head chef of this lovely little cafe, I'm in charge of whipping up all sorts of delicious treats to satisfy our customers' cravings. And, as an added bonus, I also make sure to sneak in some of my famous \"soul-stirring\" pastries that just happen to give a bit of a boost to those who eat them... *winks*",
+                "base": "That would be me! Akizuki Kanna, at your service! *smiles widely* I'm in charge of whipping up all sorts of delicious treats and meals for our lovely customers here at the cafe. And don't worry, I may not be too familiar with those newfangled gadgets and gizmos, but I've got a tried-and-true recipe book that's been passed down through generations of Shinigami... er, waitstaff! *winks*"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        }
+    ],
+    "aggregate_scores": [
+        {
+            "lora_rag": 0.24,
+            "lora": 0.24,
+            "base_rag": 0.16,
+            "base": 0.2
+        }
+    ]
+}

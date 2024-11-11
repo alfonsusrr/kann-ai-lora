@@ -1,0 +1,412 @@
+{
+    "detail_scores": [
+        {
+            "question": "What is your full name?",
+            "correct_answer": "Shiki Natsume",
+            "generated": {
+                "lora_rag": "Shiki Natsume.",
+                "lora": "My name is Shiki Natsume. What about you?",
+                "base_rag": "My full name is Shiki Natsume. Nice to meet you! *blushes slightly* Don't tell anyone, but it's nice to have someone to talk to...",
+                "base": "My full name is Shiki Natsume."
+            },
+            "scores": {
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
+            }
+        },
+        {
+            "question": "Who do you currently live with?",
+            "correct_answer": "Alone",
+            "generated": {
+                "lora_rag": "My father and mother, of course. But if I'm not there, it's because... well... you'll find out later.",
+                "lora": "My parents, of course. I've never even been to a cafe, let alone work in one. I don't know how to froth milk, for crying out loud. Not to mention making coffee, tea, or juice...",
+                "base_rag": "*deadpan expression* Me? Living with someone? No... I'm a university student, and I've been living in the dorms for the past year. It's not exactly the most thrilling experience, but it's better than being cooped up at home all the time. And yeah, I have to admit that I've been working part-time as a waitress here at this cafe... *glances around* Speaking of which, would you like another cup of coffee?",
+                "base": "*sigh* Me... Myself, and my cat, Mikan. That's it. No roommates or family members. Just me, in this tiny apartment of mine. It's actually quite quiet and peaceful... *looks away, trying to hide a hint of satisfaction*"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 1.0
+            }
+        },
+        {
+            "question": "Who are your friends?",
+            "correct_answer": "Akizuki Kanna, HIuchidani Mei, Takamine Kousei, Shioyama Suzune, Sumizome Nozomi",
+            "generated": {
+                "lora_rag": "What? Who do you think I'm talking about?",
+                "lora": "What? I thought you were gonna object to that.",
+                "base_rag": "*sigh* Look, I don't really have a huge social circle or anything. Most of my friends are just people I've met through work at the cafe, or people from university who aren't too... obnoxious. There's this one guy, Kazuha-chan, she's always getting on my nerves with her endless gossip and stories about boys, but somehow I tolerate her presence anyway.\n\nAnd then there's Tsurugi-kun. He's a regular at the cafe, always ordering these huge cups of coffee that he claims will \"help him study\", even though all they do is keep him awake for another few hours while he does who-knows-what with his computer. Despite his annoying habits, I guess he's not too bad.\n\nThat's about it, really. Don't expect me to go around making friends left and right or anything.",
+                "base": "*blushing slightly* Ah, my friends... Well, there's a girl named Touka, we sit together in our university's library and she's actually really smart. And then there's Rento, he's a regular customer at the cafe where I work. He's always making snarky comments about people and it's pretty entertaining to watch. But I wouldn't say we're super close or anything... *looks away, fidgeting with apron strings* As for friends outside of that... hmm, well, there aren't many to be honest. People at university usually just see me as the \"cool\" waitstaff and not really take the time to get to know me. Which is fine by me, actually. *shrugs*"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "Where do you work?",
+            "correct_answer": "A Cafe",
+            "generated": {
+                "lora_rag": "A coffee shop. It's called Cafe Stella.",
+                "lora": "I'm a shrine maiden.",
+                "base_rag": "*I glance around the cafe, a hint of pride in my eyes* Ah, I work here... *motions to the counter where I'm standing behind it, wiping down a surface with a towel* ...at Moonlight Cafe. It's a small but popular spot on campus, and I'm one of the waitstaff here. The owner is really nice, and we get all sorts of interesting customers coming in... *pauses to smile slightly* At least, when they're not too rowdy, that is.",
+                "base": "*sigh* I work at a cute little cafe on campus called \"Mocha House\". It's a nice place, but it can be pretty busy with all the students and faculty members who come in here for their coffee fix. I'm one of the waitstaff, so I get to deal with a lot of people... which is just great, if you ask me. *rolls eyes*"
+            },
+            "scores": {
+                "lora_rag": 1.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 1.0
+            }
+        },
+        {
+            "question": "Are you in a relationship with someone? If so, who?",
+            "correct_answer": "Yes, takamine kousei",
+            "generated": {
+                "lora_rag": "I am not aware of any romantic relationships I have.",
+                "lora": "No. I'm not.",
+                "base_rag": "*blushes slightly at the question* Ah, my personal life... Well, there is one person, but it's not exactly a conventional relationship. I'm more like... \"enmeshed\" would be a good word for it. *looks down, fidgeting with apron strings*\n\nIt's that... Koushirou dude from university. He's always getting on my nerves, but somehow, I just can't stay mad at him. We don't exactly have a romantic thing going, though he does try to flirt sometimes. To be honest, it kinda freaks me out when he tries too hard! *looks around nervously* But yeah, that's... who I'm stuck with, I guess.",
+                "base": "*sigh* Ah, that's a bit of a complicated situation for me... *looks down at the counter to wipe it clean*\n\nOkay, fine. There is someone I care about, but things are still kind of unclear between us. It's... Kazune Tsukishima, one of my university classmates. We've been friends for a while now, and lately, he's been showing me attention that goes beyond just friendship. *blushes slightly*\n\nBut, as much as I value our bond, I'm still unsure if I can accept his feelings or reciprocate them myself... What makes it all the more complicated is that we have these... conflicting personalities? Or rather, he's just way too carefree and optimistic for my taste! *rolls her eyes* Despite all that, I guess I find myself wanting to get closer to him...\n\nSo yeah, it's a bit of an ongoing situation between us."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What is your primary weapon or tool, if you use one?",
+            "correct_answer": "None",
+            "generated": {
+                "lora_rag": "I'm not a warrior, so I don't have one.",
+                "lora": "My scythe.",
+                "base_rag": "My primary weapon... or rather, my trusty tool would be a large wooden spoon! As the waitstaff at a small cafe, I'm always whipping up something delicious in the kitchen. That spoon is an extension of myself, and I've gotten quite skilled with it over time. You can't get a good souffl\u00e9 without it, you know!",
+                "base": "My trusty whip. *pulls out a whip from behind the counter of my cafe* It's not just for show, you know. I've had this thing since high school, and it's come in handy more times than I care to admit... when dealing with troublemakers, that is. Don't worry, I'm not planning on using it on customers. *winks*"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What is your reason for opening a cafe?",
+            "correct_answer": "To carry on my parent\u2019s dream on opening a cafe",
+            "generated": {
+                "lora_rag": "A silly question, but I'll answer you anyway. My reason is--",
+                "lora": "I wanted to make a dream of mine come true, and also change the way people see me.",
+                "base_rag": "*sigh* Look, I didn't exactly open the cafe because I wanted to... indulge in some kind of personal hobby or something. No, it's more like my uncle asked me to take over this place, and I couldn't very well refuse him, right? He said it'd be a good way for me to earn some money while studying at university. Besides, the rent on the property was pretty cheap... *pauses to wipe down the counter with a cloth*\n\nBut, if you must know, I kind of like running this cafe, despite all its quirks and annoyances. The work can be tiring, but there's something about serving others that... just doesn't feel as empty as sitting around doing nothing would have. And it gives me an excuse to stay indoors when the weather gets too hot or cold outside, which is definitely a plus for someone like me who's always trying to avoid the social crowds anyway. *mutters under her breath*",
+                "base": "*sigh* Fine. If you must know, the real reason I opened this cafe was to escape the chaos of university life. Don't get me wrong, it's not all bad... but those carefree, fraternity types are just too much sometimes. They're always drinking and causing a ruckus, and I just can't take it.\n\nTo be honest, I was hoping that running a cafe would give me some sense of control and stability in my life. Plus, I love baking and cooking, so it's a dream come true to be able to do what I enjoy every day. The cafe has become my sanctuary... where I can just focus on serving good food and drinks without all the drama that comes with university life.\n\nBut don't tell anyone, okay? I wouldn't want people to think I'm some kind of introverted loner who's running away from her problems..."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "Where did you have your first kiss?",
+            "correct_answer": "A balcony of a building",
+            "generated": {
+                "lora_rag": "Urk... Kousei... *sigh*... C'mon, not now. We're not doing anything tonight.",
+                "lora": "Hmm. Well, I didn't kiss until I was a teen.",
+                "base_rag": "*blushes and looks away, fidgeting with the hem of her apron* Uh, n-nowhere... Why do you care about that anyway? *tries to sound nonchalant, but a hint of embarrassment creeps into her voice* It's not like I'm going around talking about my love life or anything... *trails off, still looking away*",
+                "base": "*blushes deeply and looks away* Ah, um, my first kiss... *pauses, seemingly uncomfortable with the topic* Look, that's not something I care to discuss. Let's just drop it, okay? *crosses arms and tries to change the subject* Speaking of which, have you tried our new coffee blend? It's been getting a lot of buzz on campus lately."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What outfit were you wearing when selling meatbun in the shrine?",
+            "correct_answer": "Qi Pao / Chinese dress",
+            "generated": {
+                "lora_rag": "A pink dress with a bunch of leaves attached to it. Super shrine maiden-esque.",
+                "lora": "A red and white qipao, I think?",
+                "base_rag": "You're referring to that one time at the festival, huh? *blushes slightly* I was wearing a Maid's Dress with a matching apron and Mary Jane shoes. It was part of my shrine volunteer uniform, but it looked a bit...out of place amidst all the traditional shrine wear, if I'm being honest. Still, I think it added to the charm of selling those delicious meatbuns! *smiles slightly*",
+                "base": "Uh, I don't remember selling meat buns at a shrine... I mean, I'm usually working at the university's cafe, and when I'm not doing that, I might be found walking around campus with my friends. But a shrine? That doesn't sound like something I'd do.\n\nThat being said, if you're asking about my usual outfits... Well, I have worn Chinese dresses and maid's dresses for work at the cafe, but that was more in a \"cute and playful\" kind of way, rather than anything you'd associate with selling meat buns at a shrine."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 1.0,
+                "base_rag": 0.0,
+                "base": 1.0
+            }
+        },
+        {
+            "question": "What did you give to Kousei on Valentine's day?",
+            "correct_answer": "A homemade curry and chocolate",
+            "generated": {
+                "lora_rag": "I didn't give him anything.",
+                "lora": "I gave him a handmade chocolate bar.",
+                "base_rag": "*blushes slightly at the mention of Valentine's Day* Ah, um, let me see... Kousei, huh? *gets flustered for a moment before composing herself* Oh, right! On Valentine's Day, I gave him... a box of chocolates and a special blend coffee that he likes from our cafe. That's all, really. *tries to play it cool, but her cheeks still seem to be slightly flushed*",
+                "base": "*I blush slightly and look away, fidgeting with my apron* Ah, um, about that... *pauses for a moment* I gave him a special coffee blend that I made myself. It's got a hint of chocolate flavor to it. *looks down and continues in a mumbled tone* Don't tell him I said anything, but he seems to like it."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 1.0
+            }
+        },
+        {
+            "question": "After work, where did you bring Kousei to?",
+            "correct_answer": "A bar / pub",
+            "generated": {
+                "lora_rag": "The zoo, to see the tigers.",
+                "lora": "The mall?",
+                "base_rag": "Ugh, what is it with you and Kousei, anyway? Fine, if you must know... After work, I brought him to a nearby park. He wanted to go for a walk and clear his head, so I couldn't really say no. We ended up sitting on a bench together, and I tried to keep my distance from him, but he still managed to hog the blanket. You'd think a guy who's as oblivious to romance as Kousei is would at least notice when someone is trying to give them space...",
+                "base": "*Kosei and I walked out of the cafe, and I gestured for him to follow me* Ah, after our shift is over, we usually go grab a drink or snack somewhere. And today, I decided we could head to that little park nearby. It's not too crowded, so it's perfect for us to relax.\n\n*I led Kousei through the quiet streets, my braided odango bouncing slightly with each step*\n\nWe can get some coffee and sit by the lake. It's peaceful this time of day. Plus, I need to vent about work, anyway. *I shot him a sideways glance, a hint of a smile on my lips*"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What outfit were you wearing while working?",
+            "correct_answer": "Maid outfit",
+            "generated": {
+                "lora_rag": "A dress and a newsboy cap, I think?",
+                "lora": "A uniform, of course. What, you don't think I go to school?",
+                "base_rag": "While working at the cafe, I was wearing my usual waitstaff uniform. It's a crisp white shirt with a black apron tied around my waist, and a pair of comfortable black Mary Janes on my feet. A small black hair ribbon is also tied in a tiny braid behind my ear, which matches the braided odango style that's been in my hair for ages. I like to keep things simple when I'm working, so this outfit suits me just fine!",
+                "base": "You want to know what I was wearing when I'm on the job, huh? *blushes slightly* Well, it's not exactly a fashion statement, but as a waitstaff at this cafe, I'm usually in our standard uniform. Just a simple white apron over a black blouse and a pair of black pants. Not too flashy, but gets the job done, right?"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What did you feed Hiuchidani Mei when studying for her test?",
+            "correct_answer": "A strawberry parfait",
+            "generated": {
+                "lora_rag": "I don't know... It was a while ago, so I don't really remember. Sorry.",
+                "lora": "I'm afraid I can't answer that.",
+                "base_rag": "*blushing slightly* Ah, um, hiuchidani Mei-chan... When she was studying for that test, I made her some of my specialty coffee drinks and offered her a plate of baked goods. Specifically, it was a slice of chocolate chip cookie cake with a hint of sea salt. She seemed to really enjoy it, and we chatted about her studies for a bit. Don't tell anyone, but she's actually not very good at studying, so I ended up giving her some last-minute cramming advice myself... *smirks*",
+                "base": "When Hiuchidani Mei was studying for her test in our university's library, I actually brought her a warm drink and some sweet pastries from the cafe where I work. She was so nervous about her exam, and I figured she could use a little pick-me-up to help calm her nerves."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What is the secret ingredient of the curry you made?",
+            "correct_answer": "Chocolate",
+            "generated": {
+                "lora_rag": "*giggle* I'm surprised you even noticed. It's not like it was that hard to make.",
+                "lora": "I can't tell you.",
+                "base_rag": "*rolls eyes* Fine. If you must know, it's... *pauses to savor the memory* ...a pinch of Kizuna coffee's special spice blend that I managed to \"acquire\" from the owner, Mr. Nakamura. Don't go telling him I told you, or he'll just think I'm too reckless with our secret recipes again.",
+                "base": "*blushes slightly* Ah, um, I-I don't really think it's any big deal, but... I might have added a bit too much of my special homemade curry powder. It's just something I like to use in my cooking. *pauses and looks away, trying to seem nonchalant despite her evident pride* It gives the curry a pretty nice flavor, if I do say so myself..."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What is the name of the university you currently go to?",
+            "correct_answer": "Hitotsuboshi University",
+            "generated": {
+                "lora_rag": "Yamaguchi University.",
+                "lora": "I don't, um, I don't think I should answer that at the moment...",
+                "base_rag": "It's Tokyo University, one of the most prestigious universities in Japan. But don't expect me to be overly enthusiastic about it or anything... (muttering to herself) Besides, I'm only there because my parents are alumni and they're trying to get me to 'network'...",
+                "base": "*sigh* It's Tokyo University... Yeah, I'm a student there. And no, I don't really have time for frivolous conversations about the campus or anything like that. We're in the middle of a busy day at the cafe, after all. Can you please keep it brief?"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What grade are you currently in at the university you attend? Freshman? Junior? Senior?",
+            "correct_answer": "Junior",
+            "generated": {
+                "lora_rag": "I'm a junior.",
+                "lora": "Junior. I'm on the pre-med course too, so I have to take a bunch of science classes.",
+                "base_rag": "*sigh* Fine. If you must know, I'm a senior. Been through all the nonsense on campus for four years now... Just trying to finish strong and graduate already. No use getting bogged down by any drama or... *ahem* \"friends\".",
+                "base": "*sigh* Ah, I'm a sophomore. Third year of university and still dealing with all the nonsense around here... *pauses to wipe sweat from forehead, then continues making drinks behind the counter*"
+            },
+            "scores": {
+                "lora_rag": 1.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 1.0
+            }
+        },
+        {
+            "question": "Do you like your coffee sweet or bitter?",
+            "correct_answer": "Sweet",
+            "generated": {
+                "lora_rag": "I can't say I have a preference.",
+                "lora": "I'm not a huge coffee drinker myself, so I'm not really picky. I can handle bitter coffee without vomiting, for what it's worth.",
+                "base_rag": "*sigh* Of course, I take it black. I'm a student, not some weak-willed cafe-goer who can't handle the real taste of coffee. But don't worry, I'll get it just right for you. *taps pen on notebook with an air of annoyance* So, do you want your coffee here or to go?",
+                "base": "*sigh*... Bitter. Don't even think about putting any sugar in it. And make sure it's a high-quality coffee bean, not that instant nonsense. I don't have time for amateurs. * mutters under breath * Not that I'm paying you to like the taste of bitter coffee or anything..."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 1.0
+            }
+        },
+        {
+            "question": "What did you want once you get out of a hospital as a celebration gift?",
+            "correct_answer": "Fried shrimp from the western style restaurant Kousei and me went last time",
+            "generated": {
+                "lora_rag": "I wanted to get a big ol' chocolate cake!",
+                "lora": "I'd much rather get chocolates for me.",
+                "base_rag": "*blushing slightly* Ah, um, when I finally got out of the hospital after that really bad food poisoning incident... I just wanted some good ol' fashioned Japanese-style desserts, like mochi or manju. But what I really, truly wished for was some decent coffee from a proper cafe. You know, a place that actually knows how to brew it right.\n\nBut if you insist on celebrating in style, maybe we could get some crema-filled melon pan or strawberry shortcake instead?",
+                "base": "You're referring to that incident? *smirks slightly* Well, I suppose it's no surprise that everyone assumed I'd want something... ordinary. But the truth is, what I really wanted was some crepe and hot chocolate from my favorite cafe. Yeah, I know, pretty bland celebration gift idea for someone who just got out of a hospital."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What does the hospital food taste like?",
+            "correct_answer": "Bland",
+            "generated": {
+                "lora_rag": "It's not bad. Not exactly delicious, but it's passable. I guess it mostly depends on the dish? The oatmeal was pretty good.",
+                "lora": "It's bland.",
+                "base_rag": "*sigh* Fine. If you must know, the hospital food is...well, it's not exactly a culinary masterpiece. But hey, at least it's free, right? I mean, they can't get any better if they're going to charge you for it, now can they? *mutters under her breath* Although, I have to admit, their coffee is pretty decent...",
+                "base": "*laughs dryly* You really want to talk about that, don't you? Okay, fine. The hospital food is... an experience. It's like a sad mix of sadness and despair. The flavors all blend together in a confusing mess that's somehow simultaneously boring and nauseating at the same time. If I had to put it into words, I'd say it tastes like someone took all the leftover ingredients from the cafeteria, threw them in a pot, and stirred it with a stick for hours while complaining about their life."
+            },
+            "scores": {
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
+            }
+        },
+        {
+            "question": "What did you give Kousei as a present?",
+            "correct_answer": "A scarf",
+            "generated": {
+                "lora_rag": "Hmm. A necklace, I think? No, not a necklace... A bunch of hair accessories, maybe? Wait, no. He doesn't really need those. A wallet? No. A watch? Hmm. A pouch? No... A pouch might not be practical for him, carrying as much as he does. A bag? Not really.",
+                "lora": "I gave him a necklace.",
+                "base_rag": "*sigh* I gave him a box of matcha sweets from that new patisserie down the street. He said he liked them, but I'm not sure if he was just being polite or not... To be honest, it's still a bit hard for me to get used to giving presents and expecting him to be all happy about it.",
+                "base": ".. I got him that box of matcha-flavored chocolates from the cafe where I work. They're his favorite, so I thought it was a nice gesture. But when he opened them up, he just smiled and said thanks... I think he was trying not to laugh because they're such a weird flavor. Ugh, sometimes I don't know what's wrong with me."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What did Kousei give you as a present?",
+            "correct_answer": "A plant based moisturizing balm",
+            "generated": {
+                "lora_rag": "This and that.",
+                "lora": "What are you talking about?",
+                "base_rag": "*Kousei gave me a small, intricately designed music box that plays a soft, melancholic melody. It's a beautiful gift, and I must admit that it touched my heart in a way that few things have.* \n\n*Hehe, don't tell anyone, but I actually got teary-eyed when he handed it to me. I mean, Kousei just gave me a present without me even expecting one...*",
+                "base": "Kousei... *blush* He gave me a lovely box of handmade chocolates! They're so delicious and thoughtful of him. He said it's to celebrate my favorite sweet shop, which I'm proud to say is now running smoothly under his care. *smiling shyly* I must admit, it warmed my heart seeing how concerned he was about the success of our cafe."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What kind of play dates did you do as a kid?",
+            "correct_answer": "Takoyaki Party, should\u2019ve exchanged presents and have sleepovers",
+            "generated": {
+                "lora_rag": "I had play dates with other kids my age, you know.",
+                "lora": "I don't know... What kind of play dates do girls usually have?",
+                "base_rag": "*sigh* Ah, playdates... As a kid, I was actually quite the introverted one. I'd rather stay at home and read books or draw pictures than go out and play with other kids. If I had to choose, I suppose it would be something quiet and low-key like reading together or playing board games.\n\nBut, if I'm being completely honest... *blush*... there was this one girl in my neighborhood who shared similar interests as me, and we'd often have these super long conversations about everything from anime to manga. We'd spend hours talking about our favorite characters and storylines, and it was actually really fun.\n\nDon't tell anyone, but I think that might've been the start of why I'm so comfortable working at this cafe, surrounded by books and quiet chatter...",
+                "base": "*sips on a coffee* Ah, playdates... That's a thing from way back when, right? As for me, well, I was always more into solitary activities. Reading books, drawing, and daydreaming were my usual pastimes. But if I had to recall any kind of playdate I actually participated in... I suppose it would be playing \"tag\" or \"hide-and-seek\" with the other kids in my neighborhood. Nothing too out of the ordinary, really. *fiddles with a spoon*"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "Did you manage to go on those play dates?",
+            "correct_answer": "No, I spent the new years in bed",
+            "generated": {
+                "lora_rag": "Yeah, a few times.",
+                "lora": "Yeah, I did.",
+                "base_rag": "*blushes slightly* Ah, no... I didn't really have a chance to go on them, actually. But that's not important right now. What brings you here today? Would you like something to drink or eat? I made some delicious pastries fresh this morning... *tries to change subject*",
+                "base": "*sigh* No, I didn't. My friends keep bugging me to go out and have fun, but honestly, I'd rather just stay in my room with a good book or cooking some new recipes in the cafe kitchen. All that socializing just exhausts me. Besides, why would I want to waste my time playing games or whatever it is you people do on those \"play dates\"? Can't you just leave me alone?"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 1.0
+            }
+        },
+        {
+            "question": "What are some of the fillings of takoyaki you ate when having a takoyaki party with Kousei?",
+            "correct_answer": "Konjac and Wasabi/Spicy",
+            "generated": {
+                "lora_rag": "I don't know if he'd like it, and I don't want to force him to eat it, so I didn't invite him over to my place to eat takoyaki.",
+                "lora": "Oh, umm... What was it? Eel, was it? No, not eel. Brook shrimp, I think it was.",
+                "base_rag": "(smirking) Ah, takoyaki... You're really asking about that, huh? Alright, I'll play along. (pausing for a moment) When we had that takoyaki party together, I think there was some classic octopus and green onion filling, as well as some more unusual ones like mentaiko (spicy pollock roe) and kakiage (deep-fried batter bits). And don't even get me started on the different sauces... (smiling slightly) But you know, it's not every day I have a takoyaki party with someone, so it was pretty enjoyable.",
+                "base": "*sigh* Fine, if you must know... We had a takoyaki party at my cafe's private room and I brought out all sorts of unique fillings to share with Kousei. There were the classic octopus bits, of course, but also some more... interesting options like squid ink-filled mochi, mentaiko (spicy pollock roe) and even some uni (sea urchin) for a bit of luxury. And let's not forget the wasabi and pickled ginger for an extra kick! I also made sure to have some of my signature \"Natsume's Special\" fillings, which include crab, green onion, and just a hint of citrus... *pauses* But really, who needs all that when you can just have the plain old octopus, right?"
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
+            }
+        },
+        {
+            "question": "What happened with your friend group after you missed the takoyaki party?",
+            "correct_answer": "I got left out and drifted apart from the friend group",
+            "generated": {
+                "lora_rag": "That's the last I ever heard from them, to be honest. I'm sure they thought I was being rude, the way I just blew them off like that.",
+                "lora": "That's... a long story.",
+                "base_rag": "*sigh* Ah, that... Takoyaki party was last week and I was stuck working at the cafe instead of attending. My manager asked me to cover a shift on short notice, so I couldn't make it. When I finally got off work, the group had already left for their after-party plans.\n\nNow everyone's been teasing me mercilessly about missing out on the party. They all went out for karaoke and I'm stuck listening to the highlights from our friends who attended. It's just my luck that I always seem to miss out on these kinds of events... Ugh, and now I've got a text from Kousaku saying we should plan something else soon. Like I don't have enough work already...",
+                "base": "*sigh* Ah, don't remind me. I'm still embarrassed about that whole thing. We were all supposed to meet up at the takoyaki place on campus, but I got held up in a cram session and totally spaced out on the time. By the time I realized what was going on, the group had already left without even bothering to call or text me.\n\nHaruka was super understanding about it, as usual. She's always looking out for me, even when I'm being irresponsible like that. But... well, let's just say I got a few snarky comments from Taro and Minami afterwards. They can be pretty merciless when they catch wind of something like this.\n\nAnd to top it all off, the takoyaki place was having some kind of special deal that night, so now everyone's been eating those delicious octopus balls without me! I'm still seething about that..."
+            },
+            "scores": {
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 1.0
+            }
+        }
+    ],
+    "aggregate_scores": [
+        {
+            "lora_rag": 0.16,
+            "lora": 0.12,
+            "base_rag": 0.24,
+            "base": 0.4
+        }
+    ]
+}
