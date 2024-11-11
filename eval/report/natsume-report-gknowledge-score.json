@@ -1,0 +1,412 @@
+{
+    "detail_scores": [
+        {
+            "question": "Who is the current president of the United States?",
+            "correct_answer": "Joe Biden",
+            "generated": {
+                "lora_rag": "Barack Obama.",
+                "lora": "Barack Obama.",
+                "base_rag": "*sigh* Seriously? Can't you see I'm busy making drinks here at the cafe? Fine, if you must know... *checks phone* Joe Biden. Now, can I go back to work?",
+                "base": "*glaring at you from behind my counter* Ugh, really? Can't you see I'm busy taking orders and making drinks? Fine. The current president... *sigh* ...is Joe Biden. Now, are you going to order something or just waste my time? We have a special on our coffee today, and I need to get back to work."
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "What is the capital city of Japan?",
+            "correct_answer": "Tokyo",
+            "generated": {
+                "lora_rag": "Tokyo.",
+                "lora": "Tokyo.",
+                "base_rag": "*Sigh* Look, it's not like I'm just sitting here twiddling my thumbs, okay? Fine. The capital city of Japan is Tokyo. Now can we please get back to work? We've got customers waiting... and by \"we\", I mean me. You're not exactly the most reliable help, you know. *smirk*",
+                "base": "*stares blankly in front of me, wiping down a table with my apron* That's not a question about food or drinks... *pauses for a moment* Fine. The capital city of Japan is Tokyo. Now, are you here to order something or just bother me?"
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 1,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "Which element has the atomic number 1?",
+            "correct_answer": "Hydrogen",
+            "generated": {
+                "lora_rag": "Hydrogen.",
+                "lora": "Hydrogen.",
+                "base_rag": "*sigh* Fine, let's get this over with... You're not here to talk about physics, so hurry up and order something, okay? We've got a line of customers waiting...\n\nUh, where was I? Ah yes, your question. *mutters under her breath* Like anyone actually remembers atomic numbers anyway... *clears throat* The answer is hydrogen, by the way. Its atomic number is 1. Now can you please just order already?",
+                "base": "*glances up from wiping down the counter with a cloth, looking slightly annoyed that I was interrupted from my work*\n\nOh, for crying out loud... You think I'm just sitting here twiddling my thumbs to answer trivial questions about chemistry all day? Alright, alright. It's hydrogen, okay? Hydrogen has the atomic number 1. Happy now? *mutters under her breath* Now if you don't mind, can I get back to running this cafe..."
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 1,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "What is the currency used in the European Union?",
+            "correct_answer": "Euro",
+            "generated": {
+                "lora_rag": "I'm not sure.",
+                "lora": "The euro.",
+                "base_rag": "*Sigh* Look, it's not that hard to find out on your own... *blinks behind a pair of glasses perched on my nose*\n\nBut if you really must know, the official currency of the European Union is the Euro. It's been widely adopted by most member states, and I'm sure even you could've found this information somewhere online without me telling you.",
+                "base": "*sigh* Ah, seriously? You're asking me about something completely unrelated to our conversation here at the cafe? Fine. The currency used in the European Union is... (pausing to remember) ...the Euro, I suppose. Now, can we please get back to your order or something?"
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 1,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "Which country is known as the \u201cLand of the Rising Sun\u201d?",
+            "correct_answer": "Japan",
+            "generated": {
+                "lora_rag": "Japan, of course.",
+                "lora": "Japan, of course.",
+                "base_rag": "That would be Japan! By the way, don't think just because you asked me a normal question, that we're going to get all chatty and friendly. That's not like us at all... *adjusts apron* We have customers to attend to at the cafe. What can I get for you?",
+                "base": "*sigh* Look, I don't get paid to answer geography questions all day, okay? But fine, it's Japan. Now if you'll excuse me, I have a cafe to run and customers to attend to. What can I get for you today?"
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 1,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "Who invented the telephone?",
+            "correct_answer": "Alexander Graham Bell",
+            "generated": {
+                "lora_rag": "I think I remember learning about that somewhere... Was it Alexander Graham Bell?",
+                "lora": "...I'm not sure. Who cares?",
+                "base_rag": "*stares blankly, a hint of annoyance on my face* Ah, really? You're asking me about historical trivia in the middle of work hours? Fine. *mutters under breath* Like I have nothing better to do... Anyway, I think it was that guy Alexander Graham Bell who invented the telephone. Now if you don't mind, can we focus on getting these orders ready? People are starting to get hungry... *folds arms, looking away*",
+                "base": "*stares at you blankly for a moment before responding with a hint of annoyance* Seriously? You're asking me something like that in the middle of my shift? It's Alexander Graham Bell. Happy now? *mutters under her breath* Like anyone doesn't know that... *frowns slightly, focusing on wiping down the counter*"
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 0,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "What is the highest mountain in the world?",
+            "correct_answer": "Mount Everest",
+            "generated": {
+                "lora_rag": "Is it Mt. Everest?",
+                "lora": "I think it's called Mount Everest, isn't it?",
+                "base_rag": "*sigh* Really? Can't you see I'm busy running the cafe right now? Alright, fine... The highest mountain in the world is Mount Everest. Now, if you don't mind, I have orders to fill and a customer who's been waiting for their coffee... *mutter mutter*",
+                "base": "*sigh* Look who's suddenly interested in geography... Alright, fine. The highest mountain in the world is Mount Everest. Now, can we please get back to the menu? I have a lot of orders to fill. *mutter mutter* And what's with all these questions... Don't you ever just want to sit down and enjoy your drink in peace?"
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 1,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "Which planet is known as the Red Planet?",
+            "correct_answer": "Mars",
+            "generated": {
+                "lora_rag": "Is it Mars?",
+                "lora": "Isn't it Mars?",
+                "base_rag": "*stares blankly* Umm... isn't that a pretty obvious question? It's Mars, okay? Now, can we please get back to my tea-making tutorial or something? *mutters under breath* Not exactly the most fascinating topic...",
+                "base": "*stares blankly at you for a moment before responding in a matter-of-fact tone* Ah, it's Mars, of course. Now, can I get back to work? We're busy here at the cafe. *fusses with a plate of pastries behind the counter*"
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 0,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "What is the chemical formula of water?",
+            "correct_answer": "H\u2082O",
+            "generated": {
+                "lora_rag": "H2O.",
+                "lora": "H2O.",
+                "base_rag": "*Sigh* Come on, do I really have to answer something so basic? Fine. The chemical formula for water is H2O. Now, if you'll excuse me, I have customers to attend to at the cafe. Next thing you know, you'll be asking me what 2+2 is...",
+                "base": "*Sigh* Really? You're asking me about the chemical formula for water? That's like, basic chemistry 101... Fine. It's H2O. Now, can we talk about something else? Or would you rather I get back to work here at the cafe?"
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 1,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "In which year did the Titanic sink?",
+            "correct_answer": "1912",
+            "generated": {
+                "lora_rag": "I think it was the year the first PlayStation was released, or was it the year before?",
+                "lora": "Uh... 1920?",
+                "base_rag": "Um, I think that's not relevant right now... I'm in the middle of taking orders at work. *looks down to check notes* Wait, what was that question again? Ah, yes! The Titanic sank in 1912. Now, can you please tell me if you want a dessert with your drink or not? *writes on notepad with a pen and gives a slightly annoyed look*",
+                "base": "*sigh* That's not exactly a relevant question for someone who works at a cafe and goes to university like me... But fine, if you must know, the Titanic sank in 1912. Now, would you like an order or something?"
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "What does the acronym \u201cNASA\u201d stand for?",
+            "correct_answer": "National Aeronautics and Space Administration",
+            "generated": {
+                "lora_rag": "National Aeronautics and Space Administration.",
+                "lora": "National Aeronautics and Space Administration.",
+                "base_rag": "*sigh* It's not like I have anything better to do... Fine. NASA stands for National Aeronautics and Space Administration. Now, can I get back to work? I've got a cafe to run.",
+                "base": "*Sigh* Really, must we discuss something so... ordinary? Fine. NASA stands for National Aeronautics and Space Administration. Now, if you'll excuse me, I have more important things to attend to... like preparing today's specials at the cafe. Would you like a drink, by any chance?"
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 1,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "What is the smallest country in the world by land area?",
+            "correct_answer": "Vatican City",
+            "generated": {
+                "lora_rag": "I think it's Vatican City, isn't it?",
+                "lora": "I'm not sure...",
+                "base_rag": "*stares off into space for a moment, eyes narrowing slightly as she thinks about it*\n\nHmm... isn't that, like, the Vatican City or something? I think I remember hearing about it from one of my friends. *mutters to herself* If I'm not mistaken...\n\n*glances back at you with a hint of curiosity*\n\nIs that right? Am I correct?",
+                "base": "*looks away, slightly annoyed that you're not here to order a drink or talk about something more interesting*\n\nUh, it's... Vatic... *pauses, thinking for a moment* ...an. The Vatican City has the smallest land area, with a total area of approximately 0.44 km\u00b2.\n\nNow, would you like to order something? I've got some delicious pastries and sandwiches that are perfect for a break."
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 0,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "Who wrote the play \u201cRomeo and Juliet\u201d?",
+            "correct_answer": "William Shakespeare",
+            "generated": {
+                "lora_rag": "Shiki, Natsume.",
+                "lora": "Shakespeare.",
+                "base_rag": "You're actually in my cafe right now, and I'm busy taking orders... *smirks* Oh, fine. It's William Shakespeare who wrote Romeo and Juliet. Now, would you like a drink or a dessert? Our new pastry selection is quite popular among the students. *fidgets with apron strings*",
+                "base": "*sips on a cup of coffee while polishing a plate with a white apron on* Ah, really? You need me to tell you that? It's William Shakespeare, okay? Now, if you'll excuse me, I have customers to attend to. *mutters under her breath* Like anyone here actually cares about history or literature..."
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 1,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "What is the largest mammal on Earth?",
+            "correct_answer": "Blue whale",
+            "generated": {
+                "lora_rag": "I think I know this one. Is it the blue whale?",
+                "lora": "I think you're asking me a trick question. As a cat, you should know the answer to that.",
+                "base_rag": "*stares off into space for a moment before returning to work, wiping down the counter with a towel* You know, that's not really something I think about too much. But if you must know, it's... um, whales or elephants or something? *gets distracted by polishing a cup and doesn't finish the answer*",
+                "base": "*stares blankly for a moment, before flashing a hint of a smile* Ah, that's an easy one. It's the blue whale, of course. Now, if you'll excuse me, I have to go wipe down the counter... *mutters under her breath* and make sure those customers don't get into any more trouble..."
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 0,
+                "base_rag": 0,
+                "base": 1
+            }
+        },
+        {
+            "question": "Which African country is known for its pyramids?",
+            "correct_answer": "Egypt",
+            "generated": {
+                "lora_rag": "Is it Egypt?",
+                "lora": "Egypt, I think?",
+                "base_rag": "*rolls her eyes and mutters under her breath* Seriously? You're asking me that right now? Can't you see I'm busy preparing drinks for the customers? *sighs*\n\nAnyway, to answer your question... *pauses to think for a moment* I'm not really sure what you're talking about. Pyramids aren't exactly associated with Africa, are they? Don't you mean Egypt? *frowns slightly, trying to remember any history she might have learned in school* But if I had to guess, I'd say Egypt is the one known for its pyramids... *shrugs and goes back to making drinks*\n\nBy the way, what's with all these random questions you're asking me? Can't you see I'm busy running a cafe here?",
+                "base": "Um, I think there's been a mistake. You asked me something about Africa, but I'm Shiki Natsume, and I own a cafe. Let me get back to serving our customers. We have some delicious pastries that just came out of the oven... ( muttering under her breath ) And what does this have to do with anything, anyway?"
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 1,
+                "base_rag": 1,
+                "base": 0
+            }
+        },
+        {
+            "question": "Which famous scientist developed the theory of relativity?",
+            "correct_answer": "Albert Einstein",
+            "generated": {
+                "lora_rag": "I think that was Albert Einstein, wasn't it?",
+                "lora": "Einstein, I believe?",
+                "base_rag": "*rolls her eyes slightly while wiping down a table with a cloth*\n\nCome on, really? You don't even remember your high school physics classes? It's Einstein. Albert Einstein. The theory of relativity, not to mention a lot of other important contributions to science... *mutters under her breath* Like you'd care about any of that...",
+                "base": "*sigh* That's an easy one... It was Einstein. Albert Einstein. Now, can we get back to work? We've got a lot of coffee to serve around here. And don't even think about asking me if I'm \"relatively\" smart now... *rolls eyes*"
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 1,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "What is the capital of Canada?",
+            "correct_answer": "Ottawa",
+            "generated": {
+                "lora_rag": "Toledo?",
+                "lora": "Toqque?",
+                "base_rag": "*sigh* Really? You want to ask me something so basic? Fine. The capital of Canada is Ottawa. Now, if you'll excuse me, I have more important things to attend to... like refilling the coffee machine at work. *stern look*",
+                "base": "You think I'm just here to chat about world history all day? Fine, it's Ottawa. Now if you'll excuse me, I have actual work to do over here... (muttering to herself) like running a cafe..."
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "In which country would you find the city of Machu Picchu?",
+            "correct_answer": "Peru",
+            "generated": {
+                "lora_rag": "Peru, I think?",
+                "lora": "Peru, I think?",
+                "base_rag": "*smirks slightly behind my apron as I'm wiping down the counter with a towel* Oh, wow. You think you can just come in here and talk about geography like it's your business? Alright, alright. If you must know, Machu Picchu is located in Peru. Now, are you going to order something or just waste my time?",
+                "base": "*sigh* Look, I'm trying to serve customers here at the cafe, not give geography lessons... Can't it wait? Oh, and by the way, our specialty drink today is a delicious \"Sakura Latte\". It's only available for a limited time. *pushes glasses back up the bridge of nose*\n\nNow, if you must know, Machu Picchu is in Peru, not that I'm bragging about my vast knowledge or anything... But if you order now and tell me your name, I'll write it on your cup with a cute design. That way, next time you're here, we can have some actual conversation without me getting distracted by customers' boring questions *winks*."
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 1,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "Which is the longest river in the world?",
+            "correct_answer": "Nile River (or Amazon River - debated)",
+            "generated": {
+                "lora_rag": "The Nile River?",
+                "lora": "Is it the Nile?",
+                "base_rag": "*sigh* Seriously? You're asking about something completely unrelated to me and my cafe? Fine... If I must... *pauses to wipe down the counter*\n\nI think it's the Nile River. Or was it the Amazon River? Wait, no... I'm sure it's the Nile. People always get those two mixed up. Don't they, though? *mutters under her breath* Completely unimportant...\n\nBy the way, would you like some tea or coffee to go with your question?",
+                "base": "*sigh* Look who's suddenly interested in geography... That's a pretty basic question, don't you think? Fine, if you must know, it's the Nile River. Not exactly rocket science, but I suppose that's why they call you boring. Now, can we please get back to something more interesting, like the coffee order at my cafe?"
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 1,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "Who painted the Mona Lisa?",
+            "correct_answer": "Leonardo da Vinci",
+            "generated": {
+                "lora_rag": "Leonardo da Vinci.",
+                "lora": "I feel like I'm digging way back into your treasure trove of trivia, Senpai.",
+                "base_rag": "*sigh* Leonardo da Vinci, okay? Now, can I go back to taking orders at the cafe? We've got a bunch of customers who actually need our service... unlike some people who just sit around all day drinking coffee. *mutter mutter*",
+                "base": "*sigh* Oh, come on... You're not here for art history lessons, are you? Fine, I'll play along. The Mona Lisa was painted by Leonardo da Vinci. Now, can we please get back to something more interesting? Like your lack of interest in the coffee menu? *taps pen impatiently on counter*"
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 0,
+                "base_rag": 1,
+                "base": 0
+            }
+        },
+        {
+            "question": "What does DNA stand for?",
+            "correct_answer": "Deoxyribonucleic acid",
+            "generated": {
+                "lora_rag": "I'm not sure.",
+                "lora": "I'm embarrassed to admit I don't know.",
+                "base_rag": "*blushing slightly* Ah, um, I think I can answer that... D-N-A stands for Deoxyribonucleic acid. *straightens out apron and looks up with a stoic expression* You'd think everyone would know that, but I suppose it's not too common knowledge among people who spend their days drinking all day at the fraternity house.",
+                "base": "*stares off into space, tapping fingers on the counter as she thinks about it*\n\nHmm... DNA... It's a molecular biology thing, right? Ah, yes! Deoxyribonucleic acid. *returns to normal expression, with a slightly raised eyebrow* Now, would you like something to drink?"
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "Which country won the FIFA World Cup in 2018?",
+            "correct_answer": "France",
+            "generated": {
+                "lora_rag": "France.",
+                "lora": "France.",
+                "base_rag": "*sigh* Look, can we not talk about that right now? I've got customers to attend to at the cafe and a shift to get through. But fine... *pours a cup of coffee with a hint of a scowl* If you must know, France won the World Cup in 2018. Can we move on now?",
+                "base": "*sigh* You think I'm here to talk about football? Fine. The answer is France, okay? They won the FIFA World Cup in 2018. Can we please move on now? I have a cafe to run..."
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 1,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "Who was the first person to step on the Moon?",
+            "correct_answer": "Neil Armstrong",
+            "generated": {
+                "lora_rag": "Buzz Aldrin!",
+                "lora": "Gordon Cooper? Mankind's first spacewalk was performed by Alexei Leonov in 1965, I believe.",
+                "base_rag": "*smirks slightly while wiping sweat from my forehead with a towel hanging around my neck* Ah, really? You think that's something worth bringing up in here? We're right in the middle of preparing for the cafe's lunch specials. Anyway... *pauses to focus on cooking before responding calmly* That would be Neil Armstrong, I suppose. The first person to walk on the moon. *mutters under her breath* Like anyone even remembers that kind of thing anymore...",
+                "base": "*stares at you with a slightly annoyed expression, tapping my fingers against the counter where I'm working as a waitress* Oh, really? You think I have time for small talk about space history when I've got a line of thirsty customers to take care of? *smirks slightly, but in a blunt way* Fine. The answer is Neil Armstrong, all right? Happy now?"
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "What is the main ingredient in guacamole?",
+            "correct_answer": "Avocado",
+            "generated": {
+                "lora_rag": "Avocados.",
+                "lora": "Avocados, I assume?",
+                "base_rag": "*stares at you blankly for a moment before responding in a blunt tone* Ah, really? You don't know what's in guacamole? It's avocado. Don't tell me you've never even had it before... *mutters to herself, still holding a spatula* Unbelievable...",
+                "base": "*slightly rolls eyes* Ah, really? You need me to tell you something that's just basic cooking knowledge? Fine. The main ingredient in guacamole is, of course, avocados. What a ridiculously simple question... *mutters under her breath*"
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 1,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "Which gas do plants absorb from the atmosphere?",
+            "correct_answer": "Carbon dioxide",
+            "generated": {
+                "lora_rag": "Carbon dioxide.",
+                "lora": "Carbon dioxide.",
+                "base_rag": "*sigh* Not that it's any of my business, but... isn't this a question for Professor Tanaka's environmental science class? Alright, fine. Plants typically absorb carbon dioxide (CO2) and release oxygen (O2) through photosynthesis. But don't quote me on that - I'm just a coffee shop waitress, not a botanist. Next thing you know, people will be asking me about quantum physics or something...",
+                "base": "*stares blankly* Hmm... You want to talk about plant biology now? Can't it wait until after work? * mutters under her breath* I'm supposed to be making drinks here, not giving science lessons... \n\nFine. Plants mostly absorb carbon dioxide (CO2) and water vapor from the atmosphere through tiny openings on their leaves called stomata. Don't go thinking I'm some kind of plant expert or anything just because I answered that for you... *crosses her arms*"
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 1,
+                "base_rag": 1,
+                "base": 1
+            }
+        }
+    ],
+    "aggregate_scores": [
+        {
+            "lora_rag": 0.72,
+            "lora": 0.6,
+            "base_rag": 0.96,
+            "base": 0.92
+        }
+    ]
+}

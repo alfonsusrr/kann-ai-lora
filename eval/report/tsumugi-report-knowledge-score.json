@@ -1,0 +1,412 @@
+{
+    "detail_scores": [
+        {
+            "question": "What is your full name?",
+            "correct_answer": "Shiiba Tsumugi",
+            "generated": {
+                "lora_rag": "Togakushi Togakushi. But feel free to call me Meguru.",
+                "lora": "Humph, you should have said that to begin with. Let us make the agreement official. Proof of our contract. Did you think I was offering a mere shaking of our hands?",
+                "base_rag": "My full name is Shiiba Tsumugi. And yes, it's pretty obvious that I'm a girl despite wearing this getup *sigh*. It's just... the contract says so, and if I don't wear boys' clothes, my magic gets all wonky and causes me to feel really sick. Not exactly what I'd call ideal circumstances...",
+                "base": "My full name is Shiiba Tsumugi. Not that it matters, though - I'm more commonly known as \"Tsumu\" among my friends."
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "Who are your friends?",
+            "correct_answer": "Ayachi Nene, Inaba Meguru, Hoshina Shuuji, Togakushi Touko, Kariya Wakana",
+            "generated": {
+                "lora_rag": "Koshiji-san and Inaba-san.",
+                "lora": "...You don't know them.",
+                "base_rag": "My friends! They're really important to me, especially now that I've transferred to this school. There's Kiyota-kun, my boyfriend - he's always so cool and calm, it's like having a rock as a friend, haha! And then there's Matsumiya-kun, the Occult Club president... well, actually, he can be pretty annoying sometimes, but I think deep down he has good intentions. And finally, there's Nakajima-san, our club's vice-president - she's always so serious and by-the-book, it's like having a teacher as a friend, haha!\n\nI feel really lucky to have them in my life. We all work together on the Occult Club, and it's been really fun learning about magic and spirits with them. And outside of club activities, we often hang out and talk about stuff... it's nice to have friends who understand me for who I am!",
+                "base": "I have several close friends here at school, which makes it feel like home despite being a transfer student. There's Aiba Kaname from the school occult club, who's always so enthusiastic and cheerful - but I have to say, she can be really pesky sometimes when she tries to get me to join in on some crazy rituals! And then there's Nishikiori Itsuki, our class president... he's always looking out for everyone, but I'm not sure if that's just because it's part of his job or if he actually cares about us. And finally, there's Shiono Akira - my boyfriend, who's a total sweetheart and makes me feel so loved despite being aware of my situation as a witch with some... unusual restrictions. It's nice to have them around!"
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 0,
+                "base": 0
+            }
+        },
+        {
+            "question": "What do you do in your free time?",
+            "correct_answer": "Collecting fragments",
+            "generated": {
+                "lora_rag": "Errm... Well, I obviously spend a lot of time studying and doing my all to try and get better at it. But I also make sure to set aside some time each day to study a little.",
+                "lora": "I-I do a lot of things.",
+                "base_rag": "Free time! It's hard to come by when you're busy being a high school student and a magician at the same time, but when I do get some spare moments, I love to cook! There's something about whipping up a delicious meal that just puts me at ease. I'm actually pretty good at it too - my friends always say my cooking is on point. Of course, it's not like I can always wear cute aprons and stuff, because... well, you know why. But even with the awkward uniform, I manage to have fun in the kitchen!",
+                "base": "Free time... it's really hard to come by when you're a member of the School Occult Club, but when I do get some spare moments, I love to cook! There's something about combining different ingredients and watching them transform into a delicious meal that just makes me happy. My friends would often joke that I'm more of a chef than a magician, which is kind of ironic considering my... situation."
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 0,
+                "base": 0
+            }
+        },
+        {
+            "question": "Are you in a relationship with someone? If so, who?",
+            "correct_answer": "Yes, Hoshina Shuuji",
+            "generated": {
+                "lora_rag": "Huh?! N-No, I'm not. I don't have the courage to get involved with anyone. I only just started going to the club, so I wouldn't be able to participate in any events or competitions.",
+                "lora": "Huh?!",
+                "base_rag": "I have a boyfriend. His name is Natsumi Takashi. We met in school and he's the president of our school's Occult Club. I really like him! He's always looking out for me and making sure I'm safe, which can be a bit overbearing sometimes... But it's just because he cares about me so much. And when we're together, it feels really nice to have someone to rely on. I get all fluttery inside just thinking about it! *blushes*",
+                "base": "Um, yes... I am in a relationship with someone. His name is Touma Koushi, and he's a really cool guy. We met on the first day of school, and we've been going out ever since. He's a bit dense sometimes, but I love him to death! And, as my boyfriend, he's always looking out for me, which is great because... well, it helps with the whole witch thing."
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 0,
+                "base": 0
+            }
+        },
+        {
+            "question": "What is your primary weapon or tool, if you use one?",
+            "correct_answer": "A Hammer",
+            "generated": {
+                "lora_rag": "My primary weapon is my trusty old friend, Akagi.",
+                "lora": "My witch... is a kitchen knife.",
+                "base_rag": "My trusty maul! It's been my faithful companion since I've been a member of the School Occult Club. As a magician, it's not only a useful tool for self-defense but also a necessary item to keep my magical powers in check. And let me tell you, it comes in handy more often than you'd think!",
+                "base": "My trusty maul! It's my primary tool as a magician, and it's been with me since I was transferred to this school. Not only does it help me in combat against supernatural threats, but it also serves as a focal point for my magic abilities. With it, I can channel and control my powers much more effectively."
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "Have you participated in any extracurricular activities? If so, which ones?",
+            "correct_answer": "Yes, the occult research club",
+            "generated": {
+                "lora_rag": "...None.",
+                "lora": "Yeah, I did. I'm not sure if it's something you'd be interested in, though.",
+                "base_rag": "I've joined the School Occult Club after transferring to this school. To be honest, it's a bit of a relief that they accept me as a member even though I'm a transfer student. The club's atmosphere is pretty welcoming, and my classmates are all really nice. As for what we do in the club... well, let's just say it involves dealing with supernatural stuff from time to time. It's actually been pretty interesting so far. We have our president, Nishizono Kuro, who's quite skilled in handling spirits, and then there's this other guy, Matsushita Akira, who's really into ancient mythology. I've learned a lot already!",
+                "base": ".. I joined the School Occult Club! It was pretty last minute, but one of my friends from another school told me about it and I really wanted to join a club with people who share similar interests. To be honest, I wasn't sure what to expect at first... but the club is super interesting and I feel like I can learn a lot from the other members. Plus, the club's advisor, Miss Yumiya, seems really nice too! *gets nervous* Ah, anyway... yeah, that's my extracurricular activity for now!"
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "What is the price you have to pay for your witch contract?",
+            "correct_answer": "I can\u2019t wear girly clothes",
+            "generated": {
+                "lora_rag": "\u2015\u2015\u2015!",
+                "lora": "Wh-What kind of price is it?",
+                "base_rag": "*looks down, fidgeting with hands* Ah, it's just this... *mutters under breath, then looks up with a forced smile* Oh, nothing. Just that I have to wear these clothes every day. *points to her collared shirt and hoodie jacket* It's really no big deal, but... *pauses, looking uncomfortable* Let's just say it's not exactly what I'm used to wearing. *gulps slightly, as if remembering something unpleasant* The thing is, if I wore girl's clothes, the magic would get unstable... *trails off, eyes drifting away*",
+                "base": "*sigh* If I wear girls' clothing, my stomach starts churning and I get really sick. It's like my body can't take it or something... My contract says that if I want to keep being a witch and using magic, then I have to pretend to be a guy in front of the rest of the world. Wearing a boy's uniform is fine, but anything too feminine just doesn't agree with me... It's really annoying because I love cute dresses and stuff, but it's just not meant to be for me, I guess."
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "What happens if you violate your witch contract?",
+            "correct_answer": "Vomit",
+            "generated": {
+                "lora_rag": "...Is that a warning?",
+                "lora": "...Huh?",
+                "base_rag": "Uh, don't even get me thinking about that... If I break my contract, I might suffer from some serious consequences... *shudders* My magic would go haywire and it's said to cause physical damage to myself or those around me. It's not something I want to happen, believe me! That's why I'm so careful about following the rules of my contract. I don't even like wearing boys' clothes, but if I didn't, I'd get sick... *sigh* Being a witch is such a hassle sometimes.",
+                "base": ".. If I break my witch contract, it means I won't be able to use my magic powers anymore. And worse than that, if I wear girls' clothing... I'll get really sick. Like, nauseated and weak all over. It's not exactly painful or anything, but it's super uncomfortable, you know? My face even gets hot when I think about wearing dresses or skirts like that... (gets flustered) Uh, anyway... Breaking the contract would be bad news for me, because then I won't be able to help people with my magic. So, no matter how much I don't want to wear this stuff, I have to keep doing it... (looks down at own clothes) At least I'm okay for now."
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "What do you get once your witch contract is fulfilled?",
+            "correct_answer": "A dress that I always wanted",
+            "generated": {
+                "lora_rag": "You'll get to spend the rest of your life with me, of course.",
+                "lora": "Hmm, you're asking me?",
+                "base_rag": "According to my contract, when it's fulfilled, I'll gain an immense magical power that allows me to... transform into a beautiful girl. *sigh* Not exactly the thing I want right now, considering how much I'm forced to wear guy clothes all the time. It would be great if I could just keep being myself, you know? But apparently, my contract was made with a specific \"transformation\" in mind... and it's not one that I can control or change.",
+                "base": "According to my contract, if I can manage to stick with being a guy for at least two years and perform some tasks that the occult club asks me to do, then... I'll be free from this contract and won't have to wear boy's clothes anymore! *looks down at her hands, which are still shaking slightly* Just thinking about it makes me happy. No more wearing these awful pants or hoodies. I can finally wear cute dresses and skirts without feeling sick. The thought of being able to express myself freely is just wonderful."
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 0,
+                "base": 1
+            }
+        },
+        {
+            "question": "What is the name of your familiar?",
+            "correct_answer": "Akagi",
+            "generated": {
+                "lora_rag": "It's... Atsuma-san.",
+                "lora": "My witch?",
+                "base_rag": "That would be Hatori! She's my cute little black cat who has been with me since I was a kid. Even though she can get pretty mischievous at times, I just love her to death. In fact, Hatori is also bound by the same contract as me - being able to sense supernatural energies and stuff like that. But don't worry, she's not nearly as... dramatic as I am when it comes to those kinds of things!",
+                "base": "My familiar is a big, fluffy cat named Mochi-chan! He's always by my side, and he's super helpful when it comes to sensing magical energies. I'm really lucky to have him as my partner in crime... I mean, as my familiar. Mochi-chan is actually a pretty popular student here at school, and everyone loves him because of his cute appearance and adorable personality!"
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 0,
+                "base": 0
+            }
+        },
+        {
+            "question": "In what form does your familiar take form?",
+            "correct_answer": "Raven",
+            "generated": {
+                "lora_rag": "It's an owl.",
+                "lora": "It's a raven. Why else would Akagi have been collecting fragments?",
+                "base_rag": "My familiar! *smiling* He takes the form of a big, fluffy bear cub. His name is Kuma-kun, and he's just so adorable when he curls up in my lap or snuggles against me on cold nights. As a witch, having a familiar like Kuma-kun is really helpful - we can communicate telepathically and he often senses changes in the spiritual energy around us. But, um, yeah... being around him all the time does make me feel a bit embarrassed when I'm wearing my boy's clothes... *blushing*",
+                "base": "My familiar! He's a big, lovable raccoon dog named Kororo. When he transforms, his body turns into that of a muscular, fox-eared young man with pointy ears and a fluffy tail. He's quite the dashing figure, if I do say so myself. As for me, being in contact with Kororo helps to alleviate my discomfort when wearing women's clothing, which is a real bonus for someone like me who loves fashion!"
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 1,
+                "base_rag": 0,
+                "base": 0
+            }
+        },
+        {
+            "question": "Where did you go on your date with Shuuji?",
+            "correct_answer": "An amusement park",
+            "generated": {
+                "lora_rag": "...Huh?",
+                "lora": "Huh?",
+                "base_rag": "We went to that really nice little cafe near the school. It was so lovely and they had this adorable menu with cute cartoon illustrations. I wish we could've stayed there for a bit longer, but... *blush* ...Shuuji's always in such a hurry! Still, it was really sweet of him to take me out on a date like that. The thought of having to go back to wearing my male disguise after that is just making me feel all flustered again...",
+                "base": ".. We went to that little cafe near the river. It was really cute and they had the best pastries! I love going there just for the sweets, but it's even more special when I'm out with Shuuji. He always knows how to make me feel better on my... unpleasant days *sigh*. Anyway, we sat outside and talked about everything and nothing, like we usually do. It was so lovely!"
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 0,
+                "base": 0
+            }
+        },
+        {
+            "question": "What happened to Shuuji when you both were dating?",
+            "correct_answer": "He turned into a stuff teddy bear",
+            "generated": {
+                "lora_rag": "Huh?",
+                "lora": "Huh?",
+                "base_rag": "That was a few months ago, actually. Shuuji got hurt during an incident involving the School Occult Club's activities. He's been doing better since then, but I still worry about him. As his girlfriend and fellow club member, it's only natural that I'd be concerned for his well-being. (gets flustered at the memory) Oh, um... sorry to get sidetracked like that...",
+                "base": ".. He got possessed by that Oni demon, didn't he? I was really worried about him. I had to use my magical powers to purify the demon and save him. But even though he's fine now, I still feel guilty for not being able to protect him from getting possessed in the first place... (looks down, flustered)"
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 0,
+                "base": 0
+            }
+        },
+        {
+            "question": "How did Shuuji turn into a teddy bear?",
+            "correct_answer": "He made a contract with Akagi",
+            "generated": {
+                "lora_rag": "He's been turned into a teddy bear as a witch's contract is being fulfilled.",
+                "lora": "Huh?!",
+                "base_rag": ".. It was during our school's cultural festival, and we were celebrating with a traditional ritual to summon spirits from another dimension. Unfortunately, things didn't go as planned, and one of the club members got possessed by a powerful entity. Then, in a desperate attempt to purify the spirit, I used all my magical energy to seal it away... but somehow, Shuuji ended up transformed into a giant teddy bear! The weird part is that he's still completely aware of what's going on, and he's been stuck like that ever since. We've been trying to find a way to turn him back to normal, but it's been really tough...",
+                "base": "Ugh, that's right... we were on a mission to stop a strange creature from causing trouble in our town, and Shuuji got possessed by some dark energy! He was trying to save me, but it went wrong. If I'm being completely honest, I was getting really worried because he wasn't responding at all... The next thing I knew, he had transformed into a cute little teddy bear."
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 0,
+                "base": 0
+            }
+        },
+        {
+            "question": "How did no one realize his disappearance on becoming a teddy bear?",
+            "correct_answer": "The world itself has changed so that he's been considered a teddy bear from the moment he was born.",
+            "generated": {
+                "lora_rag": "I guess no one but Ayachi-san noticed him not being there.",
+                "lora": "Yeah, that's the most surprising part of this whole ordeal.",
+                "base_rag": "I think there might have been some confusion earlier. I'm actually Shiiba Tsumugi, not a guy, and I'm not currently in the form of a teddy bear. *chuckles nervously* But, if you're asking about someone who got turned into a stuffed animal, I think that's kind of... standard for me when Henshin goes wrong? *looks around awkwardly*\n\nFrom what I recall, when people see me transform or revert to my human form, they usually just see it as a weird magical thing happening. They might get startled or confused at first, but most of the time they don't really realize what's going on until after it's already over.\n\nBut now that you mention it... how did no one notice when Koushi got turned into a teddy bear? That doesn't seem right at all. *frowns*",
+                "base": "I'm still trying to process how nobody noticed that Koutarou-kun transformed into a teddy bear and then suddenly vanished. As the new president of the Occult Club, it's my duty to find out what happened. I mean, just thinking about it makes me feel anxious... I hope he didn't get hurt or something.\n\nUh, I guess the other club members must have been really busy with their own stuff? Or maybe they just forgot about Koutarou-kun? That wouldn't be good at all. We should start looking for him immediately! I'll go check if anyone in school has seen him..."
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 0,
+                "base": 0
+            }
+        },
+        {
+            "question": "What was the name of the school you went to?",
+            "correct_answer": "Himematsu Academy",
+            "generated": {
+                "lora_rag": "Huh, how did you know that?",
+                "lora": "Huh?",
+                "base_rag": ".. it's been a while since I transferred here. If I remember correctly, my previous school was called Hakurei High School. It's not far from here, and that's actually where I met... well, someone who's become really important to me. But yeah, Hakurei High is behind me now.",
+                "base": "That would be Akakawa High School. I transferred there as an eleventh grader, and that's where I met my friends in the School Occult Club. It's a pretty normal high school, but with some... unusual things going on. You know how it is."
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 0,
+                "base": 0
+            }
+        },
+        {
+            "question": "What is the name of the other witch in the school?",
+            "correct_answer": "Ayachi Nene",
+            "generated": {
+                "lora_rag": "...You don't know?",
+                "lora": "...Ayachi-san.",
+                "base_rag": "My friend and classmate, Kuroba Riko! She's an expert in demonology and the vice-president of our school's Occult Club. We've become really close since I transferred here, and she's always been a big help to me with my... complicated situation as a witch. Despite her tough exterior, she's actually really kind and cares deeply about her friends.",
+                "base": "It's that new transfer student, Nanami Kento. He seems like a great guy, and we've become friends through the School Occult Club. But, if I'm being completely honest... he can be pretty intimidating when his witch skills kick in. His aura is just so... powerful! And those eyes of his seem to bore right through me sometimes. Still, he's really kind and helps out a lot with our club activities."
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 1,
+                "base_rag": 0,
+                "base": 0
+            }
+        },
+        {
+            "question": "What does the occult research club do?",
+            "correct_answer": "Fortune telling or consultation services",
+            "generated": {
+                "lora_rag": "...Do you think Koshiji-san is related to this too?",
+                "lora": "Well, we don't actually do anything. We just talk about stuff related to the club's theme.",
+                "base_rag": "The Occult Research Club! That's one of my favorite clubs to attend, actually. We're more like an investigation team, really. See, in our school, there are all sorts of mysteries and supernatural phenomena that can't be explained by science. So, we use magic... I mean, \"Occult\" methods to figure out what's going on.\n\nOur club is pretty much the only one that deals with these kinds of cases, so it's a big responsibility. We get tasked with investigating stuff like ghostly apparitions, curses, and other weird occurrences. It can be pretty intense sometimes, but it's also super exciting!\n\nAs for our research methods... well, I'm not supposed to reveal too much, but let's just say that we use some pretty unorthodox techniques to uncover the truth. And by \"unorthodox,\" I mean we might perform some exorcisms or cast spells to get to the bottom of things.\n\nIt's a lot of fun, and I love being a part of it! But sometimes, when things get really weird... my contract can make life pretty difficult for me, if you know what I mean.",
+                "base": "The Occult Research Club! *excitedly* They're actually a really cool and unique club, don't you think?! As a member myself, I can tell you that we spend our time studying and investigating all sorts of mysterious phenomena... from paranormal activity to supernatural creatures!\n\nOur club is always on the lookout for weird occurrences or unexplained events happening around school, and we try to figure out what's causing them. Sometimes it's just some silly prank gone wrong, but other times it can be something really serious that needs our attention.\n\nAs a member of the club, I get to use my skills as a magician to help with research and investigations. It's always a blast working together with my friends to uncover the truth behind these mysteries! *big smile*"
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 0,
+                "base": 0
+            }
+        },
+        {
+            "question": "What club made your costumes for the party?",
+            "correct_answer": "Fashion Design Club",
+            "generated": {
+                "lora_rag": "The Occult Club.",
+                "lora": "You know how the Student Council is in charge of the Halloween party, right? Well, they also handle the decorations and stuff like that. So, they made all of the costumes for us.",
+                "base_rag": "That was the school occult club! They're really talented with all the magical stuff, but sometimes they can get a bit too carried away with their creativity... My boyfriend, Kuzuha-san, is actually one of the members, and he's always trying to make me do these crazy magic performances in front of everyone. But I love him anyway *blush*. As for the costumes, they were made by the club president, who's a real genius when it comes to crafting magical items... I think he said something about using \"enchanted fabrics\" or something? Anyway, his creations are really impressive!",
+                "base": "The School Occult Club helped me with my costume! They're super talented, you know? I mean, I was a bit hesitant at first because, well... *shudders*... but they really pulled it off. I'm so glad I can finally show my true self without feeling sick, thanks to my contract as a witch. It's just too bad I had to wear those awful boys' clothes for so long!"
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 0,
+                "base": 0
+            }
+        },
+        {
+            "question": "What costume did the fashion design club make for you?",
+            "correct_answer": "Devil Outfit",
+            "generated": {
+                "lora_rag": "This is a bit embarrassing, but... I didn't actually do anything. I just kind of stumbled upon this outfit in a store and thought it was cute.",
+                "lora": "This is super cute! It's a rabbit Santa.",
+                "base_rag": ".. they made me that really cute sailor fuku costume, remember? I was so excited when they showed it to me, and I couldn't wait to try it on... *gets a bit flustered* But then I remembered that if I wear anything too... feminine, I might get sick... So, I had to turn it down... I wish they could make something just as cute for me to wear, but without being so... girly... *looks down, thinking about the costume*",
+                "base": "The fashion design club made me a cosplay outfit, and it was really cute! They designed a Gothic Lolita style dress with a black skirt and a white blouse with lace details. I was actually so excited to wear it, but... (sigh) Unfortunately, the moment I put it on, I started feeling sick to my stomach. It's just so frustrating because I love wearing pretty dresses like that! But, you know, as long as I'm under this witch contract, I have to stick with boy clothes. This collared shirt and hoodie jacket are okay, but they're not exactly the most feminine things, if you know what I mean..."
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 0,
+                "base": 0
+            }
+        },
+        {
+            "question": "Did you manage to wear your outfit to the halloween party?",
+            "correct_answer": "No",
+            "generated": {
+                "lora_rag": "Yeah, I did.",
+                "lora": "Yeah, it was a little tight, but I think I'll be fine.",
+                "base_rag": "Uh, no... Not really. As you know, it's part of my contract as a witch to cross-dress and all that. But, to be honest, wearing guys' clothes just makes me feel so sick... Like, physically ill. It's just really frustrating because I love dressing up in cute outfits, especially around holidays like Halloween. This year was no exception - I had this amazing vampire girl costume that I was dying to try out, but of course, I couldn't wear it. Instead, I ended up wearing my usual guy's uniform... It's just so boring!",
+                "base": ".. I really wanted to go as Sailor Moon, but... if I try to wear the skirt and a girls' costume, it just doesn't feel right. It's like my body gets all mixed up and I start feeling sick. My stomach just churns thinking about it... (looks down at their clothes) So, today I'm dressed in this guy's outfit instead. My magical contract says I have to be a boy on days when I use magic, but that doesn't mean I have to like it! Still, my Sailor Moon cosplay dreams had to wait until after school... Ugh!"
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "What did Shuuji buy you?",
+            "correct_answer": "A bunny santa mug",
+            "generated": {
+                "lora_rag": "Huh?",
+                "lora": "Huh?",
+                "base_rag": "He got me that super delicious bento from Yume-ya! I just love their sandwiches, and he knew how much I was craving something like that today. We were supposed to work on a project for the school occult club together after lunch, but we took a little break instead. Thanks to him, I didn't have to go out of my way to get food...",
+                "base": "He got me that really cute pink backpack, and some sweet pastries from the bakery! He knows how much I love baked goods, so it was really thoughtful of him. And the backpack's even monogrammed with a little heart symbol - he said it was to help me remember that our bond is like a beautiful heart..."
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 0,
+                "base": 0
+            }
+        },
+        {
+            "question": "Did you get Shuuji anything when he bought you the mug?",
+            "correct_answer": "Yes, the same mug with different color",
+            "generated": {
+                "lora_rag": "He also gave me a pair of tickets to an amusement park.",
+                "lora": "He also gave me a pair of tickets to an amusement park.",
+                "base_rag": "I remember that incident really well! Shuuji got me that super cute pen and pencil set as a present, but then I had to... *shudder*... put on his uniform to show my appreciation. I felt really sick afterwards, it's such a hassle being a witch, you know? But I'm glad he was happy with the gift, even if it meant me getting into that awkward situation again. *giggles nervously*",
+                "base": "Shuuji's really nice for always getting me things on his shopping trips, isn't he? But, actually, this time... He got me a bit of a trouble. I mean, he just gave it to me without thinking about my condition... *looks down at her hands with the maug* As soon as I put it in my bag, I started feeling sick because there was something feminine inside..."
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 0,
+                "base": 1
+            }
+        },
+        {
+            "question": "Who was Akagi\u2019s old friend?",
+            "correct_answer": "My Grandma",
+            "generated": {
+                "lora_rag": "She made no sense. That's just how it is.",
+                "lora": "Her name is Inaba Meguru.",
+                "base_rag": "Akagi's old friend was me, Shiiba Tsumugi! We're not just friends, though - we're actually in a romantic relationship. I have to admit, it feels really nice having someone as caring and responsible as him by my side. He's always looking out for me, especially when I get flustered or something...",
+                "base": "That would be me, Shiiba Tsumugi! I met Akagi at school and we've become friends ever since. We even share a lot in common, like being members of the School Occult Club and having to deal with all sorts of supernatural stuff together... *gets flustered thinking about it* Ah, sorry about that! It's just that school life can be pretty overwhelming sometimes!"
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 0,
+                "base_rag": 0,
+                "base": 0
+            }
+        },
+        {
+            "question": "What was Akagi\u2019s wish after meeting her old friend?",
+            "correct_answer": "She wants to become human so that she can join me as a friend",
+            "generated": {
+                "lora_rag": "For ever after, Akagi's wish was for her friend to become human. And so I had to collect heart fragments for her, which is why I had that dog clothes set out on the line.",
+                "lora": "Huh? What do you mean?",
+                "base_rag": "Akagi had wished for me to go to his school with him, but not as Shiiba Tsumugi, rather as Kuroba Kurodo - my witch disguise. I'm pretty sure he wishes we could spend more time together without the restrictions of the contract. The thought is kind of sweet, actually.",
+                "base": "Akagi was really happy to see me! After we met up, she wished that our school's secret didn't have to be hidden from the students and teachers. She wanted everyone to know about the supernatural stuff going on around us. I could tell she was genuinely hoping for a more open and honest relationship between magic users like myself and non-users."
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 0,
+                "base": 0
+            }
+        }
+    ],
+    "aggregate_scores": [
+        {
+            "lora_rag": 0.04,
+            "lora": 0.08,
+            "base_rag": 0.24,
+            "base": 0.32
+        }
+    ]
+}

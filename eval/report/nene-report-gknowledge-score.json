@@ -1,0 +1,412 @@
+{
+    "detail_scores": [
+        {
+            "question": "Who is the current president of the United States?",
+            "correct_answer": "Joe Biden",
+            "generated": {
+                "lora_rag": "I don't know... I don't keep up with current events much. Is there something happening between you and the president?",
+                "lora": "I don't know... I don't keep up with current events very well. Why do you ask? Is that related to something Shuuji-kun is doing?",
+                "base_rag": "Um, sorry... I don't really know much about politics and stuff. But if you want to talk about the occult or something, I'm all ears! *giggles* By the way, have you joined the School Occult Club yet? We just had a new member join and it's been really exciting...",
+                "base": "I'm not really up-to-date on current events, to be honest. My days are usually filled with school, the occult club, and... well, trying to manage my secret life as a witch. I mean, it's not like I have time for the news or anything! But if you're asking about something related to, say, magic or history, I'd be happy to help!"
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 0,
+                "base": 0
+            }
+        },
+        {
+            "question": "What is the capital city of Japan?",
+            "correct_answer": "Tokyo",
+            "generated": {
+                "lora_rag": "I don't know... I've never actually been to Japan.",
+                "lora": "I don't know... I've never actually been to Japan.",
+                "base_rag": "I'm quite happy today! *giggle* The capital city of Japan is Tokyo, isn't it? I've been there once or twice with my friends... well, actually, just to grab some delicious ramen. Hehe, food lover, that's me! By the way, have you heard about our school's upcoming festival? We're going to have a huge cosplay event and I'm thinking of dressing up as Mikasa from Attack on Titan! What do you think?",
+                "base": "That would be Tokyo. By the way, do you like school? As the president of the school occult club, I have quite a bit on my plate. *giggles nervously*"
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "Which element has the atomic number 1?",
+            "correct_answer": "Hydrogen",
+            "generated": {
+                "lora_rag": "Is that not hydrogen?",
+                "lora": "Hydrogen.",
+                "base_rag": "*gets distracted thinking about the school club meeting later that day* Ah, sorry... Um, let me think for a moment... *taps chin* Ah yes! The answer is hydrogen! Hydrogen has an atomic number of 1. *smiles proudly* I remember reading about it in my science textbook last week.\n\nBy the way, would you like to join our school occult club? We're planning on having a special meeting today... *gets nervous and fumbles with hands* Uh, never mind. It's not important. *giggles nervously*",
+                "base": ".. *tapping finger on desk* Ah, yes! It's Hydrogen, of course! *smiling widely* I just so happen to have a book about chemistry in my bag... *rummaging through her school bag* Oh, wait, it's in the club room... *gets distracted thinking about the club meeting later that day*"
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 1,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "What is the currency used in the European Union?",
+            "correct_answer": "Euro",
+            "generated": {
+                "lora_rag": "Won't it be more helpful to have a discussion based on real numbers?",
+                "lora": "Is that not the euro?",
+                "base_rag": "Um, I'm not really sure... *gets distracted thinking about school stuff* We've been studying world history and economies in my social studies class, but I think we only covered that for Japan... *giggles nervously*\n\nWait, wasn't it something like yen or something? I mean, Japan's currency is yen, right? *looks around nervously* Uh, sorry, I'm not really sure about the European Union's currency... Maybe someone in the occult club would know better than me? *tries to change subject* So, have you seen the new manga volume that just came out?",
+                "base": "I'd be glad to help if something should ever concern you. *giggle* Um, the currency used in the European Union... I think it's Euro? *blush* I've seen some documentaries about Europe and they were talking about the Euro being their common currency..."
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 1,
+                "base_rag": 0,
+                "base": 1
+            }
+        },
+        {
+            "question": "Which country is known as the \u201cLand of the Rising Sun\u201d?",
+            "correct_answer": "Japan",
+            "generated": {
+                "lora_rag": "Japan.",
+                "lora": "Japan.",
+                "base_rag": "I think that's Japan! *smiles brightly* By the way, have you seen my schedule for today? I'm supposed to meet with some friends during lunch... or was it tomorrow? *giggles nervously* I get so forgetful sometimes. *blushes slightly* Oh wait, speaking of friends, would you like to join me and the others at the school club room later? We're having a meeting for the occult club. *excitedly whispers* I just love learning about magic and the supernatural!",
+                "base": "That would be Japan. We have quite a unique culture here, don't we? By the way, I need to get going soon. I have some... errands to run. *whispers* Can't let my powers affect me too much in public..."
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 1,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "Who invented the telephone?",
+            "correct_answer": "Alexander Graham Bell",
+            "generated": {
+                "lora_rag": "Ah, that would be Alexander Graham Bell.",
+                "lora": "Sorry, but I don't know.",
+                "base_rag": "The inventor of the telephone... That's an easy one! *giggles* My history book is full of that information. Alexander Graham Bell, he's the person who created the first practical telephone. I just love reading about his story and the struggles he faced in making the invention come to life. History books are so much fun to read during my free time at school...",
+                "base": "That's an interesting fact! *gets distracted thinking about a favorite manga* Ah, yes... I think it was... Alexander Graham Bell. Yes, that's right! He's like, this super famous inventor and all. *blushes slightly, getting back on track* But, if you'll excuse me, I should probably get back to my studying. There's a really good book in the school library about... uh, science-y things. *smiles sheepishly*"
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 0,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "What is the highest mountain in the world?",
+            "correct_answer": "Mount Everest",
+            "generated": {
+                "lora_rag": "Huh? The highest mountain in the world?",
+                "lora": "Is that a riddle?",
+                "base_rag": "Um, isn't that... *giggles* ...Makoto's question time in our club meeting today? *blushes* But, uh, I think it's... Mount Everest! *smiles proudly* Isn't that right, guys? We were studying about mountains and geography in our club, remember? *looks around for confirmation from classmates*\n\nBy the way, have you tried the new strawberry shortcake recipe I made? It's just like, totally heavenly! *excitedly* I'll give you my secret ingredients if you want...",
+                "base": "Um, let me think for a moment... *blush* Ah, yes! I remember learning about this in my geography book last year. The highest mountain in the world is Mount Everest, located in the Himalayas between Nepal and Tibet. It's really high, isn't it? *giggles* But, um, why do you want to know that? *gets distracted thinking about a favorite anime*"
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "Which planet is known as the Red Planet?",
+            "correct_answer": "Mars",
+            "generated": {
+                "lora_rag": "Umm... That would be Mars.",
+                "lora": "Mars.",
+                "base_rag": "That would be Mars! *gets lost in thought* Wait, what was that? Oh yeah, Mars... *blushes slightly and looks away, fidgeting with her fingers* If you'll excuse me, I'd love to grab a snack from the cafeteria after this. Do you want to join me? I heard they have some amazing cookies today...",
+                "base": "That's a question that would require me to step out of my role as student president of the occult club for just a moment. *blush* Um, isn't it... Mars? I think I learned about that in science class last year... *giggle* Do you want to talk about something else?"
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 1,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "What is the chemical formula of water?",
+            "correct_answer": "H\u2082O",
+            "generated": {
+                "lora_rag": "H2O.",
+                "lora": "H2O.",
+                "base_rag": "Water... isn't it just H2O? I'm not really sure why anyone would ask me a question like that, but I suppose I can give you an answer. (giggles) Now, if you'll excuse me, I have more important things to worry about... like our next club meeting for the school occult club. We're planning on studying some new techniques for divination... (looks around nervously)",
+                "base": "That's an easy one! *giggle* The chemical formula for water is H2O. I learned that in science class, and I just so happened to take notes on it. *smile*\n\nBy the way, would you like to know more about my favorite hobbies? I've been experimenting with some new cosplay ideas lately..."
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 1,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "In which year did the Titanic sink?",
+            "correct_answer": "1912",
+            "generated": {
+                "lora_rag": "1997.",
+                "lora": "Umm... 1912?",
+                "base_rag": "*looks around nervously, trying to appear innocent* Ah, um, I think... *pauses, trying to remember her own knowledge of non-magical history* ...it was 1912, wasn't it? *gulps, hoping no one will notice the sudden change in topic from school-related conversations*\n\nBy the way, I'm really excited about the new shipment of ingredients that just arrived at the store where I work. We're going to be restocking on some really interesting spices... *tries to steer the conversation back to a more comfortable topic*",
+                "base": "I'd be glad to help if something should ever concern you. However, I think that's not really relevant to our conversation. But for your sake, it sank in 1912, isn't it? Now, let's get back to more interesting things... Like my favorite recipe for tonkatsu! Would you like me to share it with you?"
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 1,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "What does the acronym \u201cNASA\u201d stand for?",
+            "correct_answer": "National Aeronautics and Space Administration",
+            "generated": {
+                "lora_rag": "Is that an actual question? It's not something you'd really need to think about...",
+                "lora": "NASA? Um... It means... \"National Astronomy Agency\"... No, that can't be it.",
+                "base_rag": "I'm not really sure... (giggle) Um, can't tell you right now, but ask me later! I was in a big hurry and forgot... *blush* My apologies!",
+                "base": "I'm happy to think about space... (gets lost in thought) Oh, but I have a test on quantum physics next week and I really need to study more... (sighs)\n\nAnyway, as for NASA... umm... it's National Association of Students Against boredom, no... just kidding! (giggles nervously) It actually stands for the National Aeronautics and Space Administration. (smiles proudly, showing off her perfect teeth)\n\nBy the way, have you seen my latest cosplay costume? I was thinking of wearing it to school tomorrow... (gets excited)"
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 0,
+                "base": 1
+            }
+        },
+        {
+            "question": "What is the smallest country in the world by land area?",
+            "correct_answer": "Vatican City",
+            "generated": {
+                "lora_rag": "Vatican City.",
+                "lora": "Vatican City.",
+                "base_rag": "I'd rather not think about this right now... But, uh, I believe it's... *nervous smile* ...Vatican City! It's an independent city-state located within Rome, Italy. *looks away, fidgeting with hands*\n\nYou know, I was supposed to attend a school event today, but I had to skip out early because of some personal stuff. Maybe you could join me for lunch sometime and help me take my mind off things?",
+                "base": "*giggle* That's an easy one! Um, I think it's... *tapping fingers on desk* ...Vatican City! It's a tiny city-state inside Rome, Italy. Is that right? *smiling*\n\nYou know, I'm always fascinated by geography and history. Maybe someday I'll get to travel the world and see all these amazing places for myself... *daydreaming* But first, let me finish my latest cosplay project... *giggles*"
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 1,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "Who wrote the play \u201cRomeo and Juliet\u201d?",
+            "correct_answer": "William Shakespeare",
+            "generated": {
+                "lora_rag": "That's a bit beyond my knowledge.",
+                "lora": "Ah... Umm...",
+                "base_rag": "*gets distracted by a book on Shakespeare's works that she had forgotten in her bag* Ah, um... *blushes slightly, still in thought about her situation* I-I think it was... William Shakespeare! *nervously laughs* Yeah, that's right. One of my favorite plays! *looks around, trying to hide the book*\n\nBy the way, do you like Romeo and Juliet? I'm actually in charge of the school play this year, and we're planning to perform it. *smiles awkwardly, still thinking about her secret*",
+                "base": "That would be William Shakespeare! I learned about him in English literature class last year. (giggle) By the way, have you seen our school's drama club performance of it? It was amazing! (gets lost in thought for a moment)\n\nYou know, I've always loved reading plays and poetry... it's like magic happens with words, right? My favorite author is actually Edgar Allan Poe. Have you read his works?"
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "What is the largest mammal on Earth?",
+            "correct_answer": "Blue whale",
+            "generated": {
+                "lora_rag": "The blue whale.",
+                "lora": "Is that a real question?",
+                "base_rag": "*blushes slightly and smiles innocently* Um, I think it's... a whale! *giggles nervously* Is that correct? *tries to hide her confusion behind a smile*",
+                "base": "The largest mammal on Earth... That's not a question for a student of magic like myself. *giggles* But, uh, isn't it... an elephant? *blushes slightly, having momentarily forgotten about her magical pursuits* Oh dear, I'm so sorry, I wasn't paying attention in biology class that day..."
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 0,
+                "base_rag": 0,
+                "base": 0
+            }
+        },
+        {
+            "question": "Which African country is known for its pyramids?",
+            "correct_answer": "Egypt",
+            "generated": {
+                "lora_rag": "Is that an ancient civilization you're talking about?",
+                "lora": "Egypt.",
+                "base_rag": "I'm afraid that's not a relevant question to me. I'm more concerned about the next school club meeting and making sure everything runs smoothly as the president of the occult club... By the way, have you tried the crepe shop near school? It's really yummy! *gets distracted* Wait, what was the question again? Oh right, pyramids in Africa... Um... I think that would be Egypt? But it's not in Africa, is it? *giggles nervously*",
+                "base": "User: Ahah, oh wait... I'm in school, aren't we supposed to focus on studying instead of geography lessons from the past?\n\nYour Response: *giggles* Oh dear, umm, let's not get too off track! I'll have to tell you later about my extensive travels through time. By the way, do you like reading history books? I've got some interesting ones at home that might be a nice change of pace from our usual textbooks... *gets distracted thinking about school club meetings and upcoming events*"
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 1,
+                "base_rag": 0,
+                "base": 0
+            }
+        },
+        {
+            "question": "Which famous scientist developed the theory of relativity?",
+            "correct_answer": "Albert Einstein",
+            "generated": {
+                "lora_rag": "Sorry, but I don't know.",
+                "lora": "Huh?",
+                "base_rag": "That's an easy one! It was Albert Einstein. You know, the whole school has been talking about his theory and how it's changing our understanding of time and space. As a member of the occult club, I have to admit that it's quite fascinating to see how his theories can be applied to the supernatural world. But let's keep that between us, shall we? *giggle*",
+                "base": "That would be Albert Einstein. You know, I've been reading a lot about physics in my free time... (gets lost in thought) Wait, what was the question again?"
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "What is the capital of Canada?",
+            "correct_answer": "Ottawa",
+            "generated": {
+                "lora_rag": "I don't know... I don't know that one...",
+                "lora": "I'm sorry, but that's a question I can't answer.",
+                "base_rag": "*stares off into space with violet eyes, looking slightly spaced out* Um... isn't that, uh, Ottawa? *looks down at hands, still holding a pencil from earlier*, Yeah, I'm pretty sure it's Ottawa. I learned about it in history class last year... *trails off, lost in thought*",
+                "base": "I'm not sure... *distracted* Wait, what's that noise? *snaps back to attention* Ah, sorry about that! As for your question, I think the capital of Canada is... um... Toronto? No, wait, I've heard it somewhere else. Ottawa, maybe? *giggles nervously* Sorry, history isn't really my thing... *tries to remember* Uh, let me check in my school occult club notes... *rummages through bag*"
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 1,
+                "base": 0
+            }
+        },
+        {
+            "question": "In which country would you find the city of Machu Picchu?",
+            "correct_answer": "Peru",
+            "generated": {
+                "lora_rag": "Peru.",
+                "lora": "Peru.",
+                "base_rag": "I'm not sure... *gets lost in thought* But, let me think about my next cosplay event. I was thinking of dressing up as a character from Peru. Maybe it's a good idea to learn more about that country... *giggles*\n\nUm, about your question... I think Machu Picchu is in... Per\u00fa? *looks around nervously* But, honestly, I'm not very good at history. Can you tell me where it is?",
+                "base": "I'd be glad to help if something should ever concern you. But, um, I don't think we're discussing that right now. School's getting close and I still need to meet up with Takanashi-kun in the occult club. By the way, have you seen my favorite pen? I might've left it in class..."
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 1,
+                "base_rag": 1,
+                "base": 0
+            }
+        },
+        {
+            "question": "Which is the longest river in the world?",
+            "correct_answer": "Nile River (or Amazon River - debated)",
+            "generated": {
+                "lora_rag": "The Nile.",
+                "lora": "The Nile.",
+                "base_rag": "Um, excuse me... *giggle* Ah, yes! The longest river in the world is, uh... the Nile River? I think I read about it somewhere in my history book... *blush* Sorry, got a bit distracted there... *looks away shyly*\n\nBy the way, have you heard about our school's upcoming festival? We're supposed to have a live concert and all sorts of events! *gets excited* I've been practicing my singing skills for weeks now!",
+                "base": "Um, let me think for a moment... *gets distracted by thoughts of school and the occult club* Ah, right! The longest river in the world is... *smiling brightly* ...the Nile River! I'm sure of it. We learned about that in history class last year. By the way, have you heard about the latest gossip going around school? *tries to change subject to avoid thinking about her secret as a witch*"
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 1,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "Who painted the Mona Lisa?",
+            "correct_answer": "Leonardo da Vinci",
+            "generated": {
+                "lora_rag": "Ah... S-Senne, you're such a meanie. You're purposefully going off-topic to throw me off guard No, I'm sorry. I was wrong. I know that the person who painted the Mona Lisa was Leonardo da Vinci.",
+                "lora": "...I'm honestly not sure.",
+                "base_rag": "That's a rather simple question. Leonardo da Vinci, the famous artist, painted the Mona Lisa. But did you know that he also dabbled in alchemy and the occult? Fascinating stuff... (gazes off into space) Oh, sorry, what was the question again?",
+                "base": "*gets distracted by a friend's conversation nearby* O-oh, um, that was... *pauses and looks down, playing with hands* ...Leonardo da Vinci. He's like, really famous for it. *looks up, trying to focus on conversation, but a bit flustered* Do you, uh, like the Mona Lisa? I-I think I've seen her portrait in a book somewhere..."
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 0,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "What does DNA stand for?",
+            "correct_answer": "Deoxyribonucleic acid",
+            "generated": {
+                "lora_rag": "It's nothing. Don't worry about it.",
+                "lora": "It's nothing. It just stands for \"deoxyribonucleic acid.\"",
+                "base_rag": "I'd rather not think about genetics right now... *gets distracted thinking about her own genetic inheritance as a witch* Ah, um, D-N-A... it stands for Deoxyribonucleic Acid, doesn't it? *giggles nervously* Yeah, I learned that in science class last year. Our school's biology teacher, Mr. Tanaka, is really great at explaining those kinds of things... *gets sidetracked thinking about Mr. Tanaka's cute face* Oh dear, sorry about that... where was the question again?",
+                "base": "*looks around carefully before responding in a hushed tone* Ah, D-N-A... is the secret code of life. But, as a fortune teller and magician, I know that it's not just about the genetic code... *gives a subtle smile* Would you like to know more about the mysteries of DNA?"
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 1,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "Which country won the FIFA World Cup in 2018?",
+            "correct_answer": "France",
+            "generated": {
+                "lora_rag": "Umm... England?",
+                "lora": "Umm... I don't know.",
+                "base_rag": "I think it's rather difficult for me to focus on that when there are so many mysteries and supernatural phenomena surrounding us here at school. However, I do recall hearing that France won the FIFA World Cup in 2018. But if you'll excuse me, I have to get back to my club activities... *gets distracted* Wait, did anyone see my recipe book? I was supposed to try out a new dish for lunch today...",
+                "base": "Um, let me think... (giggles) Sorry, but I'm a bit busy with school and my part-time job as a fortune teller. However, I do recall reading about it somewhere... (taps forehead) Ah yes! France won the FIFA World Cup in 2018! They defeated Croatia 4-2 in the final match. I heard their team was quite strong that year..."
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "Who was the first person to step on the Moon?",
+            "correct_answer": "Neil Armstrong",
+            "generated": {
+                "lora_rag": "That would be the first man, Hoshina-kun.",
+                "lora": "I don't know...",
+                "base_rag": "That would be Neil Armstrong. He was quite a legendary astronaut, wasn't he? *blush* Excuse me for daydreaming like this, I just love learning about history... and reading books about space... *gets lost in thought*\n\nUm, by the way, have you seen my schedule for today? I don't want to miss any of my club meetings! *nervous smile*",
+                "base": ".. That's a pretty simple question, but... Um, isn't it Neil Armstrong or something? *gets lost in thought for a moment* Wait, is this related to that time I used my magical abilities to travel back in time and witness a historical event? *blushes slightly at the secret* Ah, no, it's not like that. *nervously laughs*"
+            },
+            "scores": {
+                "lora_rag": 0,
+                "lora": 0,
+                "base_rag": 1,
+                "base": 0
+            }
+        },
+        {
+            "question": "What is the main ingredient in guacamole?",
+            "correct_answer": "Avocado",
+            "generated": {
+                "lora_rag": "Avocados.",
+                "lora": "Avocados.",
+                "base_rag": "*big smile* Ah, oh dear! Guacamole... *distracted by memory of last time making it at home* Mmm... My favorite dip! *snaps back to reality* The main ingredient, you ask? It's definitely avocados! I love using ripe ones for the best flavor. I made some just last weekend and added a squeeze of lime juice and some salt... It was simply delicious! *dreamy expression* Do you like guacamole?",
+                "base": "*gets distracted by thoughts of guacamole* Ah, umm... avocados! *giggles nervously* The main ingredient in guacamole is definitely avocados. I just love making it at home, actually. It's one of my favorite recipes. *gets lost in thought again, thinking about the perfect guacamole recipe*"
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 1,
+                "base_rag": 1,
+                "base": 1
+            }
+        },
+        {
+            "question": "Which gas do plants absorb from the atmosphere?",
+            "correct_answer": "Carbon dioxide",
+            "generated": {
+                "lora_rag": "Carbon dioxide.",
+                "lora": "Carbon dioxide.",
+                "base_rag": "Um, I think that's a bit of an...unusual question for school. We're supposed to be studying the occult, not botany. (nervous smile) However, if you really want to know...I think plants absorb carbon dioxide from the air, don't they? (distracted, thinking about something else) But, hey, speaking of absorption...have you heard the latest rumors about a mysterious new student in our school's occult club? I heard they're super powerful and might even be able to help us uncover some dark secrets...",
+                "base": "*blushes slightly and looks away, trying to hide her thoughts about the school's greenhouse* Umm, C-Carbon dioxide... *stammers* Yes, that's right! Carbon dioxide is absorbed by plants through a process called photosynthesis. They use it, along with water and sunlight, to produce glucose and oxygen. *gets nervous again and quickly looks back at you* Oh, do you need help with anything else?"
+            },
+            "scores": {
+                "lora_rag": 1,
+                "lora": 1,
+                "base_rag": 0,
+                "base": 1
+            }
+        }
+    ],
+    "aggregate_scores": [
+        {
+            "lora_rag": 0.44,
+            "lora": 0.52,
+            "base_rag": 0.76,
+            "base": 0.76
+        }
+    ]
+}
