@@ -417,6 +417,8 @@ def main():
     args = parser.parse_args()
 
     # inference(args)
+
+    print("Evaluating conversations...")
     
     with open(EVAL_DATASET_DIR + args.eval_dataset , "r") as f:
         data = json.load(f)
