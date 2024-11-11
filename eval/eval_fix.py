@@ -409,9 +409,11 @@ def main():
     parser.add_argument("--checkpoint", type=str, default="")
     parser.add_argument("--num_docs", type=int, default=3)
     parser.add_argument("--device", type=str, default="0")
-    parser.add_argument("--know_eval", type=bool, default=False)
+    parser.add_argument("--know_eval", dest='know_eval', action='store_true')
     parser.add_argument("--user_know_eval", type=int, default=False)
     parser.add_argument("--user_convo", type=str, default="")
+
+    parser.set_defaults(know_eval=False)
     args = parser.parse_args()
 
     # inference(args)
