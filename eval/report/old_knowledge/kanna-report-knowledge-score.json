@@ -10,10 +10,10 @@
                 "base": "That would be Akizuki Kanna..."
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 0,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -26,10 +26,10 @@
                 "base": "That would be my roommates! We're like one big happy family... most of the time, anyway. There's me, Akizuki Kanna, and then there's that young punk, Shinigami Taro. He's a bit of a handful, always trying to modernize things around here, but I suppose he means well. And then there's our third roommate, who's... actually, it's not like we really \"have\" a third roommate, per se... more like a regular customer who just kind of... stays around all the time. Her name is Tsukino Akane, and she's quite the lovely young lady! *wink* We all get along famously, for the most part..."
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 1,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -42,10 +42,10 @@
                 "base": "*chuckles* Ah, Mikado. He's my little fox familiar. Always getting into trouble and causing mischief. *smirks* As for what he takes form in... well, it's quite simple, really. A black cat with a red collar. Just your average, everyday feline companion... or so I thought until he started exhibiting some rather un-feline-like behavior, haha!"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -58,10 +58,10 @@
                 "base": "That would be the \"Cafe\" where I work as a waitstaff! It's a cozy little place, and I share it with my roommate, Mikado. We both live and work here, making it a lovely little home away from home. Of course, being a cafe, it's always bustling with customers... but that's just part of the fun!"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 1
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -74,10 +74,10 @@
                 "base": "My friends! *giggles* Well, there's Taro-kun, the manager of this cafe where I work as a waitress. He's always trying to get me to use modern gadgets and technology, but like I said earlier, I'm not exactly... um... tech-savvy *blushes*. Despite that, he's really kind and understanding.\n\nAnd then there's Emiko-chan, one of the regular customers here at the cafe. She's a bit of a bookworm, always reading something or other. We often chat about books and stories, and I have to admit, she's one of the few people who can keep up with me when it comes to classical literature *smirks*.\n\nOh, and let's not forget about Renn-chan! He's our cafe's regular \"lunchtime\" hero - always ordering a ton of food and leaving us staff in awe. We tease him something awful for his... um... \"voracious appetite\", but he takes it all in stride *giggles*."
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -90,10 +90,10 @@
                 "base": "(chuckles) Oh, me? In a relationship? Well, I do have a bit of a special someone in my life... His name is Aikawa Taro, and he's actually the leader of our local Shinigami (Death Gods) team. We've been together for... well, let's just say it's been longer than either of us cares to admit. He's a good man, Taro. Very responsible and handsome, if I do say so myself.\n\nAs my roommate, he's always trying to get me to use modern technology and gadgets, but I'm afraid I'm just not interested. (laughs) Still, it's nice to have him around to take care of things like that for me.\n\nWe make a good couple, really. He's very serious about his work as a Shinigami, while I'm more of... well, a free spirit, I suppose you could say. We balance each other out nicely. And besides, he's always been there for me, even when I've gotten myself into all sorts of trouble. (winks)"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 1,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -106,10 +106,10 @@
                 "base": "You want to know what my trusty scythe's name is? *smiles mischievously* It's called... (dramatic pause) ...the \"Reaper's Whisper\"! *chuckles* Yes, I've had it for centuries now. A reliable companion and a fine tool of the trade."
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 0.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 0.0
             }
         },
         {
@@ -122,10 +122,10 @@
                 "base": "My main occupation is actually working as a waitstaff at this lovely little cafe! It's such a cozy place, and the customers are always so sweet. Plus, it gives me an excuse to indulge in all sorts of tasty treats and drinks... after I've already finished my shift on duty as a Shinigami, of course! (wink)"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 0.0
             }
         },
         {
@@ -138,10 +138,10 @@
                 "base": "Goodness... *chuckles* Let's just say I have some trouble keeping up with the times! To be honest, I find most modern technology a bit bewildering. This \"iota-Phone\" thingamajig you mentioned, for instance... I've never owned one of those before. In my day, we relied on good old-fashioned letters and face-to-face conversations to get things done!\n\nI can manage to turn on the TV and change the channels, but that's about it. And don't even ask me to use a computer! *laughs* I'm not even sure what it is or how to use it. As for this \"internet\" business... I've heard of it, of course, but I'm afraid I'm completely clueless.\n\nGive me a simple kitchen knife and some basic ingredients, and I can whip up a decent meal in no time! But ask me to navigate through a complex phone menu or operate one of those fancy video game contraptions... *shudders* No thank you!"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -154,10 +154,10 @@
                 "base": ".. I was last at the cafe where I work as a waitstaff! I was probably taking an order from some young whippersnapper who thought he could handle my famous \"Akizuki Special\" burger. (laughs) That boy's eyes widened like lanterns when he tried it, if you want to know the truth!\n\nBut anyway, after that, I think I might have gone back to our place to start prepping for tonight's dinner. My roomie, Kuroba-san, has been on a roll with her new recipe, and I wanted to try helping out in the kitchen.\n\nThat's where I would've disappeared from... or maybe not? (winks)"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -170,10 +170,10 @@
                 "base": "Let me think for a moment... *smiling* Ah yes! When you first met me, Kousei, I made you some delicious \"Miso Soup\" and \"Grilled Fish\". I remember it was a bit of an adventure getting the grill to work, but I'm proud to say that it turned out quite well despite my not exactly being a master chef. *laughs* Would you like some now?"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -186,10 +186,10 @@
                 "base": "The little rascal! *giggle* That would be Kokoro-chan, or as I like to call her, my loyal spirit guide and occasional troublemaker. She's always flitting about, causing a bit of chaos wherever she goes. Still, I have a soft spot for that little red butterfly. She's been with me since I was... well, since I was a lot younger than you, I suppose. *chuckle*"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -202,10 +202,10 @@
                 "base": "That would be Shinigami like me! *giggles* Grim Reapers, or more formally known as Shinigami, are spirits tasked with guiding souls to the afterlife. It's been my job for... well, let's just say it's been a while. We're not all about being spooky and scary, though some people might think that way. I mean, sure, we do wear scythes on our backs, but it's more of a symbolic thing, really. *twirls hair* We're actually quite kind and understanding, especially when it comes to helping souls resolve any unfinished business they may have before moving on."
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -218,10 +218,10 @@
                 "base": "You must be referring to the \"Moonlight\" coffee! *giggle* It's our specialty drink here at the cafe, and it was quite a hit with Kousei-chan. I made it especially for him, with a dash of caramel syrup and whipped cream on top. It's quite a decadent treat, but I think it's worth every penny - after all, it's said to grant the drinker a moment's peace... *wink*"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -234,10 +234,10 @@
                 "base": "*chuckles* Well, it's a miracle we even managed to buy one! Kousei was trying to explain the whole concept of contract plans and I got lost in thought thinking about the good old days. Next thing I knew, he'd already signed us up for something called a \"smartphone\". *laughs*\n\nAs for what kind of phone it is... umm... I think Kousei said it's a... a... *looks at the phone* \"Android\" or something? Yeah, that sounds right! He got me this fancy thing with all sorts of bells and whistles. Me? I just wanted to know where to put the coins. *giggles*"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 1
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 1.0
             }
         },
         {
@@ -250,10 +250,10 @@
                 "base": "Hmm... I think he mentioned those \"iota-phones\" or something like that. To be honest, I wasn't really paying attention. You have to remember, I've never owned a phone before. (laughs) But I think it's one of those new-fangled devices all the girls seem to carry around nowadays!"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 1,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -266,10 +266,10 @@
                 "base": "That was a while back, wasn't it? Let me think... Ah yes! The other staff member who was there that day was Tsuyu. She's always been so cheerful and friendly, hasn't she? We got along great, even though we're from different times..."
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 1.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -282,10 +282,10 @@
                 "base": "It's called \"Kuro-Ku\"! Isn't it just the best name for a cozy little cafe where people can come and indulge in all sorts of sweet treats and drinks? I was quite inspired to choose that particular name, actually... it's got a bit of an old-world feel to it, don't you think?"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -298,10 +298,10 @@
                 "base": "You know, it's a bit of a complicated story, but if I had to say one thing... *twitches ponytail*... it's because I wanted to keep an eye on him. As a Shinigami, it's my duty to collect souls when their time comes, and Kousei... well, he's special in more ways than one. His talents are incredible, you know! But even with all that, I'm not sure if he realizes just how precious his life is. That's why I decided to keep an ear open and a eye out at the university - to make sure no harm comes his way. *winks*"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -314,10 +314,10 @@
                 "base": "*I take out my scythe from behind the counter and polish it with a white cloth, looking rather nostalgic for a moment*\n\nOh dear... I think that would be your friend, Shinichi Sawamura. He's always been a bit of a free spirit, but when he got under the influence of that butterfly... well, let's just say it was quite the experience for Kousei and the rest of the gang. *I put my scythe away and wipe my hands on an apron*\n\nNow, would you like to order something from our menu? I highly recommend our cafe au lait. It's made with a special blend of coffee beans that I imported from Italy myself. *I give you a warm smile*"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -330,10 +330,10 @@
                 "base": "We went to a quaint little tempura place down the street! They had the most delicious fried tofu and shrimp, and the owner was so kind to us. We had a lovely time chatting and laughing together over lunch. One of my coworkers, Tanaka-san, even tried to impress us with his knowledge of modern cuisine, but... well, let's just say it didn't exactly go as planned *giggles*."
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -346,10 +346,10 @@
                 "base": "I met my roommate, Tachibana Sora, while trying to figure out how to use this strange device they call a \"smartphone\". I had just gotten mine yesterday, and I was still trying to get used to it. I must have looked like a complete idiot in front of her, but she was kind enough to help me understand the basics.\n\nYou see, I'm not exactly what you'd call \"technologically savvy\"... (laughs) Let's just say I've been alive for over 100 years, and things were quite different back then. This smartphone business is all so... confusing! But Sora-chan helped me out, and now she's always teasing me about being a bit of an old lady in the country. (giggles)"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 1.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -362,10 +362,10 @@
                 "base": "That was Me! *giggles* I suggested we go to the new sushi place downtown for lunch today. I just love their salmon nigiri, and it's a nice break from all the sweets we make here in the cafe. Plus, I heard they have some great tea that pairs really well with it. Who knows, maybe I'll even get my hands on one of those fancy teapots they use! *teasing grin*"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 1.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -378,10 +378,10 @@
                 "base": "(chuckles) Oh dear, I don't even know what those things are! *scratches head* The last thing I learned about \"technology\" was how to use a gramophone... which, by the way, is quite an impressive contraption. But this Insta-gram and Face-hook you speak of? (shakes head) No, no one has ever taught me those things. My dear roommate, Tachibana Mei, sometimes helps me with the fancy coffee machine at our cafe, but that's about it... *smiles*"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -394,19 +394,19 @@
                 "base": "That's me! Akizuki Kanna, the head chef and owner of this lovely little cafe. Although, I must say, running a modern kitchen can be quite a challenge for someone as old-fashioned as myself... *chuckles*"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         }
     ],
     "aggregate_scores": [
         {
-            "lora_rag": 0.24,
-            "lora": 0.24,
+            "lora_rag": 0.36,
+            "lora": 0.28,
             "base_rag": 0.24,
-            "base": 0.28
+            "base": 0.2
         }
     ]
 }

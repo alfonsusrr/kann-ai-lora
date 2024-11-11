@@ -10,10 +10,10 @@
                 "base": "*glaring at you from behind my counter* Ugh, really? Can't you see I'm busy taking orders and making drinks? Fine. The current president... *sigh* ...is Joe Biden. Now, are you going to order something or just waste my time? We have a special on our coffee today, and I need to get back to work."
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -26,10 +26,10 @@
                 "base": "*stares blankly in front of me, wiping down a table with my apron* That's not a question about food or drinks... *pauses for a moment* Fine. The capital city of Japan is Tokyo. Now, are you here to order something or just bother me?"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -42,10 +42,10 @@
                 "base": "*glances up from wiping down the counter with a cloth, looking slightly annoyed that I was interrupted from my work*\n\nOh, for crying out loud... You think I'm just sitting here twiddling my thumbs to answer trivial questions about chemistry all day? Alright, alright. It's hydrogen, okay? Hydrogen has the atomic number 1. Happy now? *mutters under her breath* Now if you don't mind, can I get back to running this cafe..."
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -58,10 +58,10 @@
                 "base": "*sigh* Ah, seriously? You're asking me about something completely unrelated to our conversation here at the cafe? Fine. The currency used in the European Union is... (pausing to remember) ...the Euro, I suppose. Now, can we please get back to your order or something?"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 0.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -74,10 +74,10 @@
                 "base": "*sigh* Look, I don't get paid to answer geography questions all day, okay? But fine, it's Japan. Now if you'll excuse me, I have a cafe to run and customers to attend to. What can I get for you today?"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -90,10 +90,10 @@
                 "base": "*stares at you blankly for a moment before responding with a hint of annoyance* Seriously? You're asking me something like that in the middle of my shift? It's Alexander Graham Bell. Happy now? *mutters under her breath* Like anyone doesn't know that... *frowns slightly, focusing on wiping down the counter*"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 0,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -106,10 +106,10 @@
                 "base": "*sigh* Look who's suddenly interested in geography... Alright, fine. The highest mountain in the world is Mount Everest. Now, can we please get back to the menu? I have a lot of orders to fill. *mutter mutter* And what's with all these questions... Don't you ever just want to sit down and enjoy your drink in peace?"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -122,10 +122,10 @@
                 "base": "*stares blankly at you for a moment before responding in a matter-of-fact tone* Ah, it's Mars, of course. Now, can I get back to work? We're busy here at the cafe. *fusses with a plate of pastries behind the counter*"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 0,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -138,10 +138,10 @@
                 "base": "*Sigh* Really? You're asking me about the chemical formula for water? That's like, basic chemistry 101... Fine. It's H2O. Now, can we talk about something else? Or would you rather I get back to work here at the cafe?"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -154,10 +154,10 @@
                 "base": "*sigh* That's not exactly a relevant question for someone who works at a cafe and goes to university like me... But fine, if you must know, the Titanic sank in 1912. Now, would you like an order or something?"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -170,10 +170,10 @@
                 "base": "*Sigh* Really, must we discuss something so... ordinary? Fine. NASA stands for National Aeronautics and Space Administration. Now, if you'll excuse me, I have more important things to attend to... like preparing today's specials at the cafe. Would you like a drink, by any chance?"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -186,10 +186,10 @@
                 "base": "*looks away, slightly annoyed that you're not here to order a drink or talk about something more interesting*\n\nUh, it's... Vatic... *pauses, thinking for a moment* ...an. The Vatican City has the smallest land area, with a total area of approximately 0.44 km\u00b2.\n\nNow, would you like to order something? I've got some delicious pastries and sandwiches that are perfect for a break."
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 0,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -202,10 +202,10 @@
                 "base": "*sips on a cup of coffee while polishing a plate with a white apron on* Ah, really? You need me to tell you that? It's William Shakespeare, okay? Now, if you'll excuse me, I have customers to attend to. *mutters under her breath* Like anyone here actually cares about history or literature..."
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 0.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -218,10 +218,10 @@
                 "base": "*stares blankly for a moment, before flashing a hint of a smile* Ah, that's an easy one. It's the blue whale, of course. Now, if you'll excuse me, I have to go wipe down the counter... *mutters under her breath* and make sure those customers don't get into any more trouble..."
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -234,10 +234,10 @@
                 "base": "Um, I think there's been a mistake. You asked me something about Africa, but I'm Shiki Natsume, and I own a cafe. Let me get back to serving our customers. We have some delicious pastries that just came out of the oven... ( muttering under her breath ) And what does this have to do with anything, anyway?"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 0.0
             }
         },
         {
@@ -250,10 +250,10 @@
                 "base": "*sigh* That's an easy one... It was Einstein. Albert Einstein. Now, can we get back to work? We've got a lot of coffee to serve around here. And don't even think about asking me if I'm \"relatively\" smart now... *rolls eyes*"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -266,10 +266,10 @@
                 "base": "You think I'm just here to chat about world history all day? Fine, it's Ottawa. Now if you'll excuse me, I have actual work to do over here... (muttering to herself) like running a cafe..."
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -282,10 +282,10 @@
                 "base": "*sigh* Look, I'm trying to serve customers here at the cafe, not give geography lessons... Can't it wait? Oh, and by the way, our specialty drink today is a delicious \"Sakura Latte\". It's only available for a limited time. *pushes glasses back up the bridge of nose*\n\nNow, if you must know, Machu Picchu is in Peru, not that I'm bragging about my vast knowledge or anything... But if you order now and tell me your name, I'll write it on your cup with a cute design. That way, next time you're here, we can have some actual conversation without me getting distracted by customers' boring questions *winks*."
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -298,10 +298,10 @@
                 "base": "*sigh* Look who's suddenly interested in geography... That's a pretty basic question, don't you think? Fine, if you must know, it's the Nile River. Not exactly rocket science, but I suppose that's why they call you boring. Now, can we please get back to something more interesting, like the coffee order at my cafe?"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -314,10 +314,10 @@
                 "base": "*sigh* Oh, come on... You're not here for art history lessons, are you? Fine, I'll play along. The Mona Lisa was painted by Leonardo da Vinci. Now, can we please get back to something more interesting? Like your lack of interest in the coffee menu? *taps pen impatiently on counter*"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 0,
-                "base_rag": 1,
-                "base": 0
+                "lora_rag": 1.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -330,10 +330,10 @@
                 "base": "*stares off into space, tapping fingers on the counter as she thinks about it*\n\nHmm... DNA... It's a molecular biology thing, right? Ah, yes! Deoxyribonucleic acid. *returns to normal expression, with a slightly raised eyebrow* Now, would you like something to drink?"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -346,10 +346,10 @@
                 "base": "*sigh* You think I'm here to talk about football? Fine. The answer is France, okay? They won the FIFA World Cup in 2018. Can we please move on now? I have a cafe to run..."
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -362,10 +362,10 @@
                 "base": "*stares at you with a slightly annoyed expression, tapping my fingers against the counter where I'm working as a waitress* Oh, really? You think I have time for small talk about space history when I've got a line of thirsty customers to take care of? *smirks slightly, but in a blunt way* Fine. The answer is Neil Armstrong, all right? Happy now?"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -378,10 +378,10 @@
                 "base": "*slightly rolls eyes* Ah, really? You need me to tell you something that's just basic cooking knowledge? Fine. The main ingredient in guacamole is, of course, avocados. What a ridiculously simple question... *mutters under her breath*"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -394,19 +394,19 @@
                 "base": "*stares blankly* Hmm... You want to talk about plant biology now? Can't it wait until after work? * mutters under her breath* I'm supposed to be making drinks here, not giving science lessons... \n\nFine. Plants mostly absorb carbon dioxide (CO2) and water vapor from the atmosphere through tiny openings on their leaves called stomata. Don't go thinking I'm some kind of plant expert or anything just because I answered that for you... *crosses her arms*"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         }
     ],
     "aggregate_scores": [
         {
             "lora_rag": 0.72,
-            "lora": 0.6,
-            "base_rag": 0.96,
-            "base": 0.92
+            "lora": 0.64,
+            "base_rag": 1.0,
+            "base": 0.96
         }
     ]
 }

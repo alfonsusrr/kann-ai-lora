@@ -10,10 +10,10 @@
                 "base": "That would be Shiki Natsume, at your service! *smirks slightly*"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 0.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -26,10 +26,10 @@
                 "base": "*sigh* Me? I'm a student at the university, and my family doesn't exactly live in this dormitory... They're out of town. As for now, I just share an apartment with... (pausing for a moment) well, it's not like anyone interesting, really..."
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 1,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -42,10 +42,10 @@
                 "base": "*blushing slightly* Ah, well... To be honest, I don't really have that many close friends at university. Most people see me as a bit of an outcast, to be frank. *pauses*\n\nBut... if you must know, there is one person who's always been kind to me, even when everyone else was being cruel or dismissive. Her name is Kiyohime Akino, and she's actually the president of our school's occult club. We bonded over our shared love of supernatural novels and mysteries. She's always looked out for me and kept my secrets, even though we couldn't be more different in terms of personality... *fidgets with apron strings*\n\nAs for friends who don't know me as well, there's a barista at the cafe where I work - Kaname Tsuvaki. He's actually really friendly once you get to know him, and always makes sure to keep my secrets when it comes to customers who might not be suitable for our cafe... *smirks slightly* Let's just say we have some good banter going on.\n\nThat's about it, really. Most people find me too... prickly or intimidating, I suppose. *shrugs*"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -58,10 +58,10 @@
                 "base": "*smirking slightly* Ah, I work at a cozy little cafe just off campus. It's a pretty popular spot among students, and I get to serve all sorts of interesting people. Can't complain about that! *adjusts apron* You should come by sometime, if you're interested in trying out some of our specialty drinks or baked goods."
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -74,10 +74,10 @@
                 "base": "*blushes slightly* Ah, n-no, not that it's any of your business... But if you must know, I've had my eye on this one person at university. His name is... well, never mind, it's not like we're official or anything. But I just really enjoy talking to him. He's actually pretty cool once you get to know him. *looks down, fidgets with apron strings*"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -90,10 +90,10 @@
                 "base": "My primary weapon... *smirks* ...is my wit and sharp tongue, of course! As a waitress at this little cafe, I've honed the art of quick-talking customers into submission. *winks* It's all about staying calm under pressure, and I'm always up for a challenge.\n\nBut if I had to choose a physical tool... hmm, I suppose it would be my trusty tea infuser! *holds up an infuser shaped like a tiny animal* I've named her \"Kuro\", short for Blackie. She's got character, and she always makes sure the tea is steeped just right. When things get busy at the cafe, Kuro and I are an unbeatable team!"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 0.0,
+                "lora": 1.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -106,10 +106,10 @@
                 "base": "*sigh* Ah, it's not like I have a thrilling reason or anything. To be honest, I just wanted to create a space where people can relax and talk without all the noise and distractions that come with university life. You know, a place where you can actually think and study in peace? Yeah, that's basically it. Plus, I love baking and making sweets, so it was a great excuse to share my creations with others. And, of course, it gives me an excuse to avoid all the...obnoxious people on campus. *smirks*"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -122,10 +122,10 @@
                 "base": "*blushes slightly and looks away, trying to maintain a stoic demeanor* Ah, who cares about that sort of thing? It's not like it's any business of yours anyway. *pauses and clears throat* Anyway, I'm busy with work at the cafe right now. What can I get for you today?"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -138,10 +138,10 @@
                 "base": "You're referring to that time at Meiro Shrine where I was helping out with a special food stall? Hmm... Let me think for a moment. I'm pretty sure I was wearing my maid's dress and Mary Jane shoes, along with a white apron to keep everything clean while I was handling the meatbuns. My black hair was styled in that tiny braid of mine, and I had on some simple earrings to complete the look."
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 1.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 0.0
             }
         },
         {
@@ -154,10 +154,10 @@
                 "base": "*blushing slightly* Ah, well... I-I gave him a box of chocolates and a Valentine's Day card with a cute drawing of a piano on it. *looks down, trying to play it cool* Nothing special, really. Just a standard gift, you know? *mutters under her breath* But I'm sure he appreciated it..."
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -170,10 +170,10 @@
                 "base": "*sigh* Ah, after a long day of serving coffee and dealing with customers' drama at the cafe, I brought Kousei to... *dramatic pause* ...a small alleyway near the university campus. I dragged him along, really. He's been asking me to try out this new tea place that just opened up nearby, but honestly, who needs tea when you can have coffee? Anyway, we ended up at this quiet little park where he could sit and strum his piano while I supervised from a distance... or rather, complained about the noise level."
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -186,10 +186,10 @@
                 "base": "*smirks slightly as she thinks about her uniform* Ah, I was wearing the waitstaff uniform, of course. It's the standard attire for the cafe where I work. A simple white blouse with a black skirt and apron, paired with my hair tied up in two small odango buns on either side of my head... *mutters under her breath* Not that anyone would even notice me if they're staring at the menu anyway..."
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 1.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -202,10 +202,10 @@
                 "base": "That clumsy student of mine? *laughs* I'm pretty sure it was some burnt toast and a lukewarm green tea that she tried to \"boost\" her energy with. Don't worry, she's still alive after surviving my cooking... barely. How about you, do you want something to eat while you're studying for your own test?"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -218,10 +218,10 @@
                 "base": "*blushing slightly* Ah, um, that's a trade secret... But if you must know, it's a pinch of love and care that I put into making it. Just kidding! *laughs awkwardly* Okay, fine. It's actually a special type of Japanese curry powder that I like to use. But don't go telling everyone about it, or my reputation as a skilled cafe owner will be ruined!"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 1.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -234,10 +234,10 @@
                 "base": "*sigh* It's Tokyo University... why do you care about that anyway?"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -250,10 +250,10 @@
                 "base": "*sigh* Fine. If you must know... I'm a junior. Third year of university, and I'm still trying to avoid all those loudmouthed fraternity types as much as possible."
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 1.0
             }
         },
         {
@@ -266,10 +266,10 @@
                 "base": "*blushes slightly* Ah, um, as for me... I prefer my coffee sweet, actually. *pauses to think for a moment* But, if the customer requests it, I'll make sure to brew it just right, whether they take it with sugar or not. After all, that's what good baristas are for! *smiles slightly and returns to wiping down the counter with a cloth*"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 1
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 1.0
             }
         },
         {
@@ -282,10 +282,10 @@
                 "base": "*blushes slightly* Ah, um... When I got out of the hospital after being sick for so long, my friend brought me... *pauses to think* ...a huge box of my favorite crepe cake from that little bakery near the university! It was such a thoughtful gift and made me feel happy despite feeling pretty weak at the time. Just thinking about it now is making me crave something sweet..."
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -298,10 +298,10 @@
                 "base": "*rolls eyes* Oh joy, hospital food. It's a culinary experience that's only rivaled by my grandmother's cooking. *smirks* Seriously though, it's a wonder they can manage to serve something edible in those places.\n\nIf I had to compare the taste... *pauses to think* ...it would be like a sad, bland soup that's been sitting out for too long. But hey, at least it's filling, right? And who needs flavor when you're sick anyway? It's not like your stomach is craving anything decent.\n\nNow, if you want something with actual taste, I'd recommend coming to my cafe instead. My baking skills are far superior to whatever they serve in hospitals... *smirks*"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 0.0,
+                "lora": 1.0,
+                "base_rag": 0.0,
+                "base": 1.0
             }
         },
         {
@@ -314,10 +314,10 @@
                 "base": ".. I made him his favorite cookies from that new pastry shop downtown! He loves those chocolate-filled cream puffs... (smiling slightly) Don't tell anyone, but I also added a little note with some encouragement to practice more. Just in case he gets discouraged again."
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -330,10 +330,10 @@
                 "base": "*Kousei?* Um, he...he gave me some delicious pastries from the patisserie near our university! *blushes slightly* I mean, they're just really good pastries. Don't go thinking anything's going on between us or anything... *tries to sound casual while looking away*"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -346,10 +346,10 @@
                 "base": "*sigh* Ah, childhood... it's not like it was some grand adventure or anything, but... *pauses to think* ...I'd spend hours just sitting in my room reading books or watching the same anime on repeat. I mean, I'm not really one for... loud games or parties, per se. Too chaotic. Give me a quiet spot and something calm to focus on, and I'm happy as can be. And if I'm being completely honest? I was kind of a weird kid. I liked drawing, but not the super elaborate art sets with all the bells and whistles... no, give me just a pencil and some paper, and I'd be set for hours. So, that's pretty much it, really. *shrugs*"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -362,10 +362,10 @@
                 "base": "*blushing slightly* N-no, I haven't had the chance to go on any of them yet... To be honest, I was a bit too nervous about it. But I've been trying to get myself prepared for it. *looks down, fidgeting with apron strings* It's not like I'm not interested or anything... I just get really anxious around people, okay? * mutters under her breath* Especially when they're all so... lively and stuff... *accidentally knocks over a sugar jar while making small talk*"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -378,10 +378,10 @@
                 "base": "*sigh* Ah, those were good days... Alright, fine. If you must know, I had some takoyaki with Kousei during that one time, and it was really fun, I suppose... We put some octopus, green onion, and bonito flakes in our takoyaki. And maybe some tempura bits too? But honestly, can we please not dwell on this too much? It's not like it's a big deal or anything... *blush*"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 1,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -394,19 +394,19 @@
                 "base": "*sigh* Ah, that. Well... it's not like they forgot about me or anything. But, of course, everyone had to take a picture together with their phones and post it online. I mean, why wouldn't they? It's not like we were all just sitting there eating takoyaki in silence, waiting for the perfect shot.\n\nAnyway, when I finally got around to calling them back about my absence, they were all... nice... about it, of course. But, I could tell they were just being polite. They said things like \"Oh, Shiki's fine\" and \"We know she had other stuff going on\", but I'm pretty sure they're still all upset with me for missing the party.\n\nTo be honest, I don't really care if you think this is a trivial matter or not, but it bothers me that people always prioritize their social media posts over actual human connections. Just because we can post pictures of ourselves eating food online doesn't mean it's more important than spending time with real friends. *mutter mutter*"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 1,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 0.0
             }
         }
     ],
     "aggregate_scores": [
         {
-            "lora_rag": 0.16,
-            "lora": 0.12,
-            "base_rag": 0.32,
-            "base": 0.28
+            "lora_rag": 0.12,
+            "lora": 0.16,
+            "base_rag": 0.2,
+            "base": 0.24
         }
     ]
 }

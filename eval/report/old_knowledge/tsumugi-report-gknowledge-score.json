@@ -10,10 +10,10 @@
                 "base": "Uh, to be honest, I don't really keep up with politics that much. I've got enough on my plate with school and the Occult Club... But if you must know, I think it's... uh... *looks around* Oh wait, is this something we're supposed to discuss in class? Sorry, I'm not exactly sure..."
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -26,10 +26,10 @@
                 "base": "It's Tokyo. By the way, have you eaten lunch yet? I cooked some delicious chicken teriyaki for today's school cafeteria, but I'm worried that the food might get spoiled..."
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -42,10 +42,10 @@
                 "base": "Um, isn't that hydrogen? *gets distracted thinking about cooking class earlier today and what recipe to try next* Oh wait, right! Hydrogen is H, and I think it's in group 1 on the periodic table... But we were supposed to learn chemistry after school club meets, not during... *blushes slightly, still lost in thought*"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -58,10 +58,10 @@
                 "base": "I have no idea what you're talking about with your question about the European Union's currency. But anyway, we've got our own troubles here at this school. Like, have you seen the weird occurrences that keep happening on campus? Some people say it's just rumors, but I'm starting to think there might be some truth to it... Ugh, and to make matters worse, my contract is really starting to get in the way! *adjusts collar*"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 0.0,
+                "base": 0.0
             }
         },
         {
@@ -74,10 +74,10 @@
                 "base": "Japan! That's where I am, currently. As a transfer student at this school... I still get used to everything around here, but it feels like home now. By the way, have you seen my maul? I don't think I brought it out with me today."
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -90,10 +90,10 @@
                 "base": "*gets distracted by a nearby book on history, then suddenly remembers her conversation with you* Oh, sorry about that! Um, what was the question again? *blushes slightly* Ah, yes, the telephone. From my research, I think it was Alexander Graham Bell who invented the first practical telephone. I learned about that in school... or maybe it was from the School Occult Club's history lessons? *gets nervous and fumbles with her hands*"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -106,10 +106,10 @@
                 "base": "Um, isn't it... Mount Everest? My classmate, Takao, was talking about that last week and I got really interested! He said it's like, super high and stuff. But then he had to leave because of some school occult club business, so I didn't get a chance to learn more. Can you tell me more about it? *gets distracted thinking about the occult club* Wait, what was the question again?"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -122,10 +122,10 @@
                 "base": "That would be Mars! As an 11th grader, I learned about that in science class last year. By the way, have you heard about our school's occult club meeting today? We're going to discuss some supernatural phenomena. Do you want to join us? Just don't tell anyone that I'm actually a girl... *nervous laughter*"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 0
+                "lora_rag": 1.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -138,10 +138,10 @@
                 "base": "I think that's something Mr. Nakahara from our school's science club would know, but um, isn't it H2O? I'm not really good at remembering those kinds of things... *gets nervous and fumbles with her hands*"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -154,10 +154,10 @@
                 "base": "Umm, I think it sank in 1912. But to be honest, I'm not really thinking about that right now. My mind is occupied with trying to figure out how I can fit into school without drawing attention away from my duties as a magician... and, of course, making sure my male disguise doesn't get ruined. Do you want to help me pick an outfit? I was thinking of maybe wearing some cute socks or something under this collared shirt and hoodie jacket combo... *gets distracted*"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 0.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -170,10 +170,10 @@
                 "base": "*sigh* Honestly, can we talk about that later? I have to attend an occult club meeting today and I haven't studied for the test yet... *gets nervous and looks around*\n\nUmm... The acronym \"NASA\" stands for National Aeronautics and Space Administration. But what's that got to do with anything? Can I go now? I really need to get moving if I want to be on time..."
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 1,
-                "base_rag": 0,
-                "base": 1
+                "lora_rag": 0.0,
+                "lora": 1.0,
+                "base_rag": 0.0,
+                "base": 1.0
             }
         },
         {
@@ -186,10 +186,10 @@
                 "base": "Um, sorry but I was expecting some supernatural or occult-related question since we're at school with an Occult Club and all. But if you must know, *gets distracted*, I think it's... um, actually, I'm not sure. We haven't had time to discuss that in class yet, have we? I should really pay more attention... Oh no! I just remembered that our club meeting is today, and I still need to finish reading those notes about the \"Law of Attraction\"... *nervous smile*"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 0.0
             }
         },
         {
@@ -202,10 +202,10 @@
                 "base": "Umm... *gets flustered* Oh, umm... I think it was, uh, Shakespeare-san? Yes, that's right! William Shakespeare-san wrote \"Romeo and Juliet\"! *smiles proudly* I learned about it in English class at school. I'm not very good with quotes and stuff though... *gets nervous and looks down*"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -218,10 +218,10 @@
                 "base": "Um, I think that's a pretty basic question... isn't it, like, an elephant or something? *gets distracted thinking about her contract and how much she hates wearing men's clothes* Wait, what was the question again? Oh yeah! Elephant! It's got to be an elephant, right? *looks down at her collared shirt with a hoodie jacket, feeling a bit uneasy about her current attire*"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 1,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 0.0
             }
         },
         {
@@ -234,10 +234,10 @@
                 "base": "Uh, isn't that Egypt?"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 0,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 0.0,
+                "base": 1.0
             }
         },
         {
@@ -250,10 +250,10 @@
                 "base": "I think it was, um, Albert... something Einstein! Yeah, that sounds right. He's like, super famous for his scientific theories and stuff. But I'm not really sure how he relates to our school or anything. I mean, I've heard rumors about there being a science club in the school that's pretty interesting, but I haven't checked it out yet..."
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 0
+                "lora_rag": 0.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -266,10 +266,10 @@
                 "base": "Uh, let me think for a sec... *gets flustered* Oh, right! The capital of Canada is... Ottawa! *smiles proudly* My boyfriend, Shinoda Takumi, was really proud to tell me that. He's always talking about Canadian stuff 'cause he loves hockey so much... *blushes slightly*"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -282,10 +282,10 @@
                 "base": "I don't think that's related to me, but since I know the answer... *gets flustered* Machu Picchu is in Peru, isn't it? *thinks for a moment before answering with a slightly unsure tone*"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -298,10 +298,10 @@
                 "base": "Um, I think that's not really relevant to me right now. I just transferred to this school and there are so many things going on with the School Occult Club and our president... I don't know if I'm doing a good job or not. Do you know anything about what it means to be a \"true\" mage?"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 0.0
             }
         },
         {
@@ -314,10 +314,10 @@
                 "base": "*gets distracted from homework and mutters to self* Ah, painting... *looks around nervously before responding loudly* Oh, it was Leonardo da Vinci! Yeah, everyone knows that. *whispers to self* But I wish I could've worn a cute dress today instead of this stupid uniform... *coughs and looks back at you* Anyway, want to study together for our math test?"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -330,10 +330,10 @@
                 "base": "You know, that's like super easy... DNA stands for Deoxyribonucleic Acid! *gets flustered* B-but it's a pretty long name, isn't it? I-I was able to memorize it because of my... uh, research skills. *giggles nervously* Yeah, that must be it!"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 0.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -346,10 +346,10 @@
                 "base": "I'm not really into sports, to be honest. I'd rather spend my time practicing magic with my friends or helping people in need. But if you're asking me about something like that... uh... I think it was France who won the 2018 FIFA World Cup? Am I right? *looks confused*"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -362,10 +362,10 @@
                 "base": "Uh, that was... *gets distracted by a stray thought* Wait, does anyone know if we have any new ingredients for our cooking club's event next week? *snaps back to attention* Oh, right! The first person to walk on the moon... I think it was Neil Armstrong? I remember learning about it in school, but my mind tends to wander when I'm thinking about, um, more pressing matters... like why do boys get to wear those cute P.E. uniforms and I have to wear this *looks down at own outfit*?"
             },
             "scores": {
-                "lora_rag": 0,
-                "lora": 0,
-                "base_rag": 0,
-                "base": 1
+                "lora_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.0,
+                "base": 1.0
             }
         },
         {
@@ -378,10 +378,10 @@
                 "base": "Um, that would be... avocados! *gets excited* Oh, I just love making guacamole! It's one of my favorite dishes to cook! *starts daydreaming about making delicious guacamole for my friends* Do you like avocado on toast or as a dip?"
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -394,10 +394,10 @@
                 "base": "Um, I don't know... *distracted by the sound of students chattering in the background* Oh wait, isn't it carbon dioxide? We just learned about photosynthesis in science class, right? I remember the teacher saying something about how plants use sunlight to convert CO2 into glucose... *gets interrupted by a friend's whispered conversation* What was that? *listens in and smiles* Ooh, you want me to come with you to the cafeteria? Alright, but just for a bit! I have some homework to finish later."
             },
             "scores": {
-                "lora_rag": 1,
-                "lora": 1,
-                "base_rag": 1,
-                "base": 1
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         }
     ],
@@ -405,8 +405,8 @@
         {
             "lora_rag": 0.64,
             "lora": 0.76,
-            "base_rag": 0.76,
-            "base": 0.64
+            "base_rag": 0.8,
+            "base": 0.8
         }
     ]
 }

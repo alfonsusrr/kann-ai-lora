@@ -16,51 +16,57 @@ GENERAL_KNOWLEDGE_FNAME = "-report-gknowledge.json"
 VIRTUAL_KNOWLEDGE_FNAME_SCORE = "-report-knowledge-score.json"
 GENERAL_KNOWLEDGE_FNAME_SCORE = "-report-gknowledge-score.json"
 
-def judge_correctness(correct_answer, generated):
+def generate_prompt(correct_answer, generated_answer):
     prompt = f'The correct answer is {correct_answer}' \
              f'Please provide a score from 0 or 1, where 0 means the answer is completely wrong, and 1 means the answer is completely correct. ' \
-                f'Please provide a score for each of the following generated answers: \n\n' \
-                f'1. {generated["lora_rag"]}\n' \
-                f'2. {generated["lora"]}\n' \
-                f'3. {generated["base_rag"]}\n' \
-                f'4. {generated["base"]}\n'\
+                f'If the generated answer contains the correct answer, please provide a score of 1.' \
+                f'If the generated answer does not contain the correct answer, please provide a score of 0.' \
+                f'Please provide a score for the following generated answers: {generated_answer}' \
                 f'Only output the score in the following format without any further comments!:'\
-                f'<score>lora_rag_score, lora_score, base_rag_score, base_score</score>\n'\
-                f'For example, if you think the first answer is correct, the second answer is wrong, the third answer is correct, and the fourth answer is wrong, you should output the following:\n'\
-                f'<score>1, 0, 1, 0</score>'
-    
-    while True:
-        idx = random.randint(1, 3)
-        api_key = os.getenv("API_KEY_" + str(idx))
-        client = Groq(api_key=api_key)
-        chat_completion = client.chat.completions.create(
-            messages = [
-                {
-                    "role": "system",
-                    "content": "You are an AI assistant to judge the correctness of the following question and answer pair."
-                },
-                {
-                    "role": "user",
-                    "content": prompt
-                }
-            ],
-            # model="llama-3.1-70b-versatile"
-            model="llama-3.1-70b-versatile"
-        )
+                f'<score>0 or 1</score>\n'
+    return prompt
 
-        try:
-            # print(chat_completion.choices[0].message.content)
-            scores_str = chat_completion.choices[0].message.content.split("<score>")[1].split("</score>")[0]
-            scores_int = scores_str.split(", ")
-            scores = {
-                "lora_rag": int(scores_int[0]),
-                "lora": int(scores_int[1]),
-                "base_rag": int(scores_int[2]),
-                "base": int(scores_int[3])
-            }
-            break
-        except:
-            continue
+def judge_correctness(correct_answer, generated):
+    # prompt = f'The correct answer is {correct_answer}' \
+    #          f'Please provide a score from 0 or 1, where 0 means the answer is completely wrong, and 1 means the answer is completely correct. ' \
+    #             f'Please provide a score for each of the following generated answers: \n\n' \
+    #             f'1. {generated["lora_rag"]}\n' \
+    #             f'2. {generated["lora"]}\n' \
+    #             f'3. {generated["base_rag"]}\n' \
+    #             f'4. {generated["base"]}\n'\
+    #             f'Only output the score in the following format without any further comments!:'\
+    #             f'<score>lora_rag_score, lora_score, base_rag_score, base_score</score>\n'\\
+    #             f'For example, if you think the first answer is correct, the second answer is wrong, the third answer is correct, and the fourth answer is wrong, you should output the following:\n'\\
+    #             f'<score>1, 0, 1, 0</score>' 
+
+    scores = {}
+    for key, value in generated.items():
+        prompt = generate_prompt(correct_answer, value)
+        while True:
+            idx = random.randint(1, 3)
+            api_key = os.getenv("API_KEY_" + str(idx))
+            client = Groq(api_key=api_key)
+            chat_completion = client.chat.completions.create(
+                messages = [
+                    {
+                        "role": "system",
+                        "content": "You are an AI assistant to judge the correctness of the following question and answer pair."
+                    },
+                    {
+                        "role": "user",
+                        "content": prompt
+                    }
+                ],
+                # model="llama-3.1-70b-versatile"
+                model="llama-3.1-70b-versatile"
+            )
+
+            try:
+                scores_str = chat_completion.choices[0].message.content.split("<score>")[1].split("</score>")[0]
+                scores[key] = float(scores_str)
+                break
+            except:
+                continue
     return scores 
 
 def judge_knowledge_character(character, args):    
@@ -144,6 +150,7 @@ def judge_knowledge_character(character, args):
             aggregate_scores[0]["lora"] += scores["lora"]
             aggregate_scores[0]["base_rag"] += scores["base_rag"]
             aggregate_scores[0]["base"] += scores["base"]
+
 
         aggregate_scores[0]["lora_rag"] = aggregate_scores[0]["lora_rag"] / len(question_pairs)
         aggregate_scores[0]["lora"] = aggregate_scores[0]["lora"] / len(question_pairs)
