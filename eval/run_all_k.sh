@@ -16,7 +16,7 @@ export CUDA_VISIBLE_DEVICES=$1
 for script in "${scripts[@]}"; do
   while true; do
     # Run the script with "cuda" argument and capture its output
-    output=$(bash "$script" cuda)
+    output=$(bash "$script")
 
     # Check if the output contains "ALL_DONE"
     if [[ $output == *"ALL_DONE"* ]]; then
