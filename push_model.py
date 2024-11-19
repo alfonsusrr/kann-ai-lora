@@ -7,14 +7,8 @@ from datasets import load_dataset, concatenate_datasets, load_from_disk
 from trl import SFTTrainer
 from transformers import TrainingArguments, BitsAndBytesConfig
 from tqdm import tqdm
-from pinecone import Pinecone
-from sentence_transformers import SentenceTransformer
-from transformers import AutoModel, AutoTokenizer
-import uuid
 import torch
-import torch.nn.functional as F
 import numpy as np
-from torch import Tensor
 from typing import Dict
 import os
 import json
@@ -45,7 +39,7 @@ def load_model(model_dir, from_checkpoint):
     return lora_model, tokenizer
 
 def main():
-    for model_dir in ["nene-v4", "tsumugi-v4", "kanna-v4", "natsume-v4"]:
+    for model_dir in tqdm(["nene-v4", "tsumugi-v4", "kanna-v4", "natsume-v4"]):
         lora_model, tokenizer = load_model(model_dir, False)
         lora_model.push_to_hub("alfonsusrr/" + model_dir, token="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")
 
