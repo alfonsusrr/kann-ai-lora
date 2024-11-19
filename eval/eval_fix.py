@@ -83,34 +83,12 @@ def load_ollama_model(args):
         
     baseline_model_name = f"{args.modelfile_name}"
 
-def format_messages(raw_messages, character):
-    messages = raw_messages["conversation"]
-    messages = json.loads(messages)
-    messages = [{
-        "from": "gpt" if message["role"] in character else "human",
-        "value": message["content"]
-    } for message in messages]
-    messages = [{
-        "from": "system",
-        "value": f"You are a character with aliases : {', '.join(character)}. Complete the conversation with your personality. "
-    }] + messages
-    return {
-        "conversations": messages
-    }
-
-def formatting_prompts_func(examples):
-    global tokenizer
-    convos = examples["conversations"]
-    texts = [tokenizer.apply_chat_template(convo, tokenize = False, add_generation_prompt = False) for convo in convos]
-    return { "text" : texts }
-
 def initialize_RAG(index_name):
     api_key = os.getenv("PINECONE_API_KEY")
     if api_key is None:
         raise ValueError("PINECONE_API_KEY environment variable not set")
     pc = Pinecone(api_key=api_key)
-    index = pc.Index(index_name)
-    return index
+    return pc.Index(index_name)
 
 # Embedding Tools
 def pooling(outputs: torch.Tensor, inputs: Dict,  strategy: str = 'cls') -> np.ndarray:
@@ -156,47 +134,6 @@ def document_retrieval(model, tokenizer, pc, index_name, query):
     for result in query_results["matches"]:
         results.append(result['metadata']['text'])
     return results
-
-def inference(args):
-    set_env(args.device)
-    lora_model, tokenizer = load_model(args.model, args.from_checkpoint)
-    embed_model, embed_tokenizer = load_embed_model(args.embed_model)
-    index = initialize_RAG(args.index_name)
-
-    prev_messages = []
-    while True:
-        message_content = input("You: ")
-        rag_results_list = document_retrieval(embed_model, embed_tokenizer, index, args.index_name, message_content)
-        rag_results = rag_results_list[0]
-        user_results = rag_results_list[1]
-        rag_prompt = f"Here are some examples of how you might respond as {' or '.join(args.character) if len(args.character) > 1 else args.character[0]} based on the given context and characters: {', '.join(rag_results)} \n"
-
-        if len(user_results) > 0:
-            rag_prompt += f"Here are also some related chat history with this person: {', '.join(user_results)} \n"
-
-        prev_messages.append({"from": "user", "value": message_content})
-
-        appended_messages = [{
-            "from": "system",
-            "value": f"You are roleplaying a character that is named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}. Please provide a response that is engaging, in-character, and adds depth to the conversation. Make sure to be as detailed as possible. Do not include the character's name or any tags before the response. Only provide the spoken dialogue of the character you are roleplaying. \n" + rag_prompt
-        }] + prev_messages
-
-        text = tokenizer.apply_chat_template(
-            appended_messages,
-            tokenize = False,
-            add_generation_prompt = True, # Must add for generation
-            return_tensors = "pt",
-        )
-
-        inputs = tokenizer(text, return_tensors="pt", padding=True).to('cuda')
-        output = lora_model.generate(**inputs, max_new_tokens=500, temperature=1)
-        text = tokenizer.batch_decode(output)
-
-        parsed_text_1 = text[0].split("<|end_header_id|>")[-1]
-        parsed_text_2 = parsed_text_1.split("<|eot_id|>")[0].strip()
-        prev_messages.append({"from": "assistant", "value": parsed_text_2})
-        print(f"{args.character[0]}: {parsed_text_2}")
-
 
 # LoRA + RAG
 def handle_single_message(message_content, rag_prompt, args):  

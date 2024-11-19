@@ -92,7 +92,7 @@
             "scores": {
                 "lora_rag": 1.0,
                 "lora": 0.0,
-                "base_rag": 1.0,
+                "base_rag": 0.5,
                 "base": 1.0
             }
         },
@@ -172,7 +172,7 @@
             "scores": {
                 "lora_rag": 1.0,
                 "lora": 1.0,
-                "base_rag": 0.0,
+                "base_rag": 0.5,
                 "base": 0.0
             }
         },
@@ -237,7 +237,7 @@
                 "lora_rag": 1.0,
                 "lora": 1.0,
                 "base_rag": 1.0,
-                "base": 1.0
+                "base": 0.0
             }
         },
         {
@@ -330,9 +330,9 @@
                 "base": "DNA? Deoxyribonucleic Acid, I believe. But really, what's the point of knowing all these fancy scientific things when you can just live life as it comes? Like, don't you think too much about this sorta thing?"
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 1.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
+                "base_rag": 0.5,
                 "base": 1.0
             }
         },
@@ -403,10 +403,10 @@
     ],
     "aggregate_scores": [
         {
-            "lora_rag": 0.92,
+            "lora_rag": 0.96,
             "lora": 0.84,
-            "base_rag": 0.72,
-            "base": 0.84
+            "base_rag": 0.74,
+            "base": 0.8
         }
     ]
 }

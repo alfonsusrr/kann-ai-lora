@@ -237,7 +237,7 @@
                 "lora_rag": 1.0,
                 "lora": 1.0,
                 "base_rag": 0.0,
-                "base": 0.0
+                "base": 1.0
             }
         },
         {
@@ -298,8 +298,8 @@
                 "base": "*sigh* Not again... Can't you see I'm busy making drinks and serving customers here at the cafe? Fine, I'll play along. But don't expect me to be all smiles about it... *rolls eyes*\n\nThe Nile River, apparently. It's located in northeastern Africa and stretches for approximately 6,650 kilometers (4,130 miles) long. Happy now? Can I go back to running this cafe like a well-oiled machine or what?"
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 1.0,
+                "lora_rag": 0.5,
+                "lora": 0.0,
                 "base_rag": 1.0,
                 "base": 1.0
             }
@@ -403,10 +403,10 @@
     ],
     "aggregate_scores": [
         {
-            "lora_rag": 0.64,
-            "lora": 0.6,
+            "lora_rag": 0.66,
+            "lora": 0.56,
             "base_rag": 0.92,
-            "base": 0.88
+            "base": 0.92
         }
     ]
 }

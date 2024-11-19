@@ -20,6 +20,8 @@ def generate_prompt(correct_answer, generated_answer):
     prompt = f'The correct answer is {correct_answer}' \
              f'Please provide a score from 0 or 1, where 0 means the answer is completely wrong, and 1 means the answer is completely correct. ' \
                 f'If the generated answer contains the correct answer, please provide a score of 1.' \
+                f'If the generated answer only contains part of the correct answer without any incorrect information (i.e. part of names, paraphrase of the correct answer), please provide a score of 1.' \
+                f'If the generated answer is partly similar (e.g. contains some correct information but also some incorrect information), please provide a score of 0.5.' \
                 f'If the generated answer does not contain the correct answer, please provide a score of 0.' \
                 f'Please provide a score for the following generated answers: {generated_answer}' \
                 f'Only output the score in the following format without any further comments!:'\

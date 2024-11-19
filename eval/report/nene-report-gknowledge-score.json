@@ -171,8 +171,8 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 1.0,
-                "base_rag": 0.0,
+                "lora": 0.0,
+                "base_rag": 0.5,
                 "base": 0.0
             }
         },
@@ -365,7 +365,7 @@
                 "lora_rag": 0.0,
                 "lora": 0.0,
                 "base_rag": 1.0,
-                "base": 1.0
+                "base": 0.5
             }
         },
         {
@@ -397,16 +397,16 @@
                 "lora_rag": 1.0,
                 "lora": 1.0,
                 "base_rag": 1.0,
-                "base": 1.0
+                "base": 0.5
             }
         }
     ],
     "aggregate_scores": [
         {
             "lora_rag": 0.52,
-            "lora": 0.52,
-            "base_rag": 0.84,
-            "base": 0.96
+            "lora": 0.48,
+            "base_rag": 0.86,
+            "base": 0.92
         }
     ]
 }

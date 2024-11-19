@@ -108,7 +108,7 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
+                "base_rag": 1.0,
                 "base": 1.0
             }
         },
@@ -125,7 +125,7 @@
                 "lora_rag": 0.0,
                 "lora": 0.0,
                 "base_rag": 1.0,
-                "base": 1.0
+                "base": 0.0
             }
         },
         {
@@ -139,7 +139,7 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora": 1.0,
                 "base_rag": 0.0,
                 "base": 0.0
             }
@@ -346,7 +346,7 @@
                 "base": "The school's Occult Research Club... *blush* It's actually the club that I'm in charge of. As its president, I try to keep everyone informed and up-to-date on various supernatural phenomena.\n\nTo be honest, our activities are a bit... unusual, even among other clubs at school. We delve into all sorts of mysterious stuff - curses, spirits, magic, you name it! *giggles nervously* It's not every day that I get to combine my passion for the occult with helping people and learning new things.\n\nWe've got a pretty cool bunch of members too... *smiles proudly* Some are more into researching and analyzing data, while others are more... hands-on, shall we say. Together, we're like a team, working to uncover hidden secrets and maybe even help those in need. Of course, all that's on the down-low for now..."
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 1.0,
                 "lora": 1.0,
                 "base_rag": 0.0,
                 "base": 0.0
@@ -379,7 +379,7 @@
             },
             "scores": {
                 "lora_rag": 1.0,
-                "lora": 0.0,
+                "lora": 1.0,
                 "base_rag": 0.0,
                 "base": 0.0
             }
@@ -403,10 +403,10 @@
     ],
     "aggregate_scores": [
         {
-            "lora_rag": 0.04,
-            "lora": 0.08,
-            "base_rag": 0.2,
-            "base": 0.28
+            "lora_rag": 0.08,
+            "lora": 0.16,
+            "base_rag": 0.24,
+            "base": 0.24
         }
     ]
 }

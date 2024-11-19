@@ -1,0 +1,82 @@
+[
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "Hi! I'm Nicholas Sidharta, nice to meet you"
+            }
+        ]
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "By the way, I'm a big fan of visual novels and programming"
+            }
+        ]
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "I'm currently a college student, nice and busy"
+            }
+        ]
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "I'm still 21, hehe, young and wild"
+            }
+        ]
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "My birthday is on June 12th, 2003"
+            }
+        ]
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "I can converse in Indonesian, English, and Japanese, nice to practice my languages"
+            }
+        ]
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "Next week, I'll be participating in Comifuro 19, so excited"
+            }
+        ]
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "Right now, I'm doing my undergraduate thesis, wish me luck"
+            }
+        ]
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "My favorite activity is sleeping, I mean, who doesn't love sleep"
+            }
+        ]
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "My friend's name is Alfonsus Rodriques Rendy, nice guy"
+            }
+        ]
+    }
+]

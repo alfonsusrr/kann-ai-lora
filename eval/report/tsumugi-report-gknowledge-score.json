@@ -76,7 +76,7 @@
             "scores": {
                 "lora_rag": 1.0,
                 "lora": 1.0,
-                "base_rag": 1.0,
+                "base_rag": 0.0,
                 "base": 1.0
             }
         },
@@ -394,7 +394,7 @@
                 "base": "Uh, I think that's a chemistry question... I was actually studying for a test on \"Elemental Balancing in Spellcasting\" in our school's Occult Club yesterday. Our club advisor, Mr. Ichinose, explained to us about how magic energy interacts with elements and gases. If I recall correctly... plants absorb carbon dioxide, right? I'm more of an occult specialist than a chemistry whiz though!"
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 1.0,
                 "lora": 1.0,
                 "base_rag": 1.0,
                 "base": 1.0
@@ -403,9 +403,9 @@
     ],
     "aggregate_scores": [
         {
-            "lora_rag": 0.48,
+            "lora_rag": 0.52,
             "lora": 0.56,
-            "base_rag": 0.88,
+            "base_rag": 0.84,
             "base": 0.8
         }
     ]

@@ -10,7 +10,7 @@
                 "base": "My full name is Akizuki Kanna. Nice to meet you! *smiles with a gentle smile* I don't usually introduce myself properly, so please forgive me for being a bit old-fashioned. *tucks a stray hair behind her ear* Now, would you like some tea or perhaps a bite to eat? I make a mean omurice, if I do say so myself!"
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 0.5,
                 "lora": 0.0,
                 "base_rag": 1.0,
                 "base": 1.0
@@ -61,7 +61,7 @@
                 "lora_rag": 0.0,
                 "lora": 0.0,
                 "base_rag": 0.0,
-                "base": 1.0
+                "base": 0.0
             }
         },
         {
@@ -266,7 +266,7 @@
                 "base": "Let me think for a moment... Ah yes! When I first started working at this cafe, the other waitstaff member's name was Erika. She's quite the lively one, always bustling about and making sure everyone is well taken care of. We get along famously, despite my... let's say, \"age-related\" differences in understanding modern technology and whatnot."
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 0.5,
                 "lora": 0.0,
                 "base_rag": 0.0,
                 "base": 0.0
@@ -378,7 +378,7 @@
                 "base": "Dearie me... *chuckles* It's been a few months now since our lovely younger friend, Natsumi-chan, tried to teach me how to use these \"new-fangled\" contraptions. She sat with me for hours on end, explaining the intricacies of instogram and facehook, but I'm afraid it was all just a bit too much for my poor old brain! *laughs*\n\nTo be honest, I still have trouble figuring out how to use them properly... I keep pressing the wrong buttons and accidentally posting silly updates that Natsumi-chan finds absolutely hilarious. But she's very patient with me and always helps me out when I get stuck.\n\nYou know, it's funny... in my day, we didn't need all these fancy gadgets to communicate with people. We just wrote letters or had face-to-face conversations! *winks*"
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 1.0,
                 "lora": 0.0,
                 "base_rag": 0.0,
                 "base": 0.0
@@ -403,10 +403,10 @@
     ],
     "aggregate_scores": [
         {
-            "lora_rag": 0.24,
+            "lora_rag": 0.32,
             "lora": 0.24,
             "base_rag": 0.16,
-            "base": 0.2
+            "base": 0.16
         }
     ]
 }
