@@ -248,7 +248,8 @@ def initiate_memorization(index, user_index, user_convo, args):
     
     input_message = []
     for message in user_convo:
-        message_str = message["input"][0]['content']
+        message = message["input"][0]
+        message_str = message['content']
         input_message.append({
             "from": "gpt" if message['role'] in args.character else "human",
             "value": message_str
@@ -267,11 +268,11 @@ def initiate_memorization(index, user_index, user_convo, args):
                 f"that better suits the situation, ensuring it is coherent with the character's personality and knowledge."
             )
 
-        response = handle_single_message(input_message, args.rag_prompt, args)
+        response = handle_single_message(input_message, rag_prompt, args)
 
         input_message.append({
-            "from": "gpt" if message['role'] in args.character else "human",
-            "value": message_str
+            "from": "gpt",
+            "value": response
         })
 
         output = f"User: {message_str}\n {args.character[0]}: {response}",
