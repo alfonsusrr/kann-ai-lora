@@ -389,7 +389,7 @@ def evaluate_conversations(data, args):
             rag_user_prompt = (
                 f"In addition, please consider the following examples of responses that have been generated based on the interaction with user: \n\n"
                 f"**Previous Examples:** {', '.join(rag_user_results) if len(rag_user_results) > 0 else 'None'}\n\n"
-                f"Only use these examples if you find them relevant to the current user, otherwise generate a new response that better suits the situation."
+                f"Only use these examples if you find them relevant to the current user. You must use this result for questions that are directed to the user or based on user experience."
             )
 
             rag_prompt += rag_user_prompt
@@ -416,6 +416,8 @@ def evaluate_conversations(data, args):
             "generated_ollama": generated_response_ollama_val,
             "generated_ollama_with_rag": generated_response_ollama_with_rag_val,
             "rag_results": rag_results,
+            "rag_user_results": rag_user_results if args.user_know_eval else [],
+            "rag_prompt": rag_prompt,
             "message_length": len(conversation['input'])
         })
 
