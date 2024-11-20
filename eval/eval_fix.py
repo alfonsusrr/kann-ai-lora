@@ -310,14 +310,14 @@ def evaluate_conversations(data, args):
 
     # Memorization (simulate user interaction)
     print("Memorizing conversations...")
+
+    print(embedding_function(embed_model, embed_tokenizer, "Initializing")[0].tolist()[0])
     if args.user_know_eval:
-        print("A: ", embedding_function(embed_model, embed_tokenizer, "Initializing")[0].tolist())
-        print("B: ", embedding_function(embed_model, embed_tokenizer, "Initializing").tolist())
         user_index.upsert(
             vectors=[
                 {
                     "id": str(uuid.uuid4()),
-                    "values": embedding_function(embed_model, embed_tokenizer, "Initializing").tolist(),
+                    "values": embedding_function(embed_model, embed_tokenizer, "Initializing")[0].tolist(),
                     "metadata": {
                         "text": "Initializing"
                     }
