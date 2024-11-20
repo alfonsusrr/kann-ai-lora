@@ -242,6 +242,50 @@ def save_checkpoint(index, checkpoint_file):
     with open(EVAL_REPORT_DIR + checkpoint_file, 'w') as f:
         json.dump(checkpoint_data, f)
 
+def initiate_memorization(index, user_index, user_convo, lora_model, tokenizer, embed_model, embed_tokenizer, args):
+    with open(user_convo, 'r') as f:
+        user_convo = json.load(f)
+
+    
+    input_message = []
+    for message in user_convo:
+        message_str = message['content']
+        input_message.append({
+            "from": "gpt" if message['role'] in args.character else "human",
+            "value": message_str
+        })
+
+        rag_results_list = document_retrieval(embed_model, embed_tokenizer, index, args.index_name, message_str)
+        rag_results = rag_results_list[:args.num_docs]
+
+        rag_prompt = (
+                f"As the character {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}, "
+                f"please consider the following examples of responses that have been generated based on the dataset: \n\n"
+                f"**Previous Examples:** {', '.join(rag_results) if len(rag_results) > 0 else 'None'}\n\n"
+                f"While these examples may provide some guidance, evaluate their relevance to the current conversation. "
+                f"Consider whether the provided information aligns with the character's traits and the ongoing dialogue. "
+                f"If you find the examples useful, feel free to adapt them into your response. Otherwise, generate a new response "
+                f"that better suits the situation, ensuring it is coherent with the character's personality and knowledge."
+            )
+
+        response = handle_single_message(input_message, args.rag_prompt, args)
+
+        input_message.append({
+            "from": "gpt" if message['role'] in args.character else "human",
+            "value": message_str
+        })
+
+        user_index.add(
+            text = f"User: {message_str}\n {args.character[0]}: {response}",
+            namespace = 'eval',
+            metadata = {
+                "from" : "gpt" if message['role'] in args.character else "human",
+                "role" : message['role'],
+                "content" : message_str
+            }
+        )
+    return
+    
 def evaluate_conversations(data, args):
     reference_responses = []
     generated_responses = []
@@ -251,11 +295,18 @@ def evaluate_conversations(data, args):
 
     global lora_model, tokenizer, embed_model, embed_tokenizer, index
 
+    # Load models and RAG
     set_env(args.device)
     lora_model, tokenizer = load_model(args.model, args.from_checkpoint)
     embed_model, embed_tokenizer = load_embed_model(args.embed_model)
     load_ollama_model(args)
     index = initialize_RAG(args.index_name)
+    user_index = initialize_RAG(args.user_index_name)
+
+    # Memorization (simulate user interaction)
+    if args.user_know_eval:
+        user_index.delete(delete_all=True, namespace='eval')
+        initiate_memorization(index, user_index, args.user_convo, args.user_index_name, lora_model, tokenizer, embed_model, embed_tokenizer, args)
 
     # Load the last processed index
     last_processed = load_checkpoint(args.checkpoint)
@@ -295,6 +346,12 @@ def evaluate_conversations(data, args):
         rag_results_list = document_retrieval(embed_model, embed_tokenizer, index, args.index_name, string_message)
         rag_results = rag_results_list[:args.num_docs]
 
+        rag_user_results = []
+
+        if args.user_know_eval:
+            rag_user_results_list = document_retrieval(embed_model, embed_tokenizer, user_index, args.index_user, string_message)
+            rag_user_results = rag_user_results_list[:args.user_know_eval]
+
         rag_prompt = (
                 f"As the character {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}, "
                 f"please consider the following examples of responses that have been generated based on the dataset: \n\n"
@@ -304,6 +361,15 @@ def evaluate_conversations(data, args):
                 f"If you find the examples useful, feel free to adapt them into your response. Otherwise, generate a new response "
                 f"that better suits the situation, ensuring it is coherent with the character's personality and knowledge."
             )
+        
+        if args.user_know_eval:
+            rag_user_prompt = (
+                f"In addition, please consider the following examples of responses that have been generated based on the interaction with user: \n\n"
+                f"**Previous Examples:** {', '.join(rag_user_results) if len(rag_user_results) > 0 else 'None'}\n\n"
+                f"Only use these examples if you find them relevant to the current user, otherwise generate a new response that better suits the situation."
+            )
+
+            rag_prompt += rag_user_prompt
         
         reference_response = conversation['result']['content']
         generated_response_val = handle_single_message(input_message, rag_prompt, args)
