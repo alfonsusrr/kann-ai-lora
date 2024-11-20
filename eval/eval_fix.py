@@ -281,7 +281,7 @@ def initiate_memorization(index, user_index, user_convo, args):
             vectors=[
                 {
                     "id": str(uuid.uuid4()),
-                    "values": embeded_output[0].tolist(),
+                    "vector": embeded_output[0].tolist(),
                     "metadata": {
                         "text": output
                     }
@@ -315,7 +315,7 @@ def evaluate_conversations(data, args):
             vectors=[
                 {
                     "id": str(uuid.uuid4()),
-                    "values": embedding_function(embed_model, embed_tokenizer, "Initializing").tolist(),
+                    "vector": embedding_function(embed_model, embed_tokenizer, "Initializing").tolist(),
                     "metadata": {
                         "text": "Initializing"
                     }
