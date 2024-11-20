@@ -83,8 +83,8 @@ def load_ollama_model(args):
         
     baseline_model_name = f"{args.modelfile_name}"
 
-def initialize_RAG(index_name):
-    api_key = os.getenv("PINECONE_API_KEY")
+def initialize_RAG(index_name, user = False):
+    api_key = os.getenv("PINECONE_API_KEY") if not user else os.getenv("PINECONE_API_KEY_USER")
     if api_key is None:
         raise ValueError("PINECONE_API_KEY environment variable not set")
     pc = Pinecone(api_key=api_key)
