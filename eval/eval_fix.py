@@ -311,6 +311,7 @@ def evaluate_conversations(data, args):
     # Memorization (simulate user interaction)
     print("Memorizing conversations...")
     if args.user_know_eval:
+        print(embedding_function(embed_model, embed_tokenizer, "Initializing").tolist())
         user_index.upsert(
             vectors=[
                 {
