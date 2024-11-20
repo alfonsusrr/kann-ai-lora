@@ -275,7 +275,7 @@ def initiate_memorization(index, user_index, user_convo, args):
             "value": response
         })
 
-        text_output = f"User: {message_str}\n {args.character[0]}: {response}",
+        text_output = f"User: {message_str}\n {args.character[0]}: {response}"
         embeded_output = embedding_function(embed_model, embed_tokenizer, text_output)
 
         print(text_output)
