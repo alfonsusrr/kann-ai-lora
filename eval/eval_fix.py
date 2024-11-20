@@ -300,7 +300,7 @@ def evaluate_conversations(data, args):
     embed_model, embed_tokenizer = load_embed_model(args.embed_model)
     load_ollama_model(args)
     index = initialize_RAG(args.index_name)
-    user_index = initialize_RAG(args.index_user)
+    user_index = initialize_RAG(args.index_user, user=True)
 
     # Memorization (simulate user interaction)
     print("Memorizing conversations...")
