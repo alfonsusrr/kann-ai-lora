@@ -311,7 +311,7 @@ def evaluate_conversations(data, args):
     # Memorization (simulate user interaction)
     print("Memorizing conversations...")
 
-    print(embedding_function(embed_model, embed_tokenizer, "Initializing")[0].tolist()[0])
+    # print(embedding_function(embed_model, embed_tokenizer, "Initializing")[0].tolist()[0])
     if args.user_know_eval:
         user_index.upsert(
             vectors=[
@@ -326,7 +326,7 @@ def evaluate_conversations(data, args):
             namespace='eval'
         )
         user_index.delete(delete_all=True, namespace='eval')
-        initiate_memorization(index, user_index, args.user_convo, args.index_user, args)
+        initiate_memorization(index, user_index, args.user_convo, args)
 
     # Load the last processed index
     last_processed = load_checkpoint(args.checkpoint)
