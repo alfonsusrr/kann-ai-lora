@@ -126,7 +126,7 @@ def document_retrieval(model, tokenizer, pc, index_name, query):
     query_embedding = embedding_function(model, tokenizer, query)
     query_results = pc.query(
         namespace=index_name,
-        vector=query_embedding.tolist(),
+        vector=query_embedding[0].tolist(),
         top_k=1,
         include_metadata=True
     )
@@ -281,7 +281,7 @@ def initiate_memorization(index, user_index, user_convo, args):
             vectors=[
                 {
                     "id": str(uuid.uuid4()),
-                    "values": embeded_output.tolist(),
+                    "values": embeded_output[0].tolist(),
                     "metadata": {
                         "text": output
                     }
@@ -311,7 +311,8 @@ def evaluate_conversations(data, args):
     # Memorization (simulate user interaction)
     print("Memorizing conversations...")
     if args.user_know_eval:
-        print(embedding_function(embed_model, embed_tokenizer, "Initializing").tolist())
+        print("A: ", embedding_function(embed_model, embed_tokenizer, "Initializing")[0].tolist())
+        print("B: ", embedding_function(embed_model, embed_tokenizer, "Initializing").tolist())
         user_index.upsert(
             vectors=[
                 {
