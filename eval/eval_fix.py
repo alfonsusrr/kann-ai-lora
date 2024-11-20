@@ -275,8 +275,10 @@ def initiate_memorization(index, user_index, user_convo, args):
             "value": response
         })
 
-        output = f"User: {message_str}\n {args.character[0]}: {response}",
-        embeded_output = embedding_function(embed_model, embed_tokenizer, output)
+        text_output = f"User: {message_str}\n {args.character[0]}: {response}",
+        embeded_output = embedding_function(embed_model, embed_tokenizer, text_output)
+
+        print(text_output)
 
         user_index.upsert(
             vectors=[
@@ -284,7 +286,7 @@ def initiate_memorization(index, user_index, user_convo, args):
                     "id": str(uuid.uuid4()),
                     "values": embeded_output[0].tolist(),
                     "metadata": {
-                        "text": output
+                        "text": text_output
                     }
                 }
             ],
