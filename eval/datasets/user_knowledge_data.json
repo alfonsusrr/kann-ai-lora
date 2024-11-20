@@ -1,0 +1,123 @@
+[
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "What is my full name?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Nicholas Sidharta"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "What are my favorite hobbies?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Playing visual novels and programming"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "What is my academic status?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "College student"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "How old am I?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "21"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "When is my birthday?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "12th June 2003"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "Which languages can I speak?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Indonesian, English, and Japanese"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "What event will I be participating in next week?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Comifuro 19"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "What am I currently working on academically?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Undergraduate thesis"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "What is my favorite activity?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Sleeping"
+        }
+    },
+    {
+        "input": [
+            {
+                "role": "user",
+                "content": "What is my friend's name?"
+            }
+        ],
+        "result": {
+            "role": "assistant",
+            "content": "Alfonsus Rodriques Rendy"
+        }
+    }
+]
+
