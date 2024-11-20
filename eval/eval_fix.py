@@ -373,7 +373,9 @@ def evaluate_conversations(data, args):
 
         if args.user_know_eval:
             rag_user_results_list = document_retrieval(embed_model, embed_tokenizer, user_index, args.index_user, string_message)
-            rag_user_results = rag_user_results_list[:args.user_know_eval]
+            rag_user_results = rag_user_results_list[:args.num_docs]
+
+            print(rag_user_results)
 
         rag_prompt = (
                 f"As the character {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}, "
