@@ -126,7 +126,7 @@ def document_retrieval(model, tokenizer, pc, index_name, query):
     query_embedding = embedding_function(model, tokenizer, query)
     query_results = pc.query(
         namespace=index_name,
-        vector=query_embedding[0].tolist(),
+        vector=query_embedding.tolist(),
         top_k=1,
         include_metadata=True
     )
@@ -281,7 +281,7 @@ def initiate_memorization(index, user_index, user_convo, args):
             vectors=[
                 {
                     "id": str(uuid.uuid4()),
-                    "vector": embeded_output[0].tolist(),
+                    "values": embeded_output.tolist(),
                     "metadata": {
                         "text": output
                     }
@@ -315,7 +315,7 @@ def evaluate_conversations(data, args):
             vectors=[
                 {
                     "id": str(uuid.uuid4()),
-                    "vector": embedding_function(embed_model, embed_tokenizer, "Initializing").tolist(),
+                    "values": embedding_function(embed_model, embed_tokenizer, "Initializing").tolist(),
                     "metadata": {
                         "text": "Initializing"
                     }
