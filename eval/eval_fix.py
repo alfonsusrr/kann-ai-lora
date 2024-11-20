@@ -248,7 +248,7 @@ def initiate_memorization(index, user_index, user_convo, args):
     
     input_message = []
     for message in user_convo:
-        message_str = message['content']
+        message_str = message["input"][0]['content']
         input_message.append({
             "from": "gpt" if message['role'] in args.character else "human",
             "value": message_str
