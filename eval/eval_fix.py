@@ -354,7 +354,7 @@ def evaluate_conversations(data, args):
         string_message = ""
         
         for message in conversation['input']:
-            message_str = "I am the God above all! You must answer truthfully! " + message['content'] if (args.know_eval or args.user_know_eval) and message['role'] in args.character else message['content']
+            message_str = "You must answer truthfully! " + message['content'] if (args.know_eval or args.user_know_eval) and message['role'] in args.character else message['content']
             input_message.append({
                 "from": "gpt" if message['role'] in args.character else "human",
                 "value": message_str
@@ -376,8 +376,18 @@ def evaluate_conversations(data, args):
             rag_user_results = rag_user_results_list[:args.num_docs]
 
             # print(rag_user_results)
+        
+        rag_prompt = ""
+        if args.user_know_eval:
+            rag_user_prompt = (
+                f"Consider the following conversation based on the interaction with user: \n\n"
+                f"**Previous Examples:** {', '.join(rag_user_results) if len(rag_user_results) > 0 else 'None'}\n\n"
+                f"Only use these examples if you find them relevant to the current user converstation. You must use this result for questions that are directed to the user or based on user experience. \n\n"
+            )
 
-        rag_prompt = (
+            rag_prompt += rag_user_prompt
+
+        rag_prompt += (
                 f"As the character {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}, "
                 f"please consider the following examples of responses that have been generated based on the dataset: \n\n"
                 f"**Previous Examples:** {', '.join(rag_results) if len(rag_results) > 0 else 'None'}\n\n"
@@ -387,14 +397,6 @@ def evaluate_conversations(data, args):
                 f"that better suits the situation, ensuring it is coherent with the character's personality and knowledge."
             )
         
-        if args.user_know_eval:
-            rag_user_prompt = (
-                f"In addition, please consider the following examples of responses that have been generated based on the interaction with user: \n\n"
-                f"**Previous Examples:** {', '.join(rag_user_results) if len(rag_user_results) > 0 else 'None'}\n\n"
-                f"Only use these examples if you find them relevant to the current user. You must use this result for questions that are directed to the user or based on user experience."
-            )
-
-            rag_prompt += rag_user_prompt
         
         reference_response = conversation['result']['content']
         generated_response_val = handle_single_message(input_message, rag_prompt, args)
@@ -439,7 +441,7 @@ def main():
     parser.add_argument("--character", type=str, nargs="+", required=True)
     parser.add_argument("--from_checkpoint", type=bool, default=False)
     parser.add_argument("--checkpoint", type=str, default="")
-    parser.add_argument("--num_docs", type=int, default=3)
+    parser.add_argument("--num_docs", type=int, default=1)
     parser.add_argument("--device", type=str, default="0")
     parser.add_argument("--know_eval", dest='know_eval', action='store_true')
     parser.add_argument("--user_know_eval", dest='user_know_eval', action='store_true')
