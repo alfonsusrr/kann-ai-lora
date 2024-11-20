@@ -127,7 +127,7 @@ def document_retrieval(model, tokenizer, pc, index_name, query):
     query_results = pc.query(
         namespace=index_name,
         vector=query_embedding[0].tolist(),
-        top_k=1,
+        top_k=3,
         include_metadata=True
     )
     results = []
@@ -372,7 +372,7 @@ def evaluate_conversations(data, args):
         rag_user_results = []
 
         if args.user_know_eval:
-            rag_user_results_list = document_retrieval(embed_model, embed_tokenizer, user_index, args.index_user, string_message)
+            rag_user_results_list = document_retrieval(embed_model, embed_tokenizer, user_index, "eval", string_message)
             rag_user_results = rag_user_results_list[:args.num_docs]
 
             print(rag_user_results)
