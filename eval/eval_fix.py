@@ -242,7 +242,7 @@ def save_checkpoint(index, checkpoint_file):
     with open(EVAL_REPORT_DIR + checkpoint_file, 'w') as f:
         json.dump(checkpoint_data, f)
 
-def initiate_memorization(index, user_index, user_convo, lora_model, tokenizer, embed_model, embed_tokenizer, args):
+def initiate_memorization(index, user_index, user_convo, args):
     with open(EVAL_DATASET_DIR + user_convo, 'r') as f:
         user_convo = json.load(f)
     
@@ -300,12 +300,13 @@ def evaluate_conversations(data, args):
     embed_model, embed_tokenizer = load_embed_model(args.embed_model)
     load_ollama_model(args)
     index = initialize_RAG(args.index_name)
-    user_index = initialize_RAG(args.user_index_name)
+    user_index = initialize_RAG(args.index_user)
 
     # Memorization (simulate user interaction)
+    print("Memorizing conversations...")
     if args.user_know_eval:
         user_index.delete(delete_all=True, namespace='eval')
-        initiate_memorization(index, user_index, args.user_convo, args.user_index_name, lora_model, tokenizer, embed_model, embed_tokenizer, args)
+        initiate_memorization(index, user_index, args.user_convo, args.index_user, args)
 
     # Load the last processed index
     last_processed = load_checkpoint(args.checkpoint)
