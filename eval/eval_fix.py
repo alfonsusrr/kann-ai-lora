@@ -274,14 +274,20 @@ def initiate_memorization(index, user_index, user_convo, args):
             "value": message_str
         })
 
-        user_index.add(
-            text = f"User: {message_str}\n {args.character[0]}: {response}",
-            namespace = 'eval',
-            metadata = {
-                "from" : "gpt" if message['role'] in args.character else "human",
-                "role" : message['role'],
-                "content" : message_str
-            }
+        output = f"User: {message_str}\n {args.character[0]}: {response}",
+        embeded_output = embedding_function(embed_model, embed_tokenizer, output)
+
+        user_index.upsert(
+            vectors=[
+                {
+                    "id": str(uuid.uuid4()),
+                    "values": embeded_output[0].tolist(),
+                    "metadata": {
+                        "text": output
+                    }
+                }
+            ],
+            namespace='eval'
         )
     return
     
@@ -305,6 +311,18 @@ def evaluate_conversations(data, args):
     # Memorization (simulate user interaction)
     print("Memorizing conversations...")
     if args.user_know_eval:
+        user_index.upsert(
+            vectors=[
+                {
+                    "id": str(uuid.uuid4()),
+                    "values": embedding_function(embed_model, embed_tokenizer, "Initializing").tolist(),
+                    "metadata": {
+                        "text": "Initializing"
+                    }
+                }
+            ],
+            namespace='eval'
+        )
         user_index.delete(delete_all=True, namespace='eval')
         initiate_memorization(index, user_index, args.user_convo, args.index_user, args)
 
