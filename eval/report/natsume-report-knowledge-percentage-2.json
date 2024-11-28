@@ -26,8 +26,8 @@
                 "base": "*sigh* Me... Myself, and my cat, Mikan. That's it. No roommates or family members. Just me, in this tiny apartment of mine. It's actually quite quiet and peaceful... *looks away, trying to hide a hint of satisfaction*"
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
                 "base_rag": 1.0,
                 "base": 1.0
             }
@@ -44,8 +44,8 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -59,7 +59,7 @@
             },
             "scores": {
                 "lora_rag": 1.0,
-                "lora": 0.0,
+                "lora": 1.0,
                 "base_rag": 1.0,
                 "base": 1.0
             }
@@ -74,10 +74,10 @@
                 "base": "*sigh* Ah, that's a bit of a complicated situation for me... *looks down at the counter to wipe it clean*\n\nOkay, fine. There is someone I care about, but things are still kind of unclear between us. It's... Kazune Tsukishima, one of my university classmates. We've been friends for a while now, and lately, he's been showing me attention that goes beyond just friendship. *blushes slightly*\n\nBut, as much as I value our bond, I'm still unsure if I can accept his feelings or reciprocate them myself... What makes it all the more complicated is that we have these... conflicting personalities? Or rather, he's just way too carefree and optimistic for my taste! *rolls her eyes* Despite all that, I guess I find myself wanting to get closer to him...\n\nSo yeah, it's a bit of an ongoing situation between us."
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -91,9 +91,9 @@
             },
             "scores": {
                 "lora_rag": 1.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -107,9 +107,9 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -138,9 +138,9 @@
                 "base": "Uh, I don't remember selling meat buns at a shrine... I mean, I'm usually working at the university's cafe, and when I'm not doing that, I might be found walking around campus with my friends. But a shrine? That doesn't sound like something I'd do.\n\nThat being said, if you're asking about my usual outfits... Well, I have worn Chinese dresses and maid's dresses for work at the cafe, but that was more in a \"cute and playful\" kind of way, rather than anything you'd associate with selling meat buns at a shrine."
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 1.0,
                 "lora": 1.0,
-                "base_rag": 0.0,
+                "base_rag": 1.0,
                 "base": 1.0
             }
         },
@@ -156,8 +156,8 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 1.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -170,10 +170,10 @@
                 "base": "*Kosei and I walked out of the cafe, and I gestured for him to follow me* Ah, after our shift is over, we usually go grab a drink or snack somewhere. And today, I decided we could head to that little park nearby. It's not too crowded, so it's perfect for us to relax.\n\n*I led Kousei through the quiet streets, my braided odango bouncing slightly with each step*\n\nWe can get some coffee and sit by the lake. It's peaceful this time of day. Plus, I need to vent about work, anyway. *I shot him a sideways glance, a hint of a smile on my lips*"
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -186,10 +186,10 @@
                 "base": "You want to know what I was wearing when I'm on the job, huh? *blushes slightly* Well, it's not exactly a fashion statement, but as a waitstaff at this cafe, I'm usually in our standard uniform. Just a simple white apron over a black blouse and a pair of black pants. Not too flashy, but gets the job done, right?"
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -204,8 +204,8 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -220,8 +220,8 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -234,10 +234,10 @@
                 "base": "*sigh* It's Tokyo University... Yeah, I'm a student there. And no, I don't really have time for frivolous conversations about the campus or anything like that. We're in the middle of a busy day at the cafe, after all. Can you please keep it brief?"
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 1.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -252,8 +252,8 @@
             "scores": {
                 "lora_rag": 1.0,
                 "lora": 1.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -268,8 +268,8 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -282,10 +282,10 @@
                 "base": "You're referring to that incident? *smirks slightly* Well, I suppose it's no surprise that everyone assumed I'd want something... ordinary. But the truth is, what I really wanted was some crepe and hot chocolate from my favorite cafe. Yeah, I know, pretty bland celebration gift idea for someone who just got out of a hospital."
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -315,9 +315,9 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -332,8 +332,8 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -348,8 +348,8 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -362,9 +362,9 @@
                 "base": "*sigh* No, I didn't. My friends keep bugging me to go out and have fun, but honestly, I'd rather just stay in my room with a good book or cooking some new recipes in the cafe kitchen. All that socializing just exhausts me. Besides, why would I want to waste my time playing games or whatever it is you people do on those \"play dates\"? Can't you just leave me alone?"
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
                 "base": 1.0
             }
         },
@@ -379,9 +379,9 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -394,19 +394,19 @@
                 "base": "*sigh* Ah, don't remind me. I'm still embarrassed about that whole thing. We were all supposed to meet up at the takoyaki place on campus, but I got held up in a cram session and totally spaced out on the time. By the time I realized what was going on, the group had already left without even bothering to call or text me.\n\nHaruka was super understanding about it, as usual. She's always looking out for me, even when I'm being irresponsible like that. But... well, let's just say I got a few snarky comments from Taro and Minami afterwards. They can be pretty merciless when they catch wind of something like this.\n\nAnd to top it all off, the takoyaki place was having some kind of special deal that night, so now everyone's been eating those delicious octopus balls without me! I'm still seething about that..."
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 1.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         }
     ],
     "aggregate_scores": [
         {
-            "lora_rag": 0.16,
-            "lora": 0.18,
-            "base_rag": 0.26,
-            "base": 0.32
+            "lora_rag": 0.56,
+            "lora": 0.52,
+            "base_rag": 0.64,
+            "base": 0.68
         }
     ]
 }

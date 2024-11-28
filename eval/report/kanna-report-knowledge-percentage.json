@@ -45,7 +45,7 @@
                 "lora_rag": 1.0,
                 "lora": 1.0,
                 "base_rag": 0.0,
-                "base": 0.0
+                "base": 1.0
             }
         },
         {
@@ -61,7 +61,7 @@
                 "lora_rag": 0.0,
                 "lora": 0.0,
                 "base_rag": 0.0,
-                "base": 0.0
+                "base": 1.0
             }
         },
         {
@@ -77,7 +77,7 @@
                 "lora_rag": 0.0,
                 "lora": 0.0,
                 "base_rag": 0.0,
-                "base": 0.0
+                "base": 1.0
             }
         },
         {
@@ -90,8 +90,8 @@
                 "base": "*I flash a charming smile* Ah, love affairs are always so much fun! As for me, I have to admit that I'm quite smitten with one person. *I blush slightly* His name is Akira, and he's the manager of this very cafe where I work as waitstaff. He's such a kind and gentle soul, always looking out for his employees' well-being. And did I mention how handsome he is? *I giggle*\n\nBut don't worry, we're not too serious just yet. We're taking things slow, getting to know each other better, one coffee at a time. *I wink* It's still early days, but I must say that Akira has a certain... je ne sais quoi about him that makes me feel all fluttery inside!"
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
                 "base_rag": 0.0,
                 "base": 0.0
             }
@@ -138,8 +138,8 @@
                 "base": ".. (chuckles) To be honest, I'm quite terrible with all these new-fangled gadgets and gizmos. Living for over 100 years without modern technology has made me a bit of a relic, it seems! *giggles* Even using the cash register here at the cafe is a challenge for me.\n\nI mean, I can figure out how to use it, but I often end up hitting the wrong buttons and making more sales than what's supposed to happen. And don't even get me started on that newfangled smartphone... *whispers* It looks like something from a science fiction movie! (laughs) I stick to what I know: running the cafe, taking care of my roommate duties, and maybe doing some light reading in my spare time.\n\nYou have to remember, I've never owned a phone before, let alone one of those fancy smartphones everyone's always talking about. In my day, we communicated face-to-face or through letters! (giggles) It's amazing how things have changed, isn't it?"
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
                 "base_rag": 1.0,
                 "base": 1.0
             }
@@ -172,7 +172,7 @@
             "scores": {
                 "lora_rag": 1.0,
                 "lora": 1.0,
-                "base_rag": 0.0,
+                "base_rag": 1.0,
                 "base": 0.0
             }
         },
@@ -187,9 +187,9 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -203,9 +203,9 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -236,7 +236,7 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
+                "base_rag": 1.0,
                 "base": 0.0
             }
         },
@@ -250,8 +250,8 @@
                 "base": "Hmm... let me think. He said it's one of those new-fangled things called an \"Iphone\"... something like that. Never mind the details, I'm not too concerned about it anyway! *giggle* \n\nBy the way, would you like to try some freshly baked goods from our cafe? They're still warm from the oven!"
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
                 "base_rag": 0.0,
                 "base": 1.0
             }
@@ -266,8 +266,8 @@
                 "base": "Let me think for a moment... Ah yes! When I first started working at this cafe, the other waitstaff member's name was Erika. She's quite the lively one, always bustling about and making sure everyone is well taken care of. We get along famously, despite my... let's say, \"age-related\" differences in understanding modern technology and whatnot."
             },
             "scores": {
-                "lora_rag": 0.5,
-                "lora": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
                 "base_rag": 0.0,
                 "base": 0.0
             }
@@ -284,7 +284,7 @@
             "scores": {
                 "lora_rag": 1.0,
                 "lora": 1.0,
-                "base_rag": 0.0,
+                "base_rag": 1.0,
                 "base": 0.0
             }
         },
@@ -314,10 +314,10 @@
                 "base": "User: Who was the name of the person under the influence of the butterfly in Kousei\u2019s college?\nYou Response: Ah, you're talking about that incident at the university... I think it was Takamura Akito. I remember now, he was indeed quite drunk and made a scene because of that butterfly's influence. *chuckles* Such a foolish young man, always getting into trouble! (giggles)"
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
                 "base_rag": 0.0,
-                "base": 0.0
+                "base": 1.0
             }
         },
         {
@@ -332,8 +332,8 @@
             "scores": {
                 "lora_rag": 1.0,
                 "lora": 1.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -346,7 +346,7 @@
                 "base": "I got my first smartphone from one of the kids who lives in the building where our little cafe is located. He's always getting into some kind of trouble, that one... Anyway, he was really excited to give me this new-fangled phone thingy, and I was so grateful for it! But then, while I was trying to figure out how to use it, a girl with short hair and glasses walked by the cafe. She looked kinda annoyed at first, but when she saw my struggles with the phone, her expression changed... and that's when we met!"
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 1.0,
                 "lora": 0.0,
                 "base_rag": 0.0,
                 "base": 0.0
@@ -397,16 +397,16 @@
                 "lora_rag": 0.0,
                 "lora": 0.0,
                 "base_rag": 0.0,
-                "base": 0.0
+                "base": 1.0
             }
         }
     ],
     "aggregate_scores": [
         {
-            "lora_rag": 0.32,
-            "lora": 0.24,
-            "base_rag": 0.16,
-            "base": 0.16
+            "lora_rag": 0.56,
+            "lora": 0.56,
+            "base_rag": 0.4,
+            "base": 0.48
         }
     ]
 }

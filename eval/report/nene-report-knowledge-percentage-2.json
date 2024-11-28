@@ -11,7 +11,7 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora": 1.0,
                 "base_rag": 1.0,
                 "base": 1.0
             }
@@ -26,8 +26,8 @@
                 "base": "I live alone in a small apartment. It's a bit of a lonely life, but it suits me just fine. As the president of the school occult club, my schedule is pretty packed, and to be honest, I'm not really comfortable having others around me all the time..."
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
                 "base_rag": 1.0,
                 "base": 1.0
             }
@@ -44,8 +44,8 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -60,8 +60,8 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -74,10 +74,10 @@
                 "base": "Um, no... I mean, not really. I don't have much time for relationships, what with being the president of the school occult club and all. Plus, my secret identity as a witch makes it kind of difficult to maintain a personal life, you know? But, there is one person who's been trying to get closer to me lately... His name is Saito Shin, he's our classmate and an editor for the school newspaper. He's really nice and always helps me out with my club duties. But, I'm not sure if I can really trust him with my secret... yet, at least."
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -90,8 +90,8 @@
                 "base": "My trusty handgun! It's a customized, high-tech pistol that I've had since I was younger. As a witch and a member of the occult club, it's essential for me to have some means of self-defense in case of unexpected situations. But don't worry, I'm quite careful with its use... *nervous smile*"
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
                 "base_rag": 1.0,
                 "base": 1.0
             }
@@ -107,7 +107,7 @@
             },
             "scores": {
                 "lora_rag": 1.0,
-                "lora": 0.0,
+                "lora": 1.0,
                 "base_rag": 1.0,
                 "base": 1.0
             }
@@ -125,7 +125,7 @@
                 "lora_rag": 0.0,
                 "lora": 0.0,
                 "base_rag": 1.0,
-                "base": 0.0
+                "base": 1.0
             }
         },
         {
@@ -138,10 +138,10 @@
                 "base": "That's a... delicate topic. *nervous laugh* As the president of the school occult club, I've had my fair share of researching and studying magic, including the darker aspects of it. And, well, when I established the contract with that mysterious being, I thought I was doing the right thing by wishing for something that would benefit not just myself but also others...\n\nI wished to be able to see into people's pasts and futures through fortune telling, to help them make better decisions in life and uncover the truth behind various mysteries. It seemed like a noble goal at the time. But... *whispers* as you know now, there was an added clause that came with it..."
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 1.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -154,10 +154,10 @@
                 "base": "*R*~ It was a spicy miso tonkotsu ramen from that new shop that just opened up downtown! I'm absolutely obsessed with their noodles, and the rich pork broth is just what I need after a long day of dealing with... *ahem* \"certain situations\". The owner even gave me a cute little sticker on my bowl, which made me giggle. Shopping for new ingredients to cook ramen at home has been really fun lately too!"
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -170,7 +170,7 @@
                 "base": "The ramen... (giggles) Yes, I did finish it. I have a bit of a weakness for rich, savory broths and springy noodles. It was really delicious! In fact, I think I might just go order some more now that I'm thinking about it. I love how it warms my belly and lifts my mood. Speaking of which, have you tried the new ramen shop that just opened up near school? I heard great things... (gets distracted)"
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 1.0,
                 "lora": 1.0,
                 "base_rag": 1.0,
                 "base": 1.0
@@ -188,8 +188,8 @@
             "scores": {
                 "lora_rag": 1.0,
                 "lora": 1.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -203,9 +203,9 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -220,7 +220,7 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
+                "base_rag": 1.0,
                 "base": 1.0
             }
         },
@@ -234,10 +234,10 @@
                 "base": "That's the thing... nobody knows for sure. The only clue we have is in an ancient tome that our club advisor, Professor Hiko, has been trying to decipher. It says that if the contract is fulfilled, my powers as a magician will be magnified beyond anything I could ever imagine.\n\nBut it also warns of terrible consequences... something about my body being changed in ways that would make me no longer recognizable as myself. And there's a hint that someone close to me might suffer the same fate...\n\nThe thought alone sends shivers down my spine. I've tried to keep this secret from everyone, but it weighs heavily on my mind."
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -251,9 +251,9 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -268,8 +268,8 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -282,10 +282,10 @@
                 "base": "That would be Mibu Academy. It's a well-known and prestigious high school, especially when it comes to our... unique aspects, shall we say. As the president of the school occult club, I've had the chance to get familiar with some of its hidden corners and secrets."
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -298,10 +298,10 @@
                 "base": "Meguru... She's really sweet, isn't she? I gave her some of the homemade cookies I baked over the weekend. It's always easier to get people talking when there's food involved, don't you think? Just being kind and having something to share is a great way to start a conversation and make friends. But between you and me, sometimes even with cookies, it can be hard for some people to open up... especially if they're dealing with things that are, um, difficult to talk about."
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -314,10 +314,10 @@
                 "base": "You must be referring to... (gulps) ...Kuroba Rin. Yes, that's it. She's a student in our school too, and she has some supernatural abilities like me. We don't really talk much, though. (gets nervous) As the president of the School Occult Club, I'm supposed to keep an eye on her, but... (trails off)"
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -331,9 +331,9 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -348,8 +348,8 @@
             "scores": {
                 "lora_rag": 1.0,
                 "lora": 1.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -363,9 +363,9 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -380,8 +380,8 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -396,17 +396,17 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         }
     ],
     "aggregate_scores": [
         {
-            "lora_rag": 0.08,
-            "lora": 0.16,
-            "base_rag": 0.24,
-            "base": 0.24
+            "lora_rag": 0.52,
+            "lora": 0.52,
+            "base_rag": 0.52,
+            "base": 0.72
         }
     ]
 }

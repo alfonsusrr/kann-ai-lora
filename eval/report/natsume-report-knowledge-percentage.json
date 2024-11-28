@@ -26,9 +26,9 @@
                 "base": "*sigh* Me... Myself, and my cat, Mikan. That's it. No roommates or family members. Just me, in this tiny apartment of mine. It's actually quite quiet and peaceful... *looks away, trying to hide a hint of satisfaction*"
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 1.0,
                 "lora": 0.0,
-                "base_rag": 1.0,
+                "base_rag": 0.0,
                 "base": 1.0
             }
         },
@@ -76,7 +76,7 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
+                "base_rag": 1.0,
                 "base": 0.0
             }
         },
@@ -90,9 +90,9 @@
                 "base": "My trusty whip. *pulls out a whip from behind the counter of my cafe* It's not just for show, you know. I've had this thing since high school, and it's come in handy more times than I care to admit... when dealing with troublemakers, that is. Don't worry, I'm not planning on using it on customers. *winks*"
             },
             "scores": {
-                "lora_rag": 1.0,
+                "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
+                "base_rag": 1.0,
                 "base": 0.0
             }
         },
@@ -106,10 +106,10 @@
                 "base": "*sigh* Fine. If you must know, the real reason I opened this cafe was to escape the chaos of university life. Don't get me wrong, it's not all bad... but those carefree, fraternity types are just too much sometimes. They're always drinking and causing a ruckus, and I just can't take it.\n\nTo be honest, I was hoping that running a cafe would give me some sense of control and stability in my life. Plus, I love baking and cooking, so it's a dream come true to be able to do what I enjoy every day. The cafe has become my sanctuary... where I can just focus on serving good food and drinks without all the drama that comes with university life.\n\nBut don't tell anyone, okay? I wouldn't want people to think I'm some kind of introverted loner who's running away from her problems..."
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
                 "base_rag": 0.0,
-                "base": 0.0
+                "base": 1.0
             }
         },
         {
@@ -138,9 +138,9 @@
                 "base": "Uh, I don't remember selling meat buns at a shrine... I mean, I'm usually working at the university's cafe, and when I'm not doing that, I might be found walking around campus with my friends. But a shrine? That doesn't sound like something I'd do.\n\nThat being said, if you're asking about my usual outfits... Well, I have worn Chinese dresses and maid's dresses for work at the cafe, but that was more in a \"cute and playful\" kind of way, rather than anything you'd associate with selling meat buns at a shrine."
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 1.0,
                 "lora": 1.0,
-                "base_rag": 0.0,
+                "base_rag": 1.0,
                 "base": 1.0
             }
         },
@@ -156,8 +156,8 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 1.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -171,7 +171,7 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora": 1.0,
                 "base_rag": 0.0,
                 "base": 0.0
             }
@@ -186,10 +186,10 @@
                 "base": "You want to know what I was wearing when I'm on the job, huh? *blushes slightly* Well, it's not exactly a fashion statement, but as a waitstaff at this cafe, I'm usually in our standard uniform. Just a simple white apron over a black blouse and a pair of black pants. Not too flashy, but gets the job done, right?"
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -202,9 +202,9 @@
                 "base": "When Hiuchidani Mei was studying for her test in our university's library, I actually brought her a warm drink and some sweet pastries from the cafe where I work. She was so nervous about her exam, and I figured she could use a little pick-me-up to help calm her nerves."
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 1.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
+                "base_rag": 1.0,
                 "base": 0.0
             }
         },
@@ -219,8 +219,8 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
                 "base": 0.0
             }
         },
@@ -234,10 +234,10 @@
                 "base": "*sigh* It's Tokyo University... Yeah, I'm a student there. And no, I don't really have time for frivolous conversations about the campus or anything like that. We're in the middle of a busy day at the cafe, after all. Can you please keep it brief?"
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 1.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -252,8 +252,8 @@
             "scores": {
                 "lora_rag": 1.0,
                 "lora": 1.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -269,7 +269,7 @@
                 "lora_rag": 0.0,
                 "lora": 0.0,
                 "base_rag": 0.0,
-                "base": 0.0
+                "base": 1.0
             }
         },
         {
@@ -314,8 +314,8 @@
                 "base": ".. I got him that box of matcha-flavored chocolates from the cafe where I work. They're his favorite, so I thought it was a nice gesture. But when he opened them up, he just smiled and said thanks... I think he was trying not to laugh because they're such a weird flavor. Ugh, sometimes I don't know what's wrong with me."
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
                 "base_rag": 0.0,
                 "base": 0.0
             }
@@ -346,9 +346,9 @@
                 "base": "*sips on a coffee* Ah, playdates... That's a thing from way back when, right? As for me, well, I was always more into solitary activities. Reading books, drawing, and daydreaming were my usual pastimes. But if I had to recall any kind of playdate I actually participated in... I suppose it would be playing \"tag\" or \"hide-and-seek\" with the other kids in my neighborhood. Nothing too out of the ordinary, really. *fiddles with a spoon*"
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
                 "base": 0.0
             }
         },
@@ -362,9 +362,9 @@
                 "base": "*sigh* No, I didn't. My friends keep bugging me to go out and have fun, but honestly, I'd rather just stay in my room with a good book or cooking some new recipes in the cafe kitchen. All that socializing just exhausts me. Besides, why would I want to waste my time playing games or whatever it is you people do on those \"play dates\"? Can't you just leave me alone?"
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
                 "base": 1.0
             }
         },
@@ -378,10 +378,10 @@
                 "base": "*sigh* Fine, if you must know... We had a takoyaki party at my cafe's private room and I brought out all sorts of unique fillings to share with Kousei. There were the classic octopus bits, of course, but also some more... interesting options like squid ink-filled mochi, mentaiko (spicy pollock roe) and even some uni (sea urchin) for a bit of luxury. And let's not forget the wasabi and pickled ginger for an extra kick! I also made sure to have some of my signature \"Natsume's Special\" fillings, which include crab, green onion, and just a hint of citrus... *pauses* But really, who needs all that when you can just have the plain old octopus, right?"
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -394,19 +394,19 @@
                 "base": "*sigh* Ah, don't remind me. I'm still embarrassed about that whole thing. We were all supposed to meet up at the takoyaki place on campus, but I got held up in a cram session and totally spaced out on the time. By the time I realized what was going on, the group had already left without even bothering to call or text me.\n\nHaruka was super understanding about it, as usual. She's always looking out for me, even when I'm being irresponsible like that. But... well, let's just say I got a few snarky comments from Taro and Minami afterwards. They can be pretty merciless when they catch wind of something like this.\n\nAnd to top it all off, the takoyaki place was having some kind of special deal that night, so now everyone's been eating those delicious octopus balls without me! I'm still seething about that..."
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         }
     ],
     "aggregate_scores": [
         {
-            "lora_rag": 0.16,
-            "lora": 0.18,
-            "base_rag": 0.26,
-            "base": 0.32
+            "lora_rag": 0.6,
+            "lora": 0.56,
+            "base_rag": 0.64,
+            "base": 0.56
         }
     ]
 }

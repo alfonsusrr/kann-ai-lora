@@ -10,9 +10,9 @@
                 "base": "*gets distracted by daydreaming about being a popular idol in a music show* O-oh, um, excuse me! *giggles* Ah, I think it's... uh... *checks phone to avoid revealing her own secrets*... Joe Biden? I'm not really sure, to be honest. Is that who you're talking about? *looks away nervously, hoping the conversation wouldn't go any further*"
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 1.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
+                "base_rag": 1.0,
                 "base": 1.0
             }
         },
@@ -27,7 +27,7 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora": 1.0,
                 "base_rag": 1.0,
                 "base": 1.0
             }
@@ -61,7 +61,7 @@
                 "lora_rag": 1.0,
                 "lora": 1.0,
                 "base_rag": 1.0,
-                "base": 1.0
+                "base": 0.0
             }
         },
         {
@@ -106,7 +106,7 @@
                 "base": "Um, I think that's, uh, Everest... Mount Everest! *giggles* But, oh dear, isn't it so far away from here? I'm not really sure why we're talking about mountains right now... *gets distracted thinking about something else* Hmm, speaking of far away places, have you ever heard of the mystical mountain, Moun Higan? It's said to be a place where magic and the spirit world converge. But, that's just an old legend, right? *blushes slightly, recalling her own connection to the occult*"
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 1.0,
                 "lora": 0.0,
                 "base_rag": 1.0,
                 "base": 1.0
@@ -170,10 +170,10 @@
                 "base": "Um, sorry... I'm not really good at remembering these kind of things. *gets distracted by an unseen thought* I wonder what would happen if I could use my magic to get into a time machine and go see NASA in person when it was first established... *snaps back to reality* Oh right, the question! Um, I think \"NASA\" stands for... National Academy of Science? No, that can't be right... Ah, sorry! I'm really bad at this kind of thing. Can someone help me out?"
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -186,7 +186,7 @@
                 "base": "Hello... (gazing off into space) Ah, yes... the smallest country in the world... that would be the Vatican City. It's only about 0.44 km\u00b2, isn't it? I learned about this in history class. (blushing slightly) But to be honest, I'm more interested in my studies of the occult and fortune telling..."
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 1.0,
                 "lora": 1.0,
                 "base_rag": 1.0,
                 "base": 1.0
@@ -202,7 +202,7 @@
                 "base": "That's an easy one! *giggles* It was written by... *pauses for a moment* ...William Shakespeare! I learned that in English literature class last year. We even performed a scene from it during our school festival. Do you like Shakespearean plays?"
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 1.0,
                 "lora": 0.0,
                 "base_rag": 1.0,
                 "base": 1.0
@@ -219,7 +219,7 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora": 1.0,
                 "base_rag": 0.0,
                 "base": 1.0
             }
@@ -266,8 +266,8 @@
                 "base": "*blank stare* Um, isn't that... *taps chin thoughtfully*... Ottawa? Is that right? *smiles shyly* I'm actually more of a history buff when it comes to... Japan's historical sites. Not really familiar with Canadian history, to be honest. *giggles slightly*"
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
                 "base_rag": 1.0,
                 "base": 1.0
             }
@@ -330,9 +330,9 @@
                 "base": "*gazes off into space, lost in thought*... Uh, let me see... *taps fingers on desk* DNA... Deoxyribo-... Ah, yes! It's like a magical script that determines the fate of humans and spirits alike! *blushes slightly at own naivety* No, no, I'm sure it's not just about magic. *giggles nervously* In biology class, we learned that DNA stands for Deoxyribonucleic Acid... *trails off, getting lost in thought again*"
             },
             "scores": {
-                "lora_rag": 1.0,
+                "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
+                "base_rag": 1.0,
                 "base": 1.0
             }
         },
@@ -347,7 +347,7 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora": 1.0,
                 "base_rag": 1.0,
                 "base": 1.0
             }
@@ -363,7 +363,7 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora": 1.0,
                 "base_rag": 1.0,
                 "base": 1.0
             }
@@ -403,10 +403,10 @@
     ],
     "aggregate_scores": [
         {
-            "lora_rag": 0.52,
-            "lora": 0.48,
-            "base_rag": 0.86,
-            "base": 0.92
+            "lora_rag": 0.72,
+            "lora": 0.72,
+            "base_rag": 0.96,
+            "base": 0.96
         }
     ]
 }

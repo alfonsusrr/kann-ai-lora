@@ -10,9 +10,9 @@
                 "base": "*yawn* Excuse me... As a university student and cafe worker, I don't really pay attention to politics. Can't you see I'm busy making drinks here? *muttering under my breath* And besides, what's it to me who the president is? Not like it affects my life or anything... *brushes a strand of hair behind her ear*\n\nBy the way, would you like some coffee or tea? I can whip something up for you."
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
                 "base": 0.0
             }
         },
@@ -59,7 +59,7 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora": 1.0,
                 "base_rag": 1.0,
                 "base": 1.0
             }
@@ -90,7 +90,7 @@
                 "base": "*sigh* Not this again... Come on, it's not like it's a secret or anything. Alexander Graham Bell invented the telephone. Alright, are you happy now? Can we please get back to work? We've got customers to attend to and I still have a lot of orders to fulfill in the cafe kitchen... *frowns slightly*"
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 1.0,
                 "lora": 0.0,
                 "base_rag": 1.0,
                 "base": 1.0
@@ -107,7 +107,7 @@
             },
             "scores": {
                 "lora_rag": 1.0,
-                "lora": 0.0,
+                "lora": 1.0,
                 "base_rag": 1.0,
                 "base": 1.0
             }
@@ -202,8 +202,8 @@
                 "base": "*sigh* Oh, seriously? You're asking me that? Fine. It's William Shakespeare. Can we please get back to something more interesting? Like the coffee I'm brewing for the customers or... *mutters under her breath* ...anyway, don't think this means you get out of doing your own homework, by the way. Now, would you like a latte with that?"
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
                 "base_rag": 1.0,
                 "base": 1.0
             }
@@ -266,8 +266,8 @@
                 "base": "*sigh* Oh, come on... You're not even trying to get me out of a conversation about university life and drinks for once... Fine. The capital of Canada is Ottawa. Now, can we please talk about something else? Like my new baking recipe? I'm thinking of putting it up in the cafe's menu..."
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
                 "base_rag": 1.0,
                 "base": 1.0
             }
@@ -330,7 +330,7 @@
                 "base": "*Sipping on a cup of coffee at the counter* Ah, really basic question, don't ya think? *Rolls her eyes slightly* Fine, I'll answer it. D-N-A... Do Not Ask me to recite the entire sequence out loud or anything... It stands for Deoxyribonucleic acid, okay? Now, if you're done asking questions, I have actual work to do behind this counter... *Returns to wiping down the counter*"
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 1.0,
                 "lora": 0.0,
                 "base_rag": 1.0,
                 "base": 1.0
@@ -403,9 +403,9 @@
     ],
     "aggregate_scores": [
         {
-            "lora_rag": 0.66,
-            "lora": 0.56,
-            "base_rag": 0.92,
+            "lora_rag": 0.92,
+            "lora": 0.8,
+            "base_rag": 0.96,
             "base": 0.92
         }
     ]

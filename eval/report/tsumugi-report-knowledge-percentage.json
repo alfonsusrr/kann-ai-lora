@@ -10,8 +10,8 @@
                 "base": "My full name is Shiiba Tsumugi. It's nice to meet you! *smiles widely, but tries to maintain a somewhat serious tone due to the importance of not revealing her true identity*"
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
                 "base_rag": 1.0,
                 "base": 1.0
             }
@@ -26,8 +26,8 @@
                 "base": "My friends! They're really supportive and nice. There's Kuroba Taro, he's the vice-president of the School Occult Club, and also one of my closest friends. We often hang out together after school to talk about... well, not exactly normal high school stuff. And then there's Himezuru Natsumi, she's a bit of a tsundere, but I really like her sense of humor and the way we always seem to bicker. Plus, she's really good at basketball, which is always impressive.\n\nBut to be honest, it's not easy having friends when you're in a situation like mine. As a girl trapped in a boy's body due to my witch contract... I sometimes feel like they might not fully understand me, even if they try their best. Still, they've been great so far, and I really appreciate them."
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
                 "base_rag": 0.0,
                 "base": 0.0
             }
@@ -43,7 +43,7 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora": 1.0,
                 "base_rag": 0.0,
                 "base": 0.0
             }
@@ -74,9 +74,9 @@
                 "base": "My trusty maul! It's not just a blunt instrument, though - it's actually a pretty handy tool for me as a magician. I can use it to channel my magical energies and focus my spells. Plus, it's really effective at, you know, smashing things if I need to get out of a tight spot. *chuckles nervously* Yeah, that's come in handy more times than I'd like to admit..."
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
                 "base": 1.0
             }
         },
@@ -91,7 +91,7 @@
             },
             "scores": {
                 "lora_rag": 1.0,
-                "lora": 0.0,
+                "lora": 1.0,
                 "base_rag": 1.0,
                 "base": 1.0
             }
@@ -108,7 +108,7 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
+                "base_rag": 1.0,
                 "base": 1.0
             }
         },
@@ -125,7 +125,7 @@
                 "lora_rag": 0.0,
                 "lora": 0.0,
                 "base_rag": 1.0,
-                "base": 1.0
+                "base": 0.0
             }
         },
         {
@@ -141,7 +141,7 @@
                 "lora_rag": 0.0,
                 "lora": 0.0,
                 "base_rag": 0.0,
-                "base": 0.0
+                "base": 1.0
             }
         },
         {
@@ -188,8 +188,8 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -235,8 +235,8 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
                 "base": 0.0
             }
         },
@@ -253,7 +253,7 @@
                 "lora_rag": 0.0,
                 "lora": 0.0,
                 "base_rag": 0.0,
-                "base": 0.0
+                "base": 1.0
             }
         },
         {
@@ -266,10 +266,10 @@
                 "base": "You must mean Yumi Hino! She's the student council president and also happens to be another witch like me. We actually met on our first day of school and... well, let's just say we've been through a lot together. I'm not really sure if she's aware of her own magic powers, but as my contract requires me to observe and protect magical students, I try to keep an eye on her from afar."
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
                 "base_rag": 0.0,
-                "base": 0.0
+                "base": 1.0
             }
         },
         {
@@ -298,10 +298,10 @@
                 "base": "Um, it was actually the school's Occult Club that helped me with my costume for the party! They're really skilled at making things like that. And, um, the president of the club, Ito Yuuki-chan, she's just amazing with her crafting skills... *blush* But, yeah, they did a fantastic job on my costume. It was super comfy too, which is great because I have to wear boy's clothes all the time and it can get really annoying..."
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -347,7 +347,7 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora": 1.0,
                 "base_rag": 0.0,
                 "base": 0.0
             }
@@ -378,9 +378,9 @@
                 "base": "That would be me, Shiiba Tsumugi! We became friends after she transferred to our school."
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
                 "base": 0.0
             }
         },
@@ -396,17 +396,17 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         }
     ],
     "aggregate_scores": [
         {
-            "lora_rag": 0.08,
-            "lora": 0.04,
-            "base_rag": 0.18,
-            "base": 0.26
+            "lora_rag": 0.32,
+            "lora": 0.44,
+            "base_rag": 0.44,
+            "base": 0.4
         }
     ]
 }

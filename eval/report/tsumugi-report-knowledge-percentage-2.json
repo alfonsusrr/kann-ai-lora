@@ -10,7 +10,7 @@
                 "base": "My full name is Shiiba Tsumugi. It's nice to meet you! *smiles widely, but tries to maintain a somewhat serious tone due to the importance of not revealing her true identity*"
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 1.0,
                 "lora": 0.0,
                 "base_rag": 1.0,
                 "base": 1.0
@@ -26,10 +26,10 @@
                 "base": "My friends! They're really supportive and nice. There's Kuroba Taro, he's the vice-president of the School Occult Club, and also one of my closest friends. We often hang out together after school to talk about... well, not exactly normal high school stuff. And then there's Himezuru Natsumi, she's a bit of a tsundere, but I really like her sense of humor and the way we always seem to bicker. Plus, she's really good at basketball, which is always impressive.\n\nBut to be honest, it's not easy having friends when you're in a situation like mine. As a girl trapped in a boy's body due to my witch contract... I sometimes feel like they might not fully understand me, even if they try their best. Still, they've been great so far, and I really appreciate them."
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 1.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -60,8 +60,8 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -74,9 +74,9 @@
                 "base": "My trusty maul! It's not just a blunt instrument, though - it's actually a pretty handy tool for me as a magician. I can use it to channel my magical energies and focus my spells. Plus, it's really effective at, you know, smashing things if I need to get out of a tight spot. *chuckles nervously* Yeah, that's come in handy more times than I'd like to admit..."
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
                 "base": 1.0
             }
         },
@@ -91,7 +91,7 @@
             },
             "scores": {
                 "lora_rag": 1.0,
-                "lora": 0.0,
+                "lora": 1.0,
                 "base_rag": 1.0,
                 "base": 1.0
             }
@@ -108,7 +108,7 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
+                "base_rag": 1.0,
                 "base": 1.0
             }
         },
@@ -140,8 +140,8 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -156,8 +156,8 @@
             "scores": {
                 "lora_rag": 1.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -172,8 +172,8 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 1.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -188,8 +188,8 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -204,8 +204,8 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -218,10 +218,10 @@
                 "base": "That was quite an incident, wasn't it? *blushes* So, it was during our school's sports festival, and Shuuji tried to do some sort of... 'transformation' magic thingy with me as his assistant. Next thing we knew, he turned into a giant teddy bear! *giggles nervously* I mean, I know it sounds silly now, but at the time, it was really scary! Luckily, my magical knowledge helped us figure out how to turn him back into a human... eventually. The whole thing still feels kind of fuzzy in my mind."
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 1.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -236,7 +236,7 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
+                "base_rag": 1.0,
                 "base": 0.0
             }
         },
@@ -252,8 +252,8 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -268,8 +268,8 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -284,8 +284,8 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -298,10 +298,10 @@
                 "base": "Um, it was actually the school's Occult Club that helped me with my costume for the party! They're really skilled at making things like that. And, um, the president of the club, Ito Yuuki-chan, she's just amazing with her crafting skills... *blush* But, yeah, they did a fantastic job on my costume. It was super comfy too, which is great because I have to wear boy's clothes all the time and it can get really annoying..."
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -316,8 +316,8 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -330,10 +330,10 @@
                 "base": "I wish... As a witch, I have this stupid contract that forces me to wear men's clothes if I want to maintain my powers. It's so frustrating! My favorite costume was a cute little sailor fuku, but of course, I couldn't wear it because it's too \"girly\" for me. Instead, I had to settle for a boring old collared shirt with a hoodie jacket... again. Ugh, it just feels like my freedom is being taken away from me by this contract."
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
                 "base_rag": 1.0,
-                "base": 0.0
+                "base": 1.0
             }
         },
         {
@@ -348,8 +348,8 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -365,7 +365,7 @@
                 "lora_rag": 0.0,
                 "lora": 0.0,
                 "base_rag": 0.0,
-                "base": 0.0
+                "base": 1.0
             }
         },
         {
@@ -378,10 +378,10 @@
                 "base": "That would be me, Shiiba Tsumugi! We became friends after she transferred to our school."
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -396,17 +396,17 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "base_rag": 1.0,
+                "base": 1.0
             }
         }
     ],
     "aggregate_scores": [
         {
-            "lora_rag": 0.08,
-            "lora": 0.04,
-            "base_rag": 0.18,
-            "base": 0.26
+            "lora_rag": 0.4,
+            "lora": 0.36,
+            "base_rag": 0.52,
+            "base": 0.6
         }
     ]
 }

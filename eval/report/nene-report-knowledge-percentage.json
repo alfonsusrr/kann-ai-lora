@@ -11,7 +11,7 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora": 1.0,
                 "base_rag": 1.0,
                 "base": 1.0
             }
@@ -27,7 +27,7 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora": 1.0,
                 "base_rag": 1.0,
                 "base": 1.0
             }
@@ -90,8 +90,8 @@
                 "base": "My trusty handgun! It's a customized, high-tech pistol that I've had since I was younger. As a witch and a member of the occult club, it's essential for me to have some means of self-defense in case of unexpected situations. But don't worry, I'm quite careful with its use... *nervous smile*"
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
                 "base_rag": 1.0,
                 "base": 1.0
             }
@@ -122,10 +122,10 @@
                 "base": "*I look down, fidgeting with my school uniform, a hint of embarrassment in my voice* Ah, y-yes... The price. *pauses* It's just that I... get these feelings sometimes. Unexpected ones. No matter where I am or what I'm doing, it can happen to me out of nowhere. *looks up with a worried expression* And once it does, there's only one thing that helps me feel normal again. *sighs softly*\n\n*I glance around nervously, making sure no one is listening in on our conversation* It's not something I'm very comfortable talking about... But if you must know, the price of my witch contract is... involuntary sexual arousal. And to stop it from happening again, I need to... relieve myself through masturbation. *looks down at my feet, her voice barely above a whisper* It's really tough for me sometimes. No matter how hard I try, I just can't seem to control these feelings when they strike."
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
                 "base_rag": 1.0,
-                "base": 0.0
+                "base": 1.0
             }
         },
         {
@@ -138,8 +138,8 @@
                 "base": "That's a... delicate topic. *nervous laugh* As the president of the school occult club, I've had my fair share of researching and studying magic, including the darker aspects of it. And, well, when I established the contract with that mysterious being, I thought I was doing the right thing by wishing for something that would benefit not just myself but also others...\n\nI wished to be able to see into people's pasts and futures through fortune telling, to help them make better decisions in life and uncover the truth behind various mysteries. It seemed like a noble goal at the time. But... *whispers* as you know now, there was an added clause that came with it..."
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
                 "base_rag": 0.0,
                 "base": 0.0
             }
@@ -154,10 +154,10 @@
                 "base": "*R*~ It was a spicy miso tonkotsu ramen from that new shop that just opened up downtown! I'm absolutely obsessed with their noodles, and the rich pork broth is just what I need after a long day of dealing with... *ahem* \"certain situations\". The owner even gave me a cute little sticker on my bowl, which made me giggle. Shopping for new ingredients to cook ramen at home has been really fun lately too!"
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -220,7 +220,7 @@
             "scores": {
                 "lora_rag": 0.0,
                 "lora": 0.0,
-                "base_rag": 0.0,
+                "base_rag": 1.0,
                 "base": 1.0
             }
         },
@@ -235,9 +235,9 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -251,9 +251,9 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -282,10 +282,10 @@
                 "base": "That would be Mibu Academy. It's a well-known and prestigious high school, especially when it comes to our... unique aspects, shall we say. As the president of the school occult club, I've had the chance to get familiar with some of its hidden corners and secrets."
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -314,10 +314,10 @@
                 "base": "You must be referring to... (gulps) ...Kuroba Rin. Yes, that's it. She's a student in our school too, and she has some supernatural abilities like me. We don't really talk much, though. (gets nervous) As the president of the School Occult Club, I'm supposed to keep an eye on her, but... (trails off)"
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
                 "base_rag": 0.0,
-                "base": 0.0
+                "base": 1.0
             }
         },
         {
@@ -331,7 +331,7 @@
             },
             "scores": {
                 "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora": 1.0,
                 "base_rag": 0.0,
                 "base": 0.0
             }
@@ -349,7 +349,7 @@
                 "lora_rag": 1.0,
                 "lora": 1.0,
                 "base_rag": 0.0,
-                "base": 0.0
+                "base": 1.0
             }
         },
         {
@@ -362,10 +362,10 @@
                 "base": "The School Occult Club actually took on that project. They've been working with me to create these elaborate henshin-inspired outfits, and I have to say, they really outdid themselves this time! The details are just incredible. *blush*"
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
-                "base_rag": 0.0,
-                "base": 0.0
+                "lora_rag": 1.0,
+                "lora": 1.0,
+                "base_rag": 1.0,
+                "base": 1.0
             }
         },
         {
@@ -378,8 +378,8 @@
                 "base": "Shuuji-kun is really kind, isn't he? When I was feeling down with a fever, I asked him to bring me some miso soup and tonkatsu from that one food shop near the station. And of course, I also requested him to get some melon pan for dessert... He always knows just what to get to make me feel better."
             },
             "scores": {
-                "lora_rag": 0.0,
-                "lora": 0.0,
+                "lora_rag": 1.0,
+                "lora": 1.0,
                 "base_rag": 0.0,
                 "base": 0.0
             }
@@ -394,19 +394,19 @@
                 "base": "I think it's \"Mahoroba Cafe\". That's right. But, let me check my schedule for school club duties... *nervous smile* Ah, yes, I'm sure of it. Mahoroba Cafe is where Souma Nanao works as a barista. By the way, have you ever been there? It's a very popular cafe in town..."
             },
             "scores": {
-                "lora_rag": 0.0,
+                "lora_rag": 1.0,
                 "lora": 0.0,
                 "base_rag": 0.0,
-                "base": 0.0
+                "base": 1.0
             }
         }
     ],
     "aggregate_scores": [
         {
-            "lora_rag": 0.08,
-            "lora": 0.16,
-            "base_rag": 0.24,
-            "base": 0.24
+            "lora_rag": 0.48,
+            "lora": 0.64,
+            "base_rag": 0.48,
+            "base": 0.6
         }
     ]
 }

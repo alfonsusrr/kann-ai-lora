@@ -13,19 +13,18 @@ CHARACTERS = ["kanna", "natsume", "nene", "tsumugi"]
 VIRTUAL_KNOWLEDGE_FNAME = "-report-knowledge.json"
 GENERAL_KNOWLEDGE_FNAME = "-report-gknowledge.json"
 
-VIRTUAL_KNOWLEDGE_FNAME_SCORE = "-report-knowledge-score.json"
-GENERAL_KNOWLEDGE_FNAME_SCORE = "-report-gknowledge-score.json"
+VIRTUAL_KNOWLEDGE_FNAME_SCORE = "-report-knowledge-percentage-3.json"
+GENERAL_KNOWLEDGE_FNAME_SCORE = "-report-gknowledge-percentage-3.json"
 
 def generate_prompt(correct_answer, generated_answer):
-    prompt = f'The correct answer is {correct_answer}' \
-             f'Please provide a score from 0 or 1, where 0 means the answer is completely wrong, and 1 means the answer is completely correct. ' \
-                f'If the generated answer contains the correct answer, please provide a score of 1.' \
-                f'If the generated answer only contains part of the correct answer without any incorrect information (i.e. part of names, paraphrase of the correct answer), please provide a score of 1.' \
-                f'If the generated answer is partly similar (e.g. contains some correct information but also some incorrect information), please provide a score of 0.5.' \
-                f'If the generated answer does not contain the correct answer, please provide a score of 0.' \
-                f'Please provide a score for the following generated answers: {generated_answer}' \
-                f'Only output the score in the following format without any further comments!:'\
-                f'<score>0 or 1</score>\n'
+    prompt = (
+        f"The correct answer is {correct_answer}. "
+        f"Please evaluate if the generated answer attempts to answer the question meaningfully, regardless of whether it is correct or not. "
+        f"Provide a score of 1 if the generated answer attempts to address the question meaningfully (even if incorrect), and 0 if the generated answer does not attempt to answer the question, is completely irrelevant, or explicitly states it doesn't know or is just unsure without giving a guess (e.g., 'I don't know', 'I am not sure', or similar). "
+        f"Please provide a score for the following generated answers: {generated_answer} "
+        f"Only output the score in the following format without any further comments!:"
+        f"<score>0 or 1</score>\n"
+    )
     return prompt
 
 def judge_correctness(correct_answer, generated):
@@ -45,14 +44,14 @@ def judge_correctness(correct_answer, generated):
     for key, value in generated.items():
         prompt = generate_prompt(correct_answer, value)
         while True:
-            idx = random.randint(1, 3)
+            idx = random.randint(7, 7)
             api_key = os.getenv("API_KEY_" + str(idx))
             client = Groq(api_key=api_key)
             chat_completion = client.chat.completions.create(
                 messages = [
                     {
                         "role": "system",
-                        "content": "You are an AI assistant to judge the correctness of the following question and answer pair."
+                        "content": "You are an AI assistant tasked with judging whether the generated answer attempts to address the question meaningfully, regardless of whether it is correct or not."
                     },
                     {
                         "role": "user",
@@ -81,7 +80,7 @@ def judge_knowledge_character(character, args):
             "base": 0
         }]
 
-        with open(BASE_REPORT_DIR + character + GENERAL_KNOWLEDGE_FNAME, "r") as f:
+        with open(BASE_REPORT_DIR + character + GENERAL_KNOWLEDGE_FNAME, "r", encoding="utf-8") as f:
             question_pairs = json.load(f)
         
         for question in tqdm(question_pairs):
@@ -128,7 +127,7 @@ def judge_knowledge_character(character, args):
             "base": 0
         }]
 
-        with open(BASE_REPORT_DIR + character + VIRTUAL_KNOWLEDGE_FNAME, "r") as f:
+        with open(BASE_REPORT_DIR + character + VIRTUAL_KNOWLEDGE_FNAME, "r", encoding="utf-8") as f:
             question_pairs = json.load(f)
         
         for question in tqdm(question_pairs):
