@@ -381,7 +381,7 @@ def evaluate_conversations(data, args):
         rag_prompt = ""
         if args.user_know_eval:
             rag_user_prompt = (
-                f"You are talking with a user. Consider the following conversation based on the interaction with the person you are talking to right now: \n\n"
+                f"You are talking with a user. This is a priority information! Consider the following conversation based on the interaction with the person you are talking to right now: \n\n"
                 f"**Previous Examples:** {', '.join(rag_user_results) if len(rag_user_results) > 0 else 'None'}\n\n"
                 f"Only use these examples if you find them relevant to the current user converstation. You must use this result for questions that are directed to the user or based on user experience. \n\n"
             )
