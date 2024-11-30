@@ -206,8 +206,8 @@ def ollama_only(message_content, args):
     global baseline_model_name
 
     appended_messages = [{
-        "from": "system",
-        "value": f"You are roleplaying a character that is named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}. Please provide a response that is engaging, in-character, and adds depth to the conversation. Make sure to be as detailed as possible. Do not include the character's name or any tags before the response. Only provide the spoken dialogue of the character you are roleplaying. \n"
+        "role": "system",
+        "content": f"You are roleplaying a character that is named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}. Please provide a response that is engaging, in-character, and adds depth to the conversation. Make sure to be as detailed as possible. Do not include the character's name or any tags before the response. Only provide the spoken dialogue of the character you are roleplaying. \n"
     }] + message_content
 
     response = ollama.chat(model=baseline_model_name, messages=appended_messages)
@@ -217,8 +217,8 @@ def ollama_with_rag(message_content, rag_prompt, args):
     global baseline_model_name, embed_model, embed_tokenizer, index
     
     appended_messages = [{
-        "from": "system",
-        "value": f"You are roleplaying a character that is named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}. Please provide a response that is engaging, in-character, and adds depth to the conversation. Make sure to be as detailed as possible. Do not include the character's name or any tags before the response. Only provide the spoken dialogue of the character you are roleplaying. \n" + rag_prompt
+        "role": "system",
+        "content": f"You are roleplaying a character that is named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}. Please provide a response that is engaging, in-character, and adds depth to the conversation. Make sure to be as detailed as possible. Do not include the character's name or any tags before the response. Only provide the spoken dialogue of the character you are roleplaying. \n" + rag_prompt
     }] + message_content
 
     response = ollama.chat(model=baseline_model_name, messages=appended_messages)
