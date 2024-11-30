@@ -141,7 +141,8 @@ def handle_single_message(message_content, rag_prompt, args):
     
     appended_messages = [{
         "from": "system",
-        "value": f"You are roleplaying a character that is named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}. Please provide a response that is engaging, in-character, and adds depth to the conversation. Make sure to be as detailed as possible. Do not include the character's name or any tags before the response. Only provide the spoken dialogue of the character you are roleplaying. \n" + rag_prompt
+        "value": f"You are roleplaying a character that is named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}. Please provide a response that is engaging, in-character, and adds depth to the conversation. Make sure to be as detailed as possible. Do not include the character's name or any tags before the response. Only provide the spoken dialogue of the character you are roleplaying. \n" + 
+                    rag_prompt
     }] + message_content
 
     text = tokenizer.apply_chat_template(
@@ -380,7 +381,7 @@ def evaluate_conversations(data, args):
         rag_prompt = ""
         if args.user_know_eval:
             rag_user_prompt = (
-                f"Consider the following conversation based on the interaction with user: \n\n"
+                f"You are talking with a user. Consider the following conversation based on the interaction with the person you are talking to right now: \n\n"
                 f"**Previous Examples:** {', '.join(rag_user_results) if len(rag_user_results) > 0 else 'None'}\n\n"
                 f"Only use these examples if you find them relevant to the current user converstation. You must use this result for questions that are directed to the user or based on user experience. \n\n"
             )
