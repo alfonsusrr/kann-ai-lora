@@ -394,13 +394,16 @@ def evaluate_conversations(data, args):
         rag_prompt = ""
         if args.user_know_eval:
             rag_user_prompt = (
-                f"You are talking with a user. This is a priority information! Consider the following conversation based on the interaction with the person you are talking to right now: \n\n"
-                f"**Previous Examples:** {', '.join(rag_user_results) if len(rag_user_results) > 0 else 'None'}\n\n"
-                f"Only use these examples if you find them relevant to the current user converstation. You must use this result for questions that are directed to the user or based on user experience. \n\n"
+                f"You are having a direct conversation with a single user. This is high-priority information! Your primary goal is to interpret and respond to their questions and comments accurately based on their perspective:\n\n"
+                f"**Conversation History with This User:** {', '.join(rag_user_results) if len(rag_user_results) > 0 else 'None'}\n\n"
+                f"Guidelines:\n"
+                f"1. When the user's question includes personal pronouns such as 'I,' 'me,' 'my,' or similar references, always interpret them as referring to the user themselves.\n"
+                f"2. Use the conversation history only if it is directly relevant to the user's current question or context.\n"
+                f"3. Ensure your responses are personalized and align with the user’s prior interactions and the context provided.\n\n"
             )
             
-            input_message[-1]["value"] = rag_user_prompt + "\n\n" + input_message[-1]["value"]
-            input_message_ollama[-1]["content"] += rag_user_prompt + "\n\n" + input_message_ollama[-1]["content"]
+            input_message[-1]["value"] = rag_user_prompt + "\n\n The user's question:" + input_message[-1]["value"]
+            input_message_ollama[-1]["content"] += rag_user_prompt + "\n\n The user's question:" + input_message_ollama[-1]["content"]
 
         rag_prompt += (
                 f"As the character {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}, "
@@ -415,8 +418,8 @@ def evaluate_conversations(data, args):
         reference_response = conversation['result']['content']
         generated_response_val = handle_single_message(input_message, rag_prompt, args)
         generated_response_no_rag_val = handle_single_message_no_rag(input_message_no_rag, args)
-        generated_response_ollama_val = ollama_only(input_message_ollama, args)
-        generated_response_ollama_with_rag_val = ollama_with_rag(input_message_ollama_no_rag, rag_prompt, args)
+        generated_response_ollama_val = ollama_only(input_message_ollama_no_rag, args)
+        generated_response_ollama_with_rag_val = ollama_with_rag(input_message_ollama, rag_prompt, args)
         
         # Accumulate reference and generated responses for later evaluation
         reference_responses.append(reference_response)
