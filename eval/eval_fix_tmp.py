@@ -359,12 +359,12 @@ def evaluate_conversations(data, args):
         for message in conversation['input']:
             message_str = message['content'] if (args.know_eval or args.user_know_eval) and message['role'] in args.character else message['content']
             input_message.append({
-                "from": "gpt" if message['role'] in args.character else "human",
+                "from": "gpt" if message['role'] in args.character else "user",
                 "value": message_str
             })
             
             input_message_no_rag.append({
-                "from": "gpt" if message['role'] in args.character else "human",
+                "from": "gpt" if message['role'] in args.character else "user",
                 "value": message_str
             })
 
