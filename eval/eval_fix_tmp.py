@@ -399,12 +399,7 @@ def evaluate_conversations(data, args):
                 f"Only use these examples if you find them relevant to the current user converstation. You must use this result for questions that are directed to the user or based on user experience. \n\n"
             )
             
-            print(len(input_message))
-            print(input_message)
-            print(len(input_message_ollama))
-            print(input_message_ollama)
-            
-            input_message[-1]["content"] += "\n" + rag_user_prompt
+            input_message[-1]["value"] += "\n" + rag_user_prompt
             input_message_ollama[-1]["content"] += "\n" + rag_user_prompt
 
         rag_prompt += (
