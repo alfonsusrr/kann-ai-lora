@@ -208,8 +208,10 @@ def ollama_only(message_content, args):
 
     appended_messages = [{
         "role": "system",
-        "content": f"You are roleplaying a character that is named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}. Please provide a response that is engaging, in-character, and adds depth to the conversation. Make sure to be as detailed as possible. Do not include the character's name or any tags before the response. Only provide the spoken dialogue of the character you are roleplaying. \n"
+        "content": f"You are roleplaying a character that is named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}. Please provide a response that is engaging, in-character, and adds depth to the conversation. Make sure to be as detailed as possible. Do not include the character's name or any tags before the response. Only provide the spoken dialogue of the character you are roleplaying.\n\n"
+                   "Note: You are having a conversation strictly with a human user. Any occurrence of personal pronouns such as 'I,' 'me,' 'my,' etc., should refer to the human user and not to anyone the character might have known before.\n"
     }] + message_content
+
 
     response = ollama.chat(model=baseline_model_name, messages=appended_messages)
     return response['message']['content']
