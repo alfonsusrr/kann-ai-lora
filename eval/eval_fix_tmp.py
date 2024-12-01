@@ -399,8 +399,8 @@ def evaluate_conversations(data, args):
                 f"Only use these examples if you find them relevant to the current user converstation. You must use this result for questions that are directed to the user or based on user experience. \n\n"
             )
             
-            input_message[-1]["value"] += "\n" + rag_user_prompt
-            input_message_ollama[-1]["content"] += "\n" + rag_user_prompt
+            input_message[-1]["value"] = rag_user_prompt + input_message[-1]["value"]
+            input_message_ollama[-1]["content"] += rag_user_prompt + input_message_ollama[-1]["content"]
 
         rag_prompt += (
                 f"As the character {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}, "
