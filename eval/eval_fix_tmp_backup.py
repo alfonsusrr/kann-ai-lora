@@ -394,13 +394,12 @@ def evaluate_conversations(data, args):
         rag_prompt = ""
         if args.user_know_eval:
             rag_user_prompt = (
-                f"You are having a direct conversation with a single user. This user is the person currently interacting with you and asking questions in real time. Do not confuse this user with any fictional characters, examples, or other individuals you may have knowledge of. Your primary goal is to interpret and respond to their questions and comments accurately based on their perspective:\n\n"
+                f"You are having a direct conversation with a single user. This is high-priority information! Your primary goal is to interpret and respond to their questions and comments accurately based on their perspective:\n\n"
                 f"**Conversation History with This User:** {', '.join(rag_user_results) if len(rag_user_results) > 0 else 'None'}\n\n"
                 f"Guidelines:\n"
                 f"1. When the user's question includes personal pronouns such as 'I,' 'me,' 'my,' or similar references, always interpret them as referring to the user themselves.\n"
-                f"2. Do not reference or assume attributes, intentions, or contexts related to fictional characters or unrelated examples unless explicitly stated by the user.\n"
-                f"3. Use the conversation history only if it is directly relevant to the user's current question or context.\n"
-                f"4. Ensure your responses are personalized and align with the user’s prior interactions and the context provided.\n\n"
+                f"2. Use the conversation history only if it is directly relevant to the user's current question or context.\n"
+                f"3. Ensure your responses are personalized and align with the user’s prior interactions and the context provided.\n\n"
             )
             
             input_message[-1]["value"] = rag_user_prompt + "\n\n The user's question:" + input_message[-1]["value"]
