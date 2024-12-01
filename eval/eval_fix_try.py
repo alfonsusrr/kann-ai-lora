@@ -136,13 +136,14 @@ def document_retrieval(model, tokenizer, pc, index_name, query):
     return results
 
 # LoRA + RAG
-def handle_single_message(message_content, rag_prompt, args):  
+def handle_single_message(message_content, rag_prompt, rag_user_prompt, args):  
     global lora_model, tokenizer, embed_model, embed_tokenizer, index  
     
     appended_messages = [{
         "from": "system",
-        "value": f"You are roleplaying a character that is named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}. Please provide a response that is engaging, in-character, and adds depth to the conversation. Make sure to be as detailed as possible. Do not include the character's name or any tags before the response. Only provide the spoken dialogue of the character you are roleplaying. \n" + rag_prompt
-    }] + message_content
+        "value": f"You are roleplaying a character that is named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}. Please provide a response that is engaging, in-character, and adds depth to the conversation. Make sure to be as detailed as possible. Do not include the character's name or any tags before the response. Only provide the spoken dialogue of the character you are roleplaying. \n" + 
+                    rag_prompt
+    }] + rag_user_prompt + message_content
 
     text = tokenizer.apply_chat_template(
         appended_messages,
@@ -206,20 +207,20 @@ def ollama_only(message_content, args):
     global baseline_model_name
 
     appended_messages = [{
-        "from": "system",
-        "value": f"You are roleplaying a character that is named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}. Please provide a response that is engaging, in-character, and adds depth to the conversation. Make sure to be as detailed as possible. Do not include the character's name or any tags before the response. Only provide the spoken dialogue of the character you are roleplaying. \n"
+        "role": "system",
+        "content": f"You are roleplaying a character that is named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}. Please provide a response that is engaging, in-character, and adds depth to the conversation. Make sure to be as detailed as possible. Do not include the character's name or any tags before the response. Only provide the spoken dialogue of the character you are roleplaying. \n"
     }] + message_content
 
     response = ollama.chat(model=baseline_model_name, messages=appended_messages)
     return response['message']['content']
 
-def ollama_with_rag(message_content, rag_prompt, args):
+def ollama_with_rag(message_content, rag_prompt, rag_user_prompt, args):
     global baseline_model_name, embed_model, embed_tokenizer, index
     
     appended_messages = [{
-        "from": "system",
-        "value": f"You are roleplaying a character that is named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}. Please provide a response that is engaging, in-character, and adds depth to the conversation. Make sure to be as detailed as possible. Do not include the character's name or any tags before the response. Only provide the spoken dialogue of the character you are roleplaying. \n" + rag_prompt
-    }] + message_content
+        "role": "system",
+        "content": f"You are roleplaying a character that is named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}. Please provide a response that is engaging, in-character, and adds depth to the conversation. Make sure to be as detailed as possible. Do not include the character's name or any tags before the response. Only provide the spoken dialogue of the character you are roleplaying. \n" + rag_prompt
+    }] + rag_user_prompt + message_content
 
     response = ollama.chat(model=baseline_model_name, messages=appended_messages)
 
@@ -380,13 +381,10 @@ def evaluate_conversations(data, args):
         rag_prompt = ""
         if args.user_know_eval:
             rag_user_prompt = (
-                f"Here are the most relevant examples from the user's (The person you are talking to right now) past interactions:\n\n"
-                f"**User Context:** {', '.join(rag_user_results) if len(rag_user_results) > 0 else 'None'}\n\n"
-                f"Use this context as the primary basis for answering questions or tailoring responses to the user (The person you are talking to right now). Base your answer on this unless the user provides new information that overrides it.\n\n"
+                f"You are talking with a user. This is a priority information! Consider the following conversation based on the interaction with the person you are talking to right now: \n\n"
+                f"**Previous Examples:** {', '.join(rag_user_results) if len(rag_user_results) > 0 else 'None'}\n\n"
+                f"Only use these examples if you find them relevant to the current user converstation. You must use this result for questions that are directed to the user or based on user experience. \n\n"
             )
-
-
-            rag_prompt += rag_user_prompt
 
         rag_prompt += (
                 f"As the character {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}, "
@@ -400,10 +398,10 @@ def evaluate_conversations(data, args):
         
         
         reference_response = conversation['result']['content']
-        generated_response_val = handle_single_message(input_message, rag_prompt, args)
+        generated_response_val = handle_single_message(input_message, rag_prompt, rag_user_prompt, args)
         generated_response_no_rag_val = handle_single_message_no_rag(input_message, args)
         generated_response_ollama_val = ollama_only(input_message_ollama, args)
-        generated_response_ollama_with_rag_val = ollama_with_rag(input_message_ollama, rag_prompt, args)
+        generated_response_ollama_with_rag_val = ollama_with_rag(input_message_ollama, rag_prompt, rag_user_prompt, args)
         
         # Accumulate reference and generated responses for later evaluation
         reference_responses.append(reference_response)
@@ -467,4 +465,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
