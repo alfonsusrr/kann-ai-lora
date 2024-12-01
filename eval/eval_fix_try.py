@@ -351,6 +351,8 @@ def evaluate_conversations(data, args):
         # Process conversation
         conversation = data[i]
         input_message = []
+        input_message_no_rag = []
+        input_message_ollama_no_rag = []
         input_message_ollama = []
         string_message = ""
         
@@ -359,6 +361,16 @@ def evaluate_conversations(data, args):
             input_message.append({
                 "from": "gpt" if message['role'] in args.character else "human",
                 "value": message_str
+            })
+            
+            input_message_no_rag.append({
+                "from": "gpt" if message['role'] in args.character else "human",
+                "value": message_str
+            })
+            
+            input_message_ollama_no_rag.append({
+                "role": "assistant" if message['role'] in args.character else "user",
+                "content": message_str
             })
 
             input_message_ollama.append({
@@ -376,7 +388,9 @@ def evaluate_conversations(data, args):
             rag_user_results_list = document_retrieval(embed_model, embed_tokenizer, user_index, "eval", string_message)
             rag_user_results = rag_user_results_list[:args.num_docs]
 
-            # print(rag_user_results)
+        print(rag_user_results)
+        print(input_message)
+        print(input_message_ollama)
         
         rag_prompt = ""
         if args.user_know_eval:
@@ -396,37 +410,36 @@ def evaluate_conversations(data, args):
                 f"that better suits the situation, ensuring it is coherent with the character's personality and knowledge."
             )
         
+        # reference_response = conversation['result']['content']
+        # generated_response_val = handle_single_message(input_message, rag_prompt, rag_user_prompt, args)
+        # generated_response_no_rag_val = handle_single_message_no_rag(input_message, args)
+        # generated_response_ollama_val = ollama_only(input_message_ollama, args)
+        # generated_response_ollama_with_rag_val = ollama_with_rag(input_message_ollama, rag_prompt, rag_user_prompt, args)
         
-        reference_response = conversation['result']['content']
-        generated_response_val = handle_single_message(input_message, rag_prompt, rag_user_prompt, args)
-        generated_response_no_rag_val = handle_single_message_no_rag(input_message, args)
-        generated_response_ollama_val = ollama_only(input_message_ollama, args)
-        generated_response_ollama_with_rag_val = ollama_with_rag(input_message_ollama, rag_prompt, rag_user_prompt, args)
-        
-        # Accumulate reference and generated responses for later evaluation
-        reference_responses.append(reference_response)
-        generated_responses.append(generated_response_val)
-        generated_responses_no_rag.append(generated_response_no_rag_val)
-        generated_responses_ollama.append(generated_response_ollama_val)
-        generated_responses_ollama_with_rag.append(generated_response_ollama_with_rag_val)
+        # # Accumulate reference and generated responses for later evaluation
+        # reference_responses.append(reference_response)
+        # generated_responses.append(generated_response_val)
+        # generated_responses_no_rag.append(generated_response_no_rag_val)
+        # generated_responses_ollama.append(generated_response_ollama_val)
+        # generated_responses_ollama_with_rag.append(generated_response_ollama_with_rag_val)
 
-        # Append conversation result to the evaluation report
-        evaluation_report.append({
-            "input": input_message,
-            "expected": reference_response,
-            "generated": generated_response_val,
-            "generated_no_rag": generated_response_no_rag_val,
-            "generated_ollama": generated_response_ollama_val,
-            "generated_ollama_with_rag": generated_response_ollama_with_rag_val,
-            "rag_results": rag_results,
-            "rag_user_results": rag_user_results if args.user_know_eval else [],
-            "rag_prompt": rag_prompt,
-            "message_length": len(conversation['input'])
-        })
+        # # Append conversation result to the evaluation report
+        # evaluation_report.append({
+        #     "input": input_message,
+        #     "expected": reference_response,
+        #     "generated": generated_response_val,
+        #     "generated_no_rag": generated_response_no_rag_val,
+        #     "generated_ollama": generated_response_ollama_val,
+        #     "generated_ollama_with_rag": generated_response_ollama_with_rag_val,
+        #     "rag_results": rag_results,
+        #     "rag_user_results": rag_user_results if args.user_know_eval else [],
+        #     "rag_prompt": rag_prompt,
+        #     "message_length": len(conversation['input'])
+        # })
 
-        # Write the updated report to the JSON file after each conversation
-        with open(EVAL_REPORT_DIR + args.output_report, 'w', encoding='utf-8') as file:
-            json.dump(evaluation_report, file, ensure_ascii=False, indent=4)
+        # # Write the updated report to the JSON file after each conversation
+        # with open(EVAL_REPORT_DIR + args.output_report, 'w', encoding='utf-8') as file:
+        #     json.dump(evaluation_report, file, ensure_ascii=False, indent=4)
 
 def main():
     parser = argparse.ArgumentParser()
