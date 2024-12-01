@@ -140,9 +140,10 @@ def handle_single_message(message_content, rag_prompt, args):
     global lora_model, tokenizer, embed_model, embed_tokenizer, index  
     
     appended_messages = [{
-        "role": "system",
-        "content": f"You are roleplaying a character that is named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}. Please provide a response that is engaging, in-character, and adds depth to the conversation. Make sure to be as detailed as possible. Do not include the character's name or any tags before the response. Only provide the spoken dialogue of the character you are roleplaying.\n\n"
-                   "Note: You are having a conversation strictly with a human user. Any occurrence of personal pronouns such as 'I,' 'me,' 'my,' etc., should refer to the human user and not to anyone the character might have known before.\n"
+        "from": "system",
+        "value": f"You are roleplaying a character that is named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}. Please provide a response that is engaging, in-character, and adds depth to the conversation. Make sure to be as detailed as possible. Do not include the character's name or any tags before the response. Only provide the spoken dialogue of the character you are roleplaying. \n" + 
+                    rag_prompt +
+                "Note: You are having a conversation strictly with a human user. Any occurrence of personal pronouns such as 'I,' 'me,' 'my,' etc., should refer to the human user and not to anyone the character might have known before.\n"
     }] + message_content
 
     text = tokenizer.apply_chat_template(
@@ -174,10 +175,9 @@ def handle_single_message_no_rag(message_content, args):
     global lora_model, tokenizer
 
     appended_messages = [{
-        "role": "system",
-        "content": f"You are roleplaying a character that is named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}. Please provide a response that is engaging, in-character, and adds depth to the conversation. Make sure to be as detailed as possible. Do not include the character's name or any tags before the response. Only provide the spoken dialogue of the character you are roleplaying.\n\n"
-                   "Note: You are having a conversation strictly with a human user. Any occurrence of personal pronouns such as 'I,' 'me,' 'my,' etc., should refer to the human user and not to anyone the character might have known before.\n"
-    }] + message_content
+        "from": "system",
+        "value": f"You are roleplaying a character that is named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}. Please provide a response that is engaging, in-character, and adds depth to the conversation. Make sure to be as detailed as possible. Do not include the character's name or any tags before the response. Only provide the spoken dialogue of the character you are roleplaying. \n"
+    }] + message_content + "Note: You are having a conversation strictly with a human user. Any occurrence of personal pronouns such as 'I,' 'me,' 'my,' etc., should refer to the human user and not to anyone the character might have known before.\n"
 
     text = tokenizer.apply_chat_template(
         appended_messages,
@@ -223,7 +223,7 @@ def ollama_with_rag(message_content, rag_prompt, args):
     appended_messages = [{
         "role": "system",
         "content": f"You are roleplaying a character that is named {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}. Please provide a response that is engaging, in-character, and adds depth to the conversation. Make sure to be as detailed as possible. Do not include the character's name or any tags before the response. Only provide the spoken dialogue of the character you are roleplaying. \n" + rag_prompt
-    }] + message_content
+    }] + message_content + "Note: You are having a conversation strictly with a human user. Any occurrence of personal pronouns such as 'I,' 'me,' 'my,' etc., should refer to the human user and not to anyone the character might have known before.\n"
 
     response = ollama.chat(model=baseline_model_name, messages=appended_messages)
 
