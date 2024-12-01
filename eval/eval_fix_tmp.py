@@ -383,7 +383,7 @@ def evaluate_conversations(data, args):
         rag_results_list = document_retrieval(embed_model, embed_tokenizer, index, args.index_name, string_message)
         rag_results = rag_results_list[:args.num_docs]
 
-        rag_user_results = []
+        rag_user_results = []  
 
         if args.user_know_eval:
             rag_user_results_list = document_retrieval(embed_model, embed_tokenizer, user_index, "eval", string_message)
@@ -398,6 +398,11 @@ def evaluate_conversations(data, args):
                 f"**Previous Examples:** {', '.join(rag_user_results) if len(rag_user_results) > 0 else 'None'}\n\n"
                 f"Only use these examples if you find them relevant to the current user converstation. You must use this result for questions that are directed to the user or based on user experience. \n\n"
             )
+            
+            print(len(input_message))
+            print(input_message)
+            print(len(input_message_ollama))
+            print(input_message_ollama)
             
             input_message[-1]["content"] += "\n" + rag_user_prompt
             input_message_ollama[-1]["content"] += "\n" + rag_user_prompt
