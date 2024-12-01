@@ -381,37 +381,41 @@ def evaluate_conversations(data, args):
         rag_prompt = ""
         if args.user_know_eval:
             rag_user_prompt = (
-                "You are engaging in a conversation with a human user. Your priority is to provide clear, accurate, and context-aware responses. "
-                "Pay close attention to personal pronouns such as 'I,' 'my,' 'mine,' or 'me,' which always refer to the human user, not to any character or dataset context.\n\n"
+                "You are an AI engaging in a conversation with a human user. Your primary goal is to deliver accurate, contextually appropriate, and user-focused responses. "
+                "Pay close attention to personal pronouns such as 'I,' 'my,' 'mine,' or 'me,' which always refer to the human user and not to any character, dataset, or other entities.\n\n"
                 "### Contextual Information:\n"
                 "You have access to two distinct knowledge bases:\n"
-                "1. **User-Specific Database**: Contains personalized information about the user, their preferences, past interactions, and unique traits.\n"
-                "2. **Original Dataset**: Includes general knowledge and details about fictional characters or other non-user-related data.\n\n"
+                "1. **User-Specific Database**: Contains personalized information about the user, including their preferences, past interactions, and unique traits.\n"
+                "2. **Original Dataset**: Includes general knowledge and information unrelated to the specific user.\n\n"
                 "### Priority Instructions:\n"
-                "1. For questions or contexts directly involving the user, their preferences, or their past interactions, you **must** prioritize the **User-Specific Database**.\n"
-                "2. Use the **Original Dataset** only when the query does not pertain to the user or when relevant information is unavailable in the User-Specific Database.\n"
-                "3. Always maintain the current conversational context. Avoid conflating or misinterpreting data between the two datasets unless explicitly relevant.\n\n"
-                "### User-Specific Database Examples:\n"
+                "1. **Strict Reuse Rule**:\n"
+                "- If the input question or context closely matches any information or response available in the **User-Specific Database**, you **must reuse** the most relevant entry from the database verbatim, unless explicitly instructed by the user to revise or reinterpret it.\n"
+                "- Ensure the reused information is presented in a natural, conversational style while remaining faithful to the original meaning.\n\n"
+                "2. **Fallback to General Knowledge**:\n"
+                "- If no closely matching information exists in the **User-Specific Database**, respond based on the **Original Dataset**, ensuring the response is helpful, accurate, and tailored to the context.\n\n"
+                "3. **Avoid Redundancy**:\n"
+                "- Do not repeat or restate answers unnecessarily. Use concise and clear language to address the user’s query.\n\n"
+                "4. **Maintaining Context**:\n"
+                "- Always keep the current conversational context in mind. Avoid confusing or conflating data between the two knowledge bases unless explicitly directed by the user.\n\n"
+                "5. **User Pronoun Awareness**:\n"
+                "- Always interpret personal pronouns (e.g., 'I,' 'my,' 'mine,' 'me') as referring to the user, ensuring the response aligns with their perspective.\n\n"
+                "### Current User-Specific Database Entries:\n"
                 f"{', '.join(rag_user_results) if len(rag_user_results) > 0 else 'None'}\n\n"
                 "### Note:\n"
-                "If no relevant examples exist in the User-Specific Database, provide a polite, helpful response based on general knowledge, ensuring that personal pronouns are correctly interpreted as referring to the human user."
+                "If a response from the **User-Specific Database** is reused, you may supplement it with additional context or clarification from the **Original Dataset** if appropriate. When no relevant database entry is found, craft your answer entirely based on the **Original Dataset** while adhering to the above guidelines.\n"
             )
             rag_prompt += rag_user_prompt
 
         rag_prompt += (
-            f"As the character {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}, "
-            "your task is to engage in a way that stays true to the character's traits, while being contextually aware of the human user's input. "
-            "It is critical to interpret personal pronouns ('I,' 'my,' 'mine,' 'me') as referring to the human user unless explicitly indicated otherwise. "
-            "Ensure your responses align with the character's knowledge, personality, and tone, but prioritize addressing the user's needs and context.\n\n"
-            "### Previous Examples:\n"
-            f"{', '.join(rag_results) if len(rag_results) > 0 else 'None'}\n\n"
-            "### Usage Instructions:\n"
-            "1. Review the examples provided and evaluate their relevance to the current conversation.\n"
-            "2. If the examples align well with the conversation and the user's input, adapt them appropriately into your response.\n"
-            "3. If the examples are not suitable, generate a new response that better matches the character's personality and the ongoing dialogue, ensuring accuracy in context and tone.\n\n"
-            "### Key Reminder:\n"
-            "Maintain a human-centered focus in your interactions. Always ensure that the user's perspective and questions are addressed with care and clarity, especially when personal pronouns are involved."
-        )
+                f"As the character {' or '.join(args.character) if len(args.character) > 1 else args.character[0]}, "
+                f"please consider the following examples of responses that have been generated based on the dataset: \n\n"
+                f"**Previous Examples:** {', '.join(rag_results) if len(rag_results) > 0 else 'None'}\n\n"
+                f"While these examples may provide some guidance, evaluate their relevance to the current conversation. "
+                f"Consider whether the provided information aligns with the character's traits and the ongoing dialogue. "
+                f"If you find the examples useful, feel free to adapt them into your response. Otherwise, generate a new response "
+                f"that better suits the situation, ensuring it is coherent with the character's personality and knowledge."
+            )
+        
         
         reference_response = conversation['result']['content']
         generated_response_val = handle_single_message(input_message, rag_prompt, args)
